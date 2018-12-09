@@ -22,6 +22,8 @@
         <module>spring-boot-web-beetl</module>
         <module>spring-boot-orm-mybatis</module>
         <module>spring-boot-cache-redis</module>
+        <module>spring-boot-sql-mysql</module>
+        <module>spring-boot-cache-guava-cache</module>
     </modules>
 
     <dependencyManagement>
