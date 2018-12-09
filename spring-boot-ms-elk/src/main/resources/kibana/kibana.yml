@@ -1,0 +1,3 @@
+server.host: "10.211.55.4"
+server.port: 5601
+elasticsearch.url: http://10.211.55.4:9200
