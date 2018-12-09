@@ -24,6 +24,8 @@
         <module>spring-boot-cache-redis</module>
         <module>spring-boot-sql-mysql</module>
         <module>spring-boot-cache-guava-cache</module>
+        <module>spring-boot-ms-consul</module>
+        <module>spring-boot-ms-elk</module>
     </modules>
 
     <dependencyManagement>

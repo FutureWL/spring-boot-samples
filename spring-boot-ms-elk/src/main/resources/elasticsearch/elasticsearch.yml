@@ -1,0 +1,12 @@
+# 集群名称
+cluster.name:
+# 节点名称
+node.name:
+# 数据文件存储的位置
+path.data:
+# 日志文件存储的位置
+path.logs:
+# 绑定的 host
+network.host:
+# 绑定的 port
+http.port:
