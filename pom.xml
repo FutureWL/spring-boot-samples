@@ -6,7 +6,7 @@
 
     <groupId>io.github.futurewl</groupId>
     <artifactId>spring-boot-example</artifactId>
-    <version>1.0.RELEASE</version>
+    <version>2.1.2.RELEASE</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -29,6 +29,7 @@
         <module>spring-boot-webflux</module>
         <module>spring-boot-first-application</module>
         <module>spring-boot-config</module>
+        <module>spring-boot-jdbc</module>
     </modules>
 
     <dependencyManagement>
