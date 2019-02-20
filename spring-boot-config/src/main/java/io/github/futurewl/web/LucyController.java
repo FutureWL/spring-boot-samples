@@ -1,11 +1,10 @@
 package io.github.futurewl.web;
 
-
 import io.github.futurewl.bean.ConfigBean;
 import io.github.futurewl.bean.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -19,21 +18,22 @@ import org.springframework.web.bind.annotation.RestController;
 public class LucyController {
 
     private final ConfigBean configBean;
+    private final User user;
 
     @Autowired
-    public LucyController(ConfigBean configBean) {
+    public LucyController(
+            ConfigBean configBean,
+            User user) {
         this.configBean = configBean;
+        this.user = user;
     }
 
-    @RequestMapping(value = "/lucy")
-    public String miya() {
+    @GetMapping(value = "/lucy")
+    public String lucy() {
         return configBean.getGreeting() + " >>>>" + configBean.getName() + " >>>>" + configBean.getUuid() + " >>>>" + configBean.getMax();
     }
 
-    @Autowired
-    User user;
-
-    @RequestMapping(value = "/user")
+    @GetMapping(value = "/user")
     public String user() {
         return user.getName() + user.getAge();
     }
