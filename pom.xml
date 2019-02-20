@@ -33,6 +33,7 @@
         <module>spring-boot-jpa</module>
         <module>spring-boot-beatlsql</module>
         <module>spring-boot-mybatis</module>
+        <module>spring-boot-mybatis-tx</module>
     </modules>
 
     <dependencyManagement>
