@@ -1,5 +1,6 @@
-package io.github.futurewl.spring.boot.data.rest;
+package io.github.futurewl.spring.boot.data.rest.business.repository;
 
+import io.github.futurewl.spring.boot.data.rest.business.entity.Person;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

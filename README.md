@@ -1,2 +1,2 @@
-# spring-boot-example
+# spring-boot
 Spring Boot 学习案例
