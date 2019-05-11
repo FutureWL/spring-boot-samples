@@ -9,11 +9,10 @@ import org.springframework.data.rest.core.annotation.RepositoryEventHandler;
 import org.springframework.stereotype.Component;
 
 /**
- * 用于指定对应的ENTITY操作的事件前后
- * <p>
- * <p>
- * Created by xw on 2017/5/10.
- * 2017-05-10 22:00
+ * 功能描述：用于指定对应的ENTITY操作的事件前后
+ *
+ * @author weilai create by 2019-05-11:08:46
+ * @version 1.0
  */
 @Component
 @RepositoryEventHandler
