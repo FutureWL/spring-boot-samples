@@ -1,11 +1,10 @@
 package io.github.futurewl.spring.boot.data.rest.business.entity;
 
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * 功能描述：国家实体
@@ -32,10 +31,10 @@ public class Country extends BaseEntity {
     private President president;
 
     @OneToMany(mappedBy = "country", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    private List<Province> provinces = new ArrayList<>();
+    private Set<Province> provinces = new HashSet<>();
 
     @ManyToMany(mappedBy = "countries", cascade = CascadeType.ALL)
-    private List<BigCompany> companies = new ArrayList<>();
+    private Set<BigCompany> companies = new HashSet<>();
 
 
     public void setPresident(President president) {
@@ -48,7 +47,7 @@ public class Country extends BaseEntity {
         provinces.add(province);
     }
 
-    public void setProvinces(List<Province> provinces) {
+    public void setProvinces(Set<Province> provinces) {
         if (provinces != null) {
             provinces.forEach(province -> province.setCountry(this));
         }

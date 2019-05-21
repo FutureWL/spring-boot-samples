@@ -1,12 +1,11 @@
 package io.github.futurewl.spring.boot.data.rest.business.entity;
 
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * 功能描述：跨国公司实体
@@ -27,7 +26,7 @@ public class BigCompany extends BaseEntity {
     @JoinTable(name = "rel_country_company",
             joinColumns = @JoinColumn(name = "company_id", referencedColumnName = "id", nullable = false),
             inverseJoinColumns = @JoinColumn(name = "country_id", referencedColumnName = "id", nullable = false))
-    private List<Country> countries = new ArrayList<>();
+    private Set<Country> countries = new HashSet<>();
 
 
     public BigCompany(String name) {
