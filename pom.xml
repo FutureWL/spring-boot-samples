@@ -41,6 +41,8 @@
         <module>spring-boot-mybatis-tx</module>
         <module>spring-boot-data-rest</module>
         <module>spring-boot-cors</module>
+        <module>spring-boot-admin</module>
+        <module>spring-boot-data-jpa</module>
     </modules>
 
 </project>
