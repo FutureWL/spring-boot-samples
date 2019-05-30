@@ -9,14 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-cloud</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>spring-cloud-config</module>
-        <module>spring-cloud-eureka-server</module>
-        <module>spring-cloud-ribbon</module>
-        <module>spring-cloud-zuul</module>
-        <module>spring-cloud-sleuth</module>
-    </modules>
+    <artifactId>spring-batch</artifactId>
+
 
 </project>

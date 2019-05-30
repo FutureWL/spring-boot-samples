@@ -39,6 +39,7 @@
         <module>spring-boot-nosql-redis</module>
         <module>spring-boot-mq-jms</module>
         <module>spring-boot-security</module>
+        <module>spring-boot-integration</module>
     </modules>
 
 
