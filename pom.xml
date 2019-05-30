@@ -11,7 +11,7 @@
     </parent>
 
     <groupId>io.github.futurewl</groupId>
-    <artifactId>spring-boot</artifactId>
+    <artifactId>spring-samples</artifactId>
     <packaging>pom</packaging>
 
     <properties>
@@ -22,27 +22,9 @@
     </properties>
 
     <modules>
-        <module>spring-boot-helloworld</module>
-        <module>spring-boot-web-mvc</module>
-        <module>spring-boot-web-beetl</module>
-        <module>spring-boot-orm-mybatis</module>
-        <module>spring-boot-cache-redis</module>
-        <module>spring-boot-sql-mysql</module>
-        <module>spring-boot-cache-guava-cache</module>
-        <module>spring-boot-ms-consul</module>
-        <module>spring-boot-ms-elk</module>
-        <module>spring-boot-webflux</module>
-        <module>spring-boot-first-application</module>
-        <module>spring-boot-config</module>
-        <module>spring-boot-jdbc</module>
-        <module>spring-boot-jpa</module>
-        <module>spring-boot-beatlsql</module>
-        <module>spring-boot-mybatis</module>
-        <module>spring-boot-mybatis-tx</module>
-        <module>spring-boot-data-rest</module>
-        <module>spring-boot-cors</module>
-        <module>spring-boot-admin</module>
-        <module>spring-boot-data-jpa</module>
+        <module>spring-boot</module>
+        <module>spring-data</module>
+        <module>spring-cloud</module>
     </modules>
 
 </project>

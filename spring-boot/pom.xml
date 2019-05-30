@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>io.github.futurewl</groupId>
+        <artifactId>spring-samples</artifactId>
+        <version>2.1.4.RELEASE</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>spring-boot</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>spring-boot-helloworld</module>
+        <module>spring-boot-web-mvc</module>
+        <module>spring-boot-web-beetl</module>
+        <module>spring-boot-orm-mybatis</module>
+        <module>spring-boot-cache-redis</module>
+        <module>spring-boot-sql-mysql</module>
+        <module>spring-boot-cache-guava-cache</module>
+        <module>spring-boot-ms-consul</module>
+        <module>spring-boot-ms-elk</module>
+        <module>spring-boot-webflux</module>
+        <module>spring-boot-first-application</module>
+        <module>spring-boot-config</module>
+        <module>spring-boot-jdbc</module>
+        <module>spring-boot-jpa</module>
+        <module>spring-boot-beatlsql</module>
+        <module>spring-boot-mybatis</module>
+        <module>spring-boot-mybatis-tx</module>
+        <module>spring-boot-data-rest</module>
+        <module>spring-boot-cors</module>
+        <module>spring-boot-admin</module>
+        <module>spring-boot-data-jpa</module>
+    </modules>
+
+
+</project>
