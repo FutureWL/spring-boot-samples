@@ -34,6 +34,7 @@
         <module>spring-boot-cors</module>
         <module>spring-boot-admin</module>
         <module>spring-boot-data-jpa</module>
+        <module>spring-boot-cache-concurrent-cache</module>
     </modules>
 
 

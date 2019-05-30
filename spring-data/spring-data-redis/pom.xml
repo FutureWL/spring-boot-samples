@@ -11,5 +11,8 @@
 
     <artifactId>spring-data-redis</artifactId>
 
+    <dependencies>
+
+    </dependencies>
 
 </project>
