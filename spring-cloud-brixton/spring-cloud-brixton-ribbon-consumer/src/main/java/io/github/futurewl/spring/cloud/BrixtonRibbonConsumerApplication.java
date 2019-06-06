@@ -1,8 +1,10 @@
 package io.github.futurewl.spring.cloud;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
@@ -18,6 +20,7 @@ import org.springframework.web.client.RestTemplate;
  * @version 1.0
  */
 @RestController
+@EnableCircuitBreaker
 @EnableDiscoveryClient
 @SpringBootApplication
 public class BrixtonRibbonConsumerApplication {
@@ -33,7 +36,17 @@ public class BrixtonRibbonConsumerApplication {
 
     @RequestMapping(value = "/ribbon-consumer", method = RequestMethod.GET)
     public String helloConsumer() {
+//        return restTemplate.getForEntity("http://HELLO-SERVICE/hello", String.class).getBody();
+        return helloService();
+    }
+
+    @HystrixCommand(fallbackMethod = "helloFallback")
+    public String helloService() {
         return restTemplate.getForEntity("http://HELLO-SERVICE/hello", String.class).getBody();
+    }
+
+    public String helloFallback() {
+        return "error";
     }
 
     public static void main(String[] args) {
