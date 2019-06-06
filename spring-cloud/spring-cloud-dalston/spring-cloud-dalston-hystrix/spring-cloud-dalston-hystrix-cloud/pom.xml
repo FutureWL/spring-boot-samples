@@ -3,23 +3,19 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>spring-samples</artifactId>
+        <artifactId>spring-cloud-dalston-hystrix</artifactId>
         <groupId>io.github.futurewl</groupId>
         <version>2.1.4.RELEASE</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-cloud</artifactId>
-
+    <artifactId>spring-cloud-dalston-hystrix-cloud</artifactId>
+    <packaging>pom</packaging>
     <modules>
-        <module>spring-cloud-angel</module>
-        <module>spring-cloud-dalston</module>
-        <module>spring-cloud-camden</module>
-        <module>spring-cloud-brixton</module>
-        <module>spring-cloud-edgware</module>
-        <module>spring-cloud-finchley</module>
-        <module>spring-cloud-greenwich</module>
-        <module>spring-cloud-hoxton</module>
+        <module>spring-cloud-dalston-hystrix-cloud-server</module>
+        <module>spring-cloud-dalston-hystrix-cloud-provider</module>
+        <module>spring-cloud-dalston-hystrix-cloud-invoker</module>
+        <module>spring-cloud-dalston-hystrix-cloud-dashboard</module>
     </modules>
 
 
