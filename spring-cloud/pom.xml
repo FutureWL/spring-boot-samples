@@ -18,6 +18,7 @@
         <module>spring-cloud-zuul</module>
         <module>spring-cloud-sleuth</module>
         <module>spring-cloud-microservice</module>
+        <module>spring-cloud-eureka-client</module>
     </modules>
 
 
