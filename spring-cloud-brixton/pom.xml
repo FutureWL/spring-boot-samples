@@ -9,16 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-cloud</artifactId>
+    <artifactId>spring-cloud-brixton</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>spring-cloud-config</module>
-        <module>spring-cloud-eureka-server</module>
-        <module>spring-cloud-ribbon</module>
-        <module>spring-cloud-zuul</module>
-        <module>spring-cloud-sleuth</module>
-        <module>spring-cloud-microservice</module>
-        <module>spring-cloud-eureka-client</module>
+        <module>spring-cloud-brixton-eureka</module>
+        <module>spring-cloud-brixton-helloworld</module>
+        <module>spring-cloud-brixton-ribbon-consumer</module>
     </modules>
 
     <dependencyManagement>
@@ -26,18 +22,35 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Greenwich.SR1</version>
+                <version>Brixton.SR7</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>2.1.5.RELEASE</version>
+                <version>1.3.7.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>1.3.7.RELEASE</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
