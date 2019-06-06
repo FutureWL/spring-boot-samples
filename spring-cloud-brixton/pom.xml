@@ -18,6 +18,8 @@
         <module>spring-cloud-brixton-hystrix-dashboard</module>
         <module>spring-cloud-brixton-turbine</module>
         <module>spring-cloud-brixton-turbine-amqp</module>
+        <module>spring-cloud-brixton-feign-consumer</module>
+        <module>spring-cloud-brixton-api-gateway</module>
     </modules>
 
     <dependencyManagement>
