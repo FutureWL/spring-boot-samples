@@ -27,6 +27,7 @@
         <module>spring-data</module>
         <module>spring-cloud</module>
         <module>spring-batch</module>
+        <module>spring-boot-demo-1</module>
     </modules>
 
     <dependencyManagement>
