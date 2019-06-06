@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Random;
+
 /**
  * 功能描述：
  *
@@ -27,8 +29,13 @@ public class BrixtonEurekaClientApplication {
     private DiscoveryClient discoveryClient;
 
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
-    public String index() {
+    public String index() throws InterruptedException {
         ServiceInstance instance = discoveryClient.getLocalServiceInstance();
+
+        int sleepTime = new Random().nextInt(3000);
+        log.info("sleepTime:" + sleepTime);
+        Thread.sleep(sleepTime);
+
         log.info("/hello, host:" + instance.getHost() + ", service_id:" + instance.getServiceId());
         return "Hello World";
     }

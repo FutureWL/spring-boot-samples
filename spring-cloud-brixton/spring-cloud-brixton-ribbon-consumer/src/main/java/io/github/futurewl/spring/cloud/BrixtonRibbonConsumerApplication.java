@@ -1,6 +1,7 @@
 package io.github.futurewl.spring.cloud;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -19,6 +20,7 @@ import org.springframework.web.client.RestTemplate;
  * @author weilai create by 2019-06-06:16:32
  * @version 1.0
  */
+@Slf4j
 @RestController
 @EnableCircuitBreaker
 @EnableDiscoveryClient
@@ -40,9 +42,17 @@ public class BrixtonRibbonConsumerApplication {
         return helloService();
     }
 
-    @HystrixCommand(fallbackMethod = "helloFallback")
+    @HystrixCommand(fallbackMethod = "helloFallback", commandKey = "helloKey")
     public String helloService() {
-        return restTemplate.getForEntity("http://HELLO-SERVICE/hello", String.class).getBody();
+        long start = System.currentTimeMillis();
+
+        String result = restTemplate.getForEntity("http://HELLO-SERVICE/hello", String.class).getBody();
+
+        long end = System.currentTimeMillis();
+        log.info("Spend time :" + (end - start));
+
+        return result;
+
     }
 
     public String helloFallback() {

@@ -15,6 +15,9 @@
         <module>spring-cloud-brixton-eureka</module>
         <module>spring-cloud-brixton-helloworld</module>
         <module>spring-cloud-brixton-ribbon-consumer</module>
+        <module>spring-cloud-brixton-hystrix-dashboard</module>
+        <module>spring-cloud-brixton-turbine</module>
+        <module>spring-cloud-brixton-turbine-amqp</module>
     </modules>
 
     <dependencyManagement>
