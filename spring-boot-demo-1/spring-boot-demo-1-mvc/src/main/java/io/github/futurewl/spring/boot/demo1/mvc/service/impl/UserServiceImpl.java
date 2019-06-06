@@ -3,6 +3,7 @@ package io.github.futurewl.spring.boot.demo1.mvc.service.impl;
 import io.github.futurewl.spring.boot.demo1.mvc.entity.User;
 import io.github.futurewl.spring.boot.demo1.mvc.service.UserService;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,6 +15,7 @@ import java.util.List;
  * @version 1.0
  */
 @Service
+@Transactional
 public class UserServiceImpl implements UserService {
 
     private List<User> users;
