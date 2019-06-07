@@ -1,4 +1,4 @@
-package io.github.futurewl.spring.demo5;
+package io.github.futurewl.spring.ioc.demo6;
 
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -22,7 +22,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class MainApp {
     public static void main(String[] args) {
-        AbstractApplicationContext context = new ClassPathXmlApplicationContext("Beans5.xml");
+        AbstractApplicationContext context = new ClassPathXmlApplicationContext("Beans6.xml");
         HelloWorld obj = (HelloWorld) context.getBean("helloWorld");
         obj.getMessage();
         context.registerShutdownHook();

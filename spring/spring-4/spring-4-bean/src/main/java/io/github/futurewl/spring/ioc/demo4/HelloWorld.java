@@ -1,4 +1,4 @@
-package io.github.futurewl.spring.demo2;
+package io.github.futurewl.spring.ioc.demo4;
 
 /**
  * 功能描述：

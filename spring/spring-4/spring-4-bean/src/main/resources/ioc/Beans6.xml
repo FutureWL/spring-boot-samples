@@ -4,9 +4,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="helloWorld"
-          class="io.github.futurewl.spring.demo5.HelloWorld"
+          class="io.github.futurewl.spring.ioc.demo6.HelloWorld"
           init-method="init"
           destroy-method="destroy">
         <property name="message" value="Hello World!"/>
     </bean>
+    <bean class="io.github.futurewl.spring.ioc.demo6.InitHelloWorld"/>
 </beans>

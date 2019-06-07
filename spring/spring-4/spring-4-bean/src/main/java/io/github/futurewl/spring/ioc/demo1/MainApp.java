@@ -1,4 +1,4 @@
-package io.github.futurewl.spring.demo1;
+package io.github.futurewl.spring.ioc.demo1;
 
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.core.io.ClassPathResource;

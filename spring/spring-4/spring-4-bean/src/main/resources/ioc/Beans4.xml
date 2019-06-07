@@ -3,11 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="helloWorld"
-          class="io.github.futurewl.spring.demo6.HelloWorld"
-          init-method="init"
-          destroy-method="destroy">
+    <bean id="helloWorld" class="io.github.futurewl.spring.ioc.demo4.HelloWorld" scope="prototype">
         <property name="message" value="Hello World!"/>
     </bean>
-    <bean class="io.github.futurewl.spring.demo6.InitHelloWorld"/>
 </beans>

@@ -1,4 +1,4 @@
-package io.github.futurewl.spring.demo4;
+package io.github.futurewl.spring.ioc.demo6;
 
 /**
  * 功能描述：
@@ -15,5 +15,13 @@ public class HelloWorld {
 
     public void getMessage() {
         System.out.println("Your Message : " + message);
+    }
+
+    public void init(){
+        System.out.println("Bean is going through init.");
+    }
+
+    public void destroy(){
+        System.out.println("Bean will destroy now.");
     }
 }

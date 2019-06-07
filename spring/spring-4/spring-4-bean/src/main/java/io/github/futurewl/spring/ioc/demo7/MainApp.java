@@ -1,4 +1,4 @@
-package io.github.futurewl.spring.demo7;
+package io.github.futurewl.spring.ioc.demo7;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

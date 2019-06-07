@@ -1,4 +1,4 @@
-package io.github.futurewl.spring.demo6;
+package io.github.futurewl.spring.ioc.demo6;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;

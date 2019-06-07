@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="helloWorld" class="io.github.futurewl.spring.demo2.HelloWorld">
+    <bean id="helloWorld" class="io.github.futurewl.spring.ioc.demo2.HelloWorld">
         <property name="message" value="Hello World!"/>
     </bean>
 </beans>

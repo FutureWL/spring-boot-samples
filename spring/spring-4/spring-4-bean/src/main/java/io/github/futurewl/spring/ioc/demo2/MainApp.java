@@ -1,4 +1,4 @@
-package io.github.futurewl.spring.demo2;
+package io.github.futurewl.spring.ioc.demo2;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
@@ -34,7 +34,7 @@ public class MainApp {
     public static void main(String[] args) {
         ApplicationContext context =
                 new FileSystemXmlApplicationContext(
-                        "spring/spring-4/spring-4-bean/src/main/resources/Beans2.xml");
+                        "spring/spring-4/spring-4-bean/src/main/resources/ioc/Beans2.xml");
         HelloWorld obj = (HelloWorld) context.getBean("helloWorld");
         obj.getMessage();
     }
