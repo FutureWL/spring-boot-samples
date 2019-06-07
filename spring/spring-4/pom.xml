@@ -17,6 +17,7 @@
         <module>spring-4-aop</module>
         <module>spring-4-jdbc</module>
         <module>spring-4-mvc</module>
+        <module>spring-4-transaction</module>
     </modules>
 
     <dependencyManagement>
