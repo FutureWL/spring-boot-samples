@@ -6,26 +6,12 @@
 
     <aop:config>
         <aop:aspect id="log" ref="logging">
-
-            <aop:pointcut id="selectAll"
-                          expression="execution(* io.github.futurewl.spring.aop.demo1.*.*(..))"/>
-            <aop:before
-                    pointcut-ref="selectAll"
-                    method="beforeAdvice"/>
-
-            <aop:after
-                    pointcut-ref="selectAll"
-                    method="afterAdvice"/>
-
-            <aop:after-returning pointcut-ref="selectAll"
-                                 returning="retVal"
-                                 method="afterReturningAdvice"/>
-
-            <aop:after-throwing pointcut-ref="selectAll"
-                                throwing="ex"
-                                method="AfterThrowingAdvice"/>
+            <aop:pointcut id="selectAll" expression="execution(* io.github.futurewl.spring.aop.demo1.*.*(..))"/>
+            <aop:before pointcut-ref="selectAll" method="beforeAdvice"/>
+            <aop:after pointcut-ref="selectAll" method="afterAdvice"/>
+            <aop:after-returning pointcut-ref="selectAll" returning="retVal" method="afterReturningAdvice"/>
+            <aop:after-throwing pointcut-ref="selectAll" throwing="ex" method="AfterThrowingAdvice"/>
         </aop:aspect>
-
     </aop:config>
 
     <!-- Definition for student bean -->
@@ -36,5 +22,7 @@
 
     <!-- Definition for logging aspect -->
     <bean id="logging" class="io.github.futurewl.spring.aop.demo1.Logging"/>
+
+
 
 </beans>

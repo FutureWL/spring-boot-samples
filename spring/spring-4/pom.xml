@@ -13,8 +13,6 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>spring-4-core</module>
-        <module>spring-4-hello</module>
         <module>spring-4-bean</module>
         <module>spring-4-aop</module>
     </modules>
