@@ -3,18 +3,23 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>spring-samples</artifactId>
+        <artifactId>spring</artifactId>
         <groupId>io.github.futurewl</groupId>
         <version>2.1.4.RELEASE</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring</artifactId>
+    <artifactId>spring-5.1</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>spring-4</module>
-        <module>spring-5.0</module>
-        <module>spring-5.1</module>
+        <module>spring-5.1-core</module>
+        <module>spring-5.1-testing</module>
+        <module>spring-5.1-data-access</module>
+        <module>spring-5.1-web-servlet</module>
+        <module>spring-5.1-web-reactive</module>
+        <module>spring-5.1-integration</module>
+        <module>spring-5.1-languages</module>
     </modules>
+
 
 </project>
