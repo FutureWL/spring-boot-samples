@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>spring-boot</artifactId>
-
+    <packaging>pom</packaging>
     <modules>
         <module>spring-boot-1.4</module>
         <module>spring-boot-1.5</module>

@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>spring-cloud-dalston-first-ribbon-cloud</artifactId>
+    <packaging>pom</packaging>
     <modules>
         <module>spring-cloud-dalston-first-ribbon-cloud-server</module>
         <module>spring-cloud-dalston-first-ribbon-cloud-invoker</module>

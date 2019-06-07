@@ -21,7 +21,6 @@
         <module>spring-cloud-brixton-feign-consumer</module>
         <module>spring-cloud-brixton-api-gateway</module>
         <module>spring-cloud-brixton-config-server</module>
-        <module>spring-cloud-brixton-config-server</module>
         <module>spring-cloud-brixton-stream-hello</module>
         <module>spring-cloud-brixton-trace-1</module>
         <module>spring-cloud-brixton-trace-2</module>
