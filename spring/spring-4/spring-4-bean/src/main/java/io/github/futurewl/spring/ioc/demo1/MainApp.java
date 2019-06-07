@@ -22,7 +22,7 @@ import org.springframework.core.io.ClassPathResource;
  */
 public class MainApp {
     public static void main(String[] args) {
-        XmlBeanFactory factory = new XmlBeanFactory(new ClassPathResource("Beans1.xml"));
+        XmlBeanFactory factory = new XmlBeanFactory(new ClassPathResource("ioc/IocBeans1.xml"));
         HelloWorld obj = (HelloWorld) factory.getBean("helloWorld");
         obj.getMessage();
     }

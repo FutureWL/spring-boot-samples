@@ -11,7 +11,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class MainApp {
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("Beans7.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("ioc/IocBeans7.xml");
 
         HelloWorld objA = (HelloWorld) context.getBean("helloWorld");
 

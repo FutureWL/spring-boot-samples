@@ -29,7 +29,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class MainApp {
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("Beans4.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("ioc/IocBeans4.xml");
         HelloWorld objA = (HelloWorld) context.getBean("helloWorld");
         objA.setMessage("I'm object A");
         objA.getMessage();

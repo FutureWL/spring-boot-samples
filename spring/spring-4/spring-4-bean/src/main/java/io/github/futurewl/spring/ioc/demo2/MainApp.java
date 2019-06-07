@@ -34,7 +34,7 @@ public class MainApp {
     public static void main(String[] args) {
         ApplicationContext context =
                 new FileSystemXmlApplicationContext(
-                        "spring/spring-4/spring-4-bean/src/main/resources/ioc/Beans2.xml");
+                        "spring/spring-4/spring-4-bean/src/main/resources/ioc/IocBeans2.xml");
         HelloWorld obj = (HelloWorld) context.getBean("helloWorld");
         obj.getMessage();
     }
