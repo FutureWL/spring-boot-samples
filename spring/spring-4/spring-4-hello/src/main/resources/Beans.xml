@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="helloWorld" class="io.github.futurewl.spring.HelloWorld"
+          scope="singleton"
+          init-method="init"
+          destroy-method="destroy"
+    >
+        <property name="message" value="Hello World!"/>
+    </bean>
+    <!-- scope="singleton"  在spring IoC容器仅存在一个Bean实例，Bean以单例方式存在，默认值-->
+    <!-- scope="prototype"  每次从容器中调用Bean时，都返回一个新的实例，即每次调用getBean()时，相当于执行newXxxBean() -->
+    <!-- scope="request"  每次HTTP请求都会创建一个新的Bean，该作用域仅适用于WebApplicationContext环境-->
+    <!-- scope="session"  同一个HTTP Session共享一个Bean，不同Session使用不同的Bean，仅适用于WebApplicationContext环境-->
+    <!-- scope="global-session"  一般用于Portlet应用环境，该运用域仅适用于WebApplicationContext环境-->
+
+
+    <!-- A simple bean definition -->
+    <!--    <bean id="..." class="...">-->
+    <!-- collaborators and configuration for this bean go here -->
+    <!--    </bean>-->
+
+    <!-- A bean definition with lazy init set on -->
+    <!--    <bean id="..." class="..." lazy-init="true">-->
+    <!-- collaborators and configuration for this bean go here -->
+    <!--    </bean>-->
+
+    <!-- A bean definition with initialization method -->
+    <!--    <bean id="..." class="..." init-method="...">-->
+    <!-- collaborators and configuration for this bean go here -->
+    <!--    </bean>-->
+
+    <!-- A bean definition with destruction method -->
+    <!--    <bean id="..." class="..." destroy-method="...">-->
+    <!-- collaborators and configuration for this bean go here -->
+    <!--    </bean>-->
+
+    <!-- more bean definitions go here -->
+
+    <bean
+            id="exampleBean"
+            class="io.github.futurewl.spring.ExampleBean"
+    />
+
+    <bean
+            id="exampleBean2"
+            class="io.github.futurewl.spring.ExampleBean2"
+            init-method="init"
+    />
+
+    <bean
+            id="exampleBean3"
+            class="io.github.futurewl.spring.ExampleBean3"
+    />
+
+    <bean
+            id="exampleBean4"
+            class="io.github.futurewl.spring.ExampleBean4"
+            destroy-method="destroy"
+    />
+
+    <!-- 建议你不要使用 InitializingBean 或者 DisposableBean 的回调方法，因为 XML 配置在命名方法上提供了极大的灵活性。 -->
+
+</beans>
