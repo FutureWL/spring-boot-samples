@@ -18,9 +18,7 @@
         <module>spring-boot-web-beetl</module>
         <module>spring-boot-orm-mybatis</module>
         <module>spring-boot-cache-redis</module>
-        <module>spring-boot-sql-mysql</module>
         <module>spring-boot-cache-guava-cache</module>
-        <module>spring-boot-ms-consul</module>
         <module>spring-boot-ms-elk</module>
         <module>spring-boot-webflux</module>
         <module>spring-boot-first-application</module>
@@ -39,7 +37,6 @@
         <module>spring-boot-nosql-redis</module>
         <module>spring-boot-mq-jms</module>
         <module>spring-boot-security</module>
-        <module>spring-boot-integration</module>
     </modules>
 
     <dependencyManagement>

@@ -7,4 +7,7 @@ package io.github.futurewl.spring.boot.ms.elk;
  * @version 1.0
  */
 public class ElkApplication {
+    public static void main(String[] args) {
+
+    }
 }
