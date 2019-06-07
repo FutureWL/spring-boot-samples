@@ -18,6 +18,7 @@
         <module>spring-4-jdbc</module>
         <module>spring-4-mvc</module>
         <module>spring-4-transaction</module>
+        <module>spring-4-log</module>
     </modules>
 
     <dependencyManagement>
