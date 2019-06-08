@@ -1,4 +1,4 @@
-package io.github.futurewl.web;
+package io.github.futurewl.spring.config.web;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,4 +1,4 @@
-package io.github.futurewl.web;
+package io.github.futurewl.spring.config.web;
 
 import io.github.futurewl.dao.AccountDao;
 import io.github.futurewl.entity.Account;

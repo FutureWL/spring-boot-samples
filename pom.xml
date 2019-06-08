@@ -6,7 +6,7 @@
 
     <groupId>io.github.futurewl</groupId>
     <artifactId>spring-samples</artifactId>
-    <version>2.1.4.RELEASE</version>
+    <version>190608</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -22,7 +22,6 @@
         <module>spring-cloud</module>
         <module>spring-data</module>
         <module>spring-batch</module>
-        <module>spring-boot-demo-1</module>
     </modules>
 
 </project>

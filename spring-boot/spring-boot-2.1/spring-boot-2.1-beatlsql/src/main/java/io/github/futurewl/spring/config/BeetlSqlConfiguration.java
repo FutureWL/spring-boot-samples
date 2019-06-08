@@ -1,4 +1,4 @@
-package io.github.futurewl.config;
+package io.github.futurewl.spring.config;
 
 import org.beetl.core.resource.WebAppResourceLoader;
 import org.beetl.ext.spring.BeetlGroupUtilConfiguration;

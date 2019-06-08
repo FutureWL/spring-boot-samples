@@ -1,4 +1,4 @@
-package io.github.futurewl.web;
+package io.github.futurewl.spring.config.web;
 
 import io.github.futurewl.service.AccountService2;
 import org.mybatis.spring.annotation.MapperScan;

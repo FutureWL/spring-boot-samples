@@ -1,8 +1,8 @@
-package io.github.futurewl.web;
+package io.github.futurewl.spring.config.web;
 
-
+import io.github.futurewl.dao.AccountDao;
 import io.github.futurewl.entity.Account;
-import io.github.futurewl.service.AccountService;
+import org.beetl.sql.core.db.KeyHolder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,21 +18,26 @@ import java.util.List;
 @RequestMapping("/account")
 public class AccountController {
 
-    private final AccountService accountService;
+    private final AccountDao accountDao;
 
     @Autowired
-    public AccountController(AccountService accountService) {
-        this.accountService = accountService;
+    public AccountController(AccountDao accountDao) {
+        this.accountDao = accountDao;
     }
 
     @GetMapping(value = "/list")
     public List<Account> getAccounts() {
-        return accountService.findAccountList();
+        return accountDao.all();
     }
 
     @GetMapping(value = "/{id}")
     public Account getAccountById(@PathVariable("id") int id) {
-        return accountService.findAccountById(id);
+        return accountDao.unique(id);
+    }
+
+    @GetMapping
+    public Account getAccountById(@RequestParam("name") String name) {
+        return accountDao.selectAccountByName(name);
     }
 
     @PutMapping(value = "/{id}")
@@ -43,7 +48,7 @@ public class AccountController {
         account.setMoney(money);
         account.setName(name);
         account.setId(id);
-        int t = accountService.update(account);
+        int t = accountDao.updateById(account);
         if (t == 1) {
             return account.toString();
         } else {
@@ -57,13 +62,11 @@ public class AccountController {
         Account account = new Account();
         account.setMoney(money);
         account.setName(name);
-        int t = accountService.add(account);
-        if (t == 1) {
+        KeyHolder t = accountDao.insertReturnKey(account);
+        if (t.getInt() > 0) {
             return account.toString();
         } else {
             return "fail";
         }
-
     }
-
 }

@@ -14,10 +14,10 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @EnableAutoConfiguration
 @EnableAdminServer
-public class AdminApplication {
+public class SpringBoot21AdminApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(AdminApplication.class, args);
+        SpringApplication.run(SpringBoot21AdminApplication.class, args);
     }
 
 }

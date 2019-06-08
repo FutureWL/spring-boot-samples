@@ -1,7 +1,7 @@
-package io.github.futurewl.web;
+package io.github.futurewl.spring.config.web;
 
-import io.github.futurewl.bean.ConfigBean;
-import io.github.futurewl.bean.User;
+import io.github.futurewl.spring.config.bean.ConfigBean;
+import io.github.futurewl.spring.config.bean.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.web.bind.annotation.GetMapping;

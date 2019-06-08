@@ -1,4 +1,4 @@
-package io.github.futurewl.bean;
+package io.github.futurewl.spring.config.bean;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

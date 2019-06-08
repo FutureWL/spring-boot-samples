@@ -1,4 +1,4 @@
-package io.github.futurewl;
+package io.github.futurewl.spring.config;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,8 +10,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @version 1.0
  */
 @SpringBootApplication
-public class SpringbootConfigApplication {
+public class Springboot21ConfigApplication {
     public static void main(String[] args) {
-        SpringApplication.run(SpringbootConfigApplication.class, args);
+        SpringApplication.run(Springboot21ConfigApplication.class, args);
     }
 }
