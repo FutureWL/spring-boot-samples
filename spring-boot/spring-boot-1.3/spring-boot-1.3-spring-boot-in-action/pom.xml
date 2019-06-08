@@ -13,6 +13,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-boot-1.3-spring-boot-in-action-chapter-1</module>
+        <module>spring-boot-1.3-spring-boot-in-action-chapter-2</module>
+        <module>spring-boot-1.3-spring-boot-in-action-chapter-3</module>
     </modules>
 
 
