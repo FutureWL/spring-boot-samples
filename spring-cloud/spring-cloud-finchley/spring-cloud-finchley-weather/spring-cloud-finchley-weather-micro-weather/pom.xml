@@ -17,16 +17,8 @@
         <module>spring-cloud-finchley-weather-micro-weather-quartz</module>
         <module>spring-cloud-finchley-weather-micro-weather-redis</module>
         <module>spring-cloud-finchley-weather-micro-weather-report</module>
-        <module>spring-cloud-finchley-weather-micro-weather-eureka-server</module>
-        <module>spring-cloud-finchley-weather-micro-weather-eureka-client</module>
-        <module>spring-cloud-finchley-weather-micro-weather-eureka-client-ribbon</module>
-        <module>spring-cloud-finchley-weather-micro-weather-eureka-client-feign</module>
-        <module>spring-cloud-finchley-weather-micro-weather-eureka-client-zuul</module>
-        <module>spring-cloud-finchley-weather-micro-weather-eureka-client-feign-hystrix</module>
-        <module>spring-cloud-finchley-weather-micro-weather-config-server</module>
-        <module>spring-cloud-finchley-weather-micro-weather-config-server-bus</module>
-        <module>spring-cloud-finchley-weather-micro-weather-config-client</module>
-        <module>spring-cloud-finchley-weather-micro-weather-config-client-bus</module>
+        <module>spring-cloud-finchley-weather-micro-weather-eureka</module>
+        <module>spring-cloud-finchley-weather-micro-weather-config</module>
     </modules>
 
 </project>
