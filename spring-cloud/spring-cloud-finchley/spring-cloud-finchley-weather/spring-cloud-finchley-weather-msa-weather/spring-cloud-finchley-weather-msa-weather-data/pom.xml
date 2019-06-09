@@ -9,18 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-cloud-finchley-weather-msa-weather-city-server</artifactId>
+    <artifactId>spring-cloud-finchley-weather-msa-weather-data</artifactId>
+    <packaging>pom</packaging>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
+    <modules>
+        <module>spring-cloud-finchley-weather-msa-weather-data-server</module>
+        <module>spring-cloud-finchley-weather-msa-weather-data-eureka</module>
+    </modules>
 
 </project>
