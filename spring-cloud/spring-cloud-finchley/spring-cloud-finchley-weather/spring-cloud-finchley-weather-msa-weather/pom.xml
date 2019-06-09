@@ -17,5 +17,6 @@
         <module>spring-cloud-finchley-weather-msa-weather-city</module>
         <module>spring-cloud-finchley-weather-msa-weather-data</module>
         <module>spring-cloud-finchley-weather-msa-weather-report</module>
+        <module>spring-cloud-finchley-weather-msa-weather-eureka-client-zuul</module>
     </modules>
 </project>
