@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class QuartzConfiguration {
 
-    private final int TIME = 1800;// 更新频率
+    private final int TIME = 20;// 更新频率
 
     @Bean
     public JobDetail weatherDataSyncJobJobDetail() {
