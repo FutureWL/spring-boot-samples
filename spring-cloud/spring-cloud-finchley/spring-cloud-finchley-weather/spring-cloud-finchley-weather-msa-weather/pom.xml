@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>spring-cloud-finchley-weather</artifactId>
+        <groupId>io.github.futurewl</groupId>
+        <version>190608</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>spring-cloud-finchley-weather-msa-weather</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>spring-cloud-finchley-weather-msa-weather-collection-server</module>
+        <module>spring-cloud-finchley-weather-msa-weather-collection-eureka</module>
+        <module>spring-cloud-finchley-weather-msa-weather-collection-eureka-feign</module>
+        <module>spring-cloud-finchley-weather-msa-weather-city-server</module>
+        <module>spring-cloud-finchley-weather-msa-weather-city-eureka</module>
+        <module>spring-cloud-finchley-weather-msa-weather-data-server</module>
+        <module>spring-cloud-finchley-weather-msa-weather-data-eureka</module>
+        <module>spring-cloud-finchley-weather-msa-weather-report-server</module>
+        <module>spring-cloud-finchley-weather-msa-weather-report-eureka</module>
+        <module>spring-cloud-finchley-weather-msa-weather-report-eureka-feign</module>
+        <module>spring-cloud-finchley-weather-msa-weather-report-eureka-feign-gateway</module>
+        <module>spring-cloud-finchley-weather-msa-weather-report-eureka-feign-gateway-hystrix</module>
+    </modules>
+</project>
