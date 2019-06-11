@@ -5,3 +5,6 @@ target/
 *.versionsBackup
 *.log
 *.out
+*.mvn
+mvnw
+mvnw.cmd
