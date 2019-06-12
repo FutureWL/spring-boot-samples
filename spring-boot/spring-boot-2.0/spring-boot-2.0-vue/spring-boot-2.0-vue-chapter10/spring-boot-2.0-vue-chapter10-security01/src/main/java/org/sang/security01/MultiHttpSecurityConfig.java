@@ -9,16 +9,17 @@ import org.springframework.security.config.annotation.method.configuration.Enabl
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Configuration
-@EnableGlobalMethodSecurity(prePostEnabled = true,securedEnabled = true)
-public class MultiHttpSecurityConfig{
+@EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)
+public class MultiHttpSecurityConfig {
+
     @Bean
     PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
+
     @Autowired
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.inMemoryAuthentication()
@@ -34,19 +35,19 @@ public class MultiHttpSecurityConfig{
                 .password("$2a$10$eUHbAOMq4bpxTvOVz33LIehLe3fu6NwqC9tdOcxJXEhyZ4simqXTC")
                 .roles("USER");
     }
+
     @Configuration
     @Order(1)
-    public static class AdminSecurityConfig
-            extends WebSecurityConfigurerAdapter{
+    public static class AdminSecurityConfig extends WebSecurityConfigurerAdapter {
         @Override
         protected void configure(HttpSecurity http) throws Exception {
             http.antMatcher("/admin/**").authorizeRequests()
                     .anyRequest().hasRole("ADMIN");
         }
     }
+
     @Configuration
-    public static class OtherSecurityConfig
-            extends WebSecurityConfigurerAdapter{
+    public static class OtherSecurityConfig extends WebSecurityConfigurerAdapter {
         @Override
         protected void configure(HttpSecurity http) throws Exception {
             http.authorizeRequests()

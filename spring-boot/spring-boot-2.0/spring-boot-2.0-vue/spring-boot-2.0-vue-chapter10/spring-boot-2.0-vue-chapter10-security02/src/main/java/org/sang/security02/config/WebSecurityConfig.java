@@ -12,13 +12,14 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.web.FilterInvocation;
 import org.springframework.security.web.access.intercept.FilterSecurityInterceptor;
 
 @Configuration
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+
     @Autowired
     UserService userService;
+
     @Bean
     RoleHierarchy roleHierarchy() {
         RoleHierarchyImpl roleHierarchy = new RoleHierarchyImpl();
@@ -26,10 +27,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         roleHierarchy.setHierarchy(hierarchy);
         return roleHierarchy;
     }
+
     @Bean
     PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
+
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(userService);
@@ -52,10 +55,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .csrf().disable();
     }
+
     @Bean
     CustomFilterInvocationSecurityMetadataSource cfisms() {
         return new CustomFilterInvocationSecurityMetadataSource();
     }
+
     @Bean
     CustomAccessDecisionManager cadm() {
         return new CustomAccessDecisionManager();

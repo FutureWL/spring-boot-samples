@@ -13,7 +13,6 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>spring-boot-2.0-vue-chapter14-actuator</module>
         <module>spring-boot-2.0-vue-chapter14-admin</module>
         <module>spring-boot-2.0-vue-chapter14-client</module>
         <module>spring-boot-2.0-vue-chapter14-corsclient</module>

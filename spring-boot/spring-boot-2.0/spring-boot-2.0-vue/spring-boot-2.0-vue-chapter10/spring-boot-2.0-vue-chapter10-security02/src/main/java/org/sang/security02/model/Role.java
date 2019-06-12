@@ -1,9 +1,13 @@
 package org.sang.security02.model;
 
 public class Role {
+
     private Integer id;
+
     private String name;
+
     private String nameZh;
+
     //省略getter/setter
 
     public Integer getId() {

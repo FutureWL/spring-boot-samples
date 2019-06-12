@@ -10,8 +10,10 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class UserService implements UserDetailsService {
+
     @Autowired
     UserMapper userMapper;
+
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         User user = userMapper.loadUserByUsername(username);
@@ -21,4 +23,5 @@ public class UserService implements UserDetailsService {
         user.setRoles(userMapper.getUserRolesByUid(user.getId()));
         return user;
     }
+
 }

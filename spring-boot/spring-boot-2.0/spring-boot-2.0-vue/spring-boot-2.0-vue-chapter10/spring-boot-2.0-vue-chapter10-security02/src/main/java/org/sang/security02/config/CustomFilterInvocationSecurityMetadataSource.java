@@ -15,11 +15,13 @@ import java.util.Collection;
 import java.util.List;
 
 @Component
-public class CustomFilterInvocationSecurityMetadataSource
-        implements FilterInvocationSecurityMetadataSource {
+public class CustomFilterInvocationSecurityMetadataSource implements FilterInvocationSecurityMetadataSource {
+
     AntPathMatcher antPathMatcher = new AntPathMatcher();
+
     @Autowired
     MenuMapper menuMapper;
+
     @Override
     public Collection<ConfigAttribute> getAttributes(Object object)
             throws IllegalArgumentException {
@@ -37,10 +39,12 @@ public class CustomFilterInvocationSecurityMetadataSource
         }
         return SecurityConfig.createList("ROLE_LOGIN");
     }
+
     @Override
     public Collection<ConfigAttribute> getAllConfigAttributes() {
         return null;
     }
+
     @Override
     public boolean supports(Class<?> clazz) {
         return FilterInvocation.class.isAssignableFrom(clazz);

@@ -14,8 +14,8 @@
 
     <modules>
         <module>spring-boot-2.0-vue-chapter09-cache</module>
-        <module>spring-boot-2.0-vue-chapter09-rediscache</module>
-        <module>spring-boot-2.0-vue-chapter09-redisclustercache</module>
+        <module>spring-boot-2.0-vue-chapter09-redis-cache</module>
+        <module>spring-boot-2.0-vue-chapter09-redis-cluster-cache</module>
     </modules>
 
 </project>

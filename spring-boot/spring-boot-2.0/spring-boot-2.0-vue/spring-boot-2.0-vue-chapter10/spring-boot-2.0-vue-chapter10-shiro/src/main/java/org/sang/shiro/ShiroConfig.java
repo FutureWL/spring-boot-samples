@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class ShiroConfig {
+
     @Bean
     public Realm realm() {
         TextConfigurationRealm realm = new TextConfigurationRealm();
@@ -17,6 +18,7 @@ public class ShiroConfig {
         realm.setRoleDefinitions("admin=read,write\n user=read");
         return realm;
     }
+
     @Bean
     public ShiroFilterChainDefinition shiroFilterChainDefinition() {
         DefaultShiroFilterChainDefinition chainDefinition =
@@ -27,6 +29,7 @@ public class ShiroConfig {
         chainDefinition.addPathDefinition("/**", "authc");
         return chainDefinition;
     }
+
     @Bean
     public ShiroDialect shiroDialect() {
         return new ShiroDialect();

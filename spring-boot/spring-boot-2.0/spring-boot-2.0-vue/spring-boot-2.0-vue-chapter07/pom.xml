@@ -13,8 +13,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>spring-boot-2.0-vue-chapter07-jparestful</module>
-        <module>spring-boot-2.0-vue-chapter07-mongorestful</module>
+        <module>spring-boot-2.0-vue-chapter07-jpa-restful</module>
+        <module>spring-boot-2.0-vue-chapter07-mongo-restful</module>
     </modules>
 
 </project>

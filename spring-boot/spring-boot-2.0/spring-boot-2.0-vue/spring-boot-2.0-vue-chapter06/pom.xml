@@ -15,7 +15,7 @@
     <modules>
         <module>spring-boot-2.0-vue-chapter06-mongodb</module>
         <module>spring-boot-2.0-vue-chapter06-redis</module>
-        <module>spring-boot-2.0-vue-chapter06-rediscluster</module>
+        <module>spring-boot-2.0-vue-chapter06-redis-cluster</module>
         <module>spring-boot-2.0-vue-chapter06-restful</module>
         <module>spring-boot-2.0-vue-chapter06-session</module>
         <module>spring-boot-2.0-vue-chapter06-solr</module>
