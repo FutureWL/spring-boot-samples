@@ -14,18 +14,8 @@
 
     <modules>
         <module>spring-boot-2.0-vue-chapter01</module>
-        <module>spring-boot-2.0-vue-chapter01-2</module>
-        <module>spring-boot-2.0-vue-chapter01-3</module>
         <module>spring-boot-2.0-vue-chapter02</module>
-        <module>spring-boot-2.0-vue-chapter02-1</module>
-        <module>spring-boot-2.0-vue-chapter02-2</module>
-        <module>spring-boot-2.0-vue-chapter02-3</module>
         <module>spring-boot-2.0-vue-chapter03</module>
-        <module>spring-boot-2.0-vue-chapter03-1</module>
-        <module>spring-boot-2.0-vue-chapter03-2</module>
-        <module>spring-boot-2.0-vue-chapter03-3</module>
-        <module>spring-boot-2.0-vue-chapter03-4</module>
-        <module>spring-boot-2.0-vue-chapter03-4-2</module>
         <module>spring-boot-2.0-vue-chapter04</module>
         <module>spring-boot-2.0-vue-chapter05</module>
         <module>spring-boot-2.0-vue-chapter06</module>
@@ -38,6 +28,8 @@
         <module>spring-boot-2.0-vue-chapter13</module>
         <module>spring-boot-2.0-vue-chapter14</module>
         <module>spring-boot-2.0-vue-chapter15</module>
+        <module>spring-boot-2.0-vue-chapter01</module>
+        <module>spring-boot-2.0-vue-chapter02</module>
     </modules>
 
 

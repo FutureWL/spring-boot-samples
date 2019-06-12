@@ -14,6 +14,7 @@ public class BookController {
     public String addBook(String name) {
         return "receive:" + name;
     }
+
     @DeleteMapping("/{id}")
 //    @CrossOrigin(value = "http://localhost:8081"
 //            ,maxAge = 1800,allowedHeaders = "*")
