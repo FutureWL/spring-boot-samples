@@ -1,4 +1,4 @@
-package io.github.futurewl.spring.boot.webflux;
+package io.github.futurewl.spring.boot.webflux.myevent;
 
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 

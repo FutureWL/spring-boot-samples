@@ -1,5 +1,6 @@
-package io.github.futurewl.spring.boot.webflux;
+package io.github.futurewl.spring.boot.webflux.config;
 
+import io.github.futurewl.spring.boot.webflux.handler.TimeHandler;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.reactive.function.server.RouterFunction;

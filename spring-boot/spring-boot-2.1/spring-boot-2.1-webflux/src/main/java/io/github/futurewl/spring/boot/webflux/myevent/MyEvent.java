@@ -1,4 +1,4 @@
-package io.github.futurewl.spring.boot.webflux;
+package io.github.futurewl.spring.boot.webflux.myevent;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

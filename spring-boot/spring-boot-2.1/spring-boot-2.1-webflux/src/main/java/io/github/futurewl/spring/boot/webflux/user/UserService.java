@@ -1,4 +1,4 @@
-package io.github.futurewl.spring.boot.webflux;
+package io.github.futurewl.spring.boot.webflux.user;
 
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;

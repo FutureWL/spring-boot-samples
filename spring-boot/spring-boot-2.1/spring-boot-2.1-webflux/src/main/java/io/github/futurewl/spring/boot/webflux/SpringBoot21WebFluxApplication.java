@@ -14,7 +14,7 @@ import reactor.core.publisher.Mono;
  */
 @RestController
 @SpringBootApplication
-public class WebFluxApplication {
+public class SpringBoot21WebFluxApplication {
 
     @GetMapping("/hello")
     public Mono<String> hello() {
@@ -23,7 +23,7 @@ public class WebFluxApplication {
 
 
     public static void main(String[] args) {
-        SpringApplication.run(WebFluxApplication.class, args);
+        SpringApplication.run(SpringBoot21WebFluxApplication.class, args);
     }
 
 }

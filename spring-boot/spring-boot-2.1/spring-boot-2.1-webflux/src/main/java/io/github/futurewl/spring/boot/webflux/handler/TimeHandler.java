@@ -1,4 +1,4 @@
-package io.github.futurewl.spring.boot.webflux;
+package io.github.futurewl.spring.boot.webflux.handler;
 
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
