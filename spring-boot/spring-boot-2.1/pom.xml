@@ -5,7 +5,7 @@
     <parent>
         <groupId>io.github.futurewl</groupId>
         <artifactId>spring-boot</artifactId>
-        <version>190608</version>
+        <version>190703</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -13,33 +13,14 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>spring-boot-2.1-helloworld</module>
-        <module>spring-boot-2.1-web-mvc</module>
-        <module>spring-boot-2.1-web-beetl</module>
-        <module>spring-boot-2.1-orm-mybatis</module>
-        <module>spring-boot-2.1-cache-redis</module>
-        <module>spring-boot-2.1-cache-guava-cache</module>
-        <module>spring-boot-2.1-ms-elk</module>
-        <module>spring-boot-2.1-webflux</module>
-        <module>spring-boot-2.1-first-application</module>
-        <module>spring-boot-2.1-config</module>
-        <module>spring-boot-2.1-jdbc</module>
-        <module>spring-boot-2.1-jpa</module>
-        <module>spring-boot-2.1-beatlsql</module>
-        <module>spring-boot-2.1-mybatis</module>
-        <module>spring-boot-2.1-mybatis-tx</module>
-        <module>spring-boot-2.1-data-rest</module>
-        <module>spring-boot-2.1-cors</module>
         <module>spring-boot-2.1-admin</module>
-        <module>spring-boot-2.1-data-jpa</module>
-        <module>spring-boot-2.1-cache-concurrent-cache</module>
-        <module>spring-boot-2.1-nosql-mongodb</module>
-        <module>spring-boot-2.1-nosql-redis</module>
+        <module>spring-boot-2.1-application</module>
         <module>spring-boot-2.1-mq-jms</module>
         <module>spring-boot-2.1-security</module>
-        <module>spring-boot-2.1-jdbc-sharding-sphere</module>
-        <module>spring-boot-2.1-web-sse</module>
-        <!--        <module>spring-boot-2.1-demo-1</module>-->
+        <module>spring-boot-2.1-cache</module>
+        <module>spring-boot-2.1-data</module>
+        <module>spring-boot-2.1-cloud-native</module>
+        <module>spring-boot-2.1-web</module>
     </modules>
 
     <dependencyManagement>
@@ -47,7 +28,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>2.1.5.RELEASE</version>
+                <version>${spring-boot-2-1-x.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -59,14 +40,14 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.1.5.RELEASE</version>
-<!--                <executions>-->
-<!--                    <execution>-->
-<!--                        <goals>-->
-<!--                            <goal>repackage</goal>-->
-<!--                        </goals>-->
-<!--                    </execution>-->
-<!--                </executions>-->
+                <version>${spring-boot-2-1-x.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

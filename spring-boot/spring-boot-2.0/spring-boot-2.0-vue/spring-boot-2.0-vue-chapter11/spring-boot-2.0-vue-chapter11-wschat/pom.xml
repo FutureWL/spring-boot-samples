@@ -4,7 +4,7 @@
     <parent>
         <artifactId>spring-boot-2.0-vue-chapter11</artifactId>
         <groupId>io.github.futurewl</groupId>
-        <version>190608</version>
+        <version>190703</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
