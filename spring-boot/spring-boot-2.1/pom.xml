@@ -37,7 +37,9 @@
         <module>spring-boot-2.1-nosql-redis</module>
         <module>spring-boot-2.1-mq-jms</module>
         <module>spring-boot-2.1-security</module>
-<!--        <module>spring-boot-2.1-demo-1</module>-->
+        <module>spring-boot-2.1-jdbc-sharding-sphere</module>
+        <module>spring-boot-2.1-web-sse</module>
+        <!--        <module>spring-boot-2.1-demo-1</module>-->
     </modules>
 
     <dependencyManagement>
