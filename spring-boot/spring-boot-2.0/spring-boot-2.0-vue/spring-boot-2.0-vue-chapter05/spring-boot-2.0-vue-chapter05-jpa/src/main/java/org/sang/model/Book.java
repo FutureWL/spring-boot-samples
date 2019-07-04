@@ -1,7 +1,5 @@
 package org.sang.model;
 
-import javax.persistence.*;
-
 /**
  * Created by sang on 2018/7/15.
  */

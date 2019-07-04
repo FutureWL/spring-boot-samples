@@ -1,8 +1,6 @@
 package org.sang.rabbitmq;
 
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
-import org.springframework.amqp.rabbit.annotation.RabbitListeners;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 @Component

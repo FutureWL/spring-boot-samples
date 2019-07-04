@@ -1,7 +1,6 @@
 package io.github.futurewl.spring.boot.security.entity;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 /**

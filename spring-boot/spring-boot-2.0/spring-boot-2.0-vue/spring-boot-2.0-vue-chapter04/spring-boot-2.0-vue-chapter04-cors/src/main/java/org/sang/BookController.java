@@ -1,7 +1,5 @@
 package org.sang;
 
-import org.springframework.web.bind.annotation.*;
-
 /**
  * Created by sang on 2018/7/12.
  */

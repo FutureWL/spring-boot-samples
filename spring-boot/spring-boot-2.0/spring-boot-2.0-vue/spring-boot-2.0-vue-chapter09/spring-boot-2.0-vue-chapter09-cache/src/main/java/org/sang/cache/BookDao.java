@@ -1,12 +1,7 @@
 package org.sang.cache;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.*;
-import org.springframework.context.annotation.Bean;
-import org.springframework.data.redis.cache.RedisCacheManager;
 import org.springframework.stereotype.Service;
-
-import javax.crypto.KeyGenerator;
 
 @Service
 @CacheConfig(cacheNames = "book_cache")

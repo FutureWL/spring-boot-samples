@@ -2,7 +2,6 @@ package io.github.futurewl.spring.boot.cache.concurrent.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import java.io.Serializable;
 
 /**
  * 功能描述：

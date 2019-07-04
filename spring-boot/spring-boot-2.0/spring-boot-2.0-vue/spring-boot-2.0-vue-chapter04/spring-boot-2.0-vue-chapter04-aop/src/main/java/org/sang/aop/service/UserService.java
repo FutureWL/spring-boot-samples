@@ -1,6 +1,5 @@
 package org.sang.aop.service;
 
-import org.sang.aop.model.User;
 import org.springframework.stereotype.Service;
 
 @Service

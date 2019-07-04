@@ -2,9 +2,7 @@ package org.sang.validation;
 
 import org.hibernate.validator.constraints.Length;
 
-import javax.validation.constraints.*;
 import java.time.Year;
-import java.util.Date;
 
 public class User {
     @Length

@@ -3,7 +3,6 @@ package io.github.futurewl.sprng.boot.web.beetl.controller;
 import io.github.futurewl.sprng.boot.web.beetl.entity.User;
 import io.github.futurewl.sprng.boot.web.beetl.form.OrderPostForm;
 import io.github.futurewl.sprng.boot.web.beetl.service.UserService;
-import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;

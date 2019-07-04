@@ -5,7 +5,6 @@ import org.quartz.JobDataMap;
 import org.quartz.SimpleTrigger;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.scheduling.quartz.*;
 
 @Configuration
 public class QuartzConfig {

@@ -1,11 +1,7 @@
 package io.github.futurewl.spring.boot.web.mvc.exception;
 
 import io.github.futurewl.spring.boot.web.mvc.controller.UserController;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
-
-import javax.servlet.http.HttpServletRequest;
 
 /**
  * 功能描述：

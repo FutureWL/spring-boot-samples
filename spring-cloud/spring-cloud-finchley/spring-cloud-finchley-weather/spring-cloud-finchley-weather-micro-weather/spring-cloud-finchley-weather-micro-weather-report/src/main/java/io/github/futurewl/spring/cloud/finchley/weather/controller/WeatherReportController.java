@@ -1,7 +1,6 @@
 package io.github.futurewl.spring.cloud.finchley.weather.controller;
 
 import io.github.futurewl.spring.cloud.finchley.weather.service.CityDataService;
-import io.github.futurewl.spring.cloud.finchley.weather.service.WeatherDataService;
 import io.github.futurewl.spring.cloud.finchley.weather.service.WeatherReportService;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

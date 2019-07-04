@@ -2,7 +2,6 @@ package org.sang.aop;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.sang.aop.model.User;
 import org.sang.aop.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

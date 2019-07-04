@@ -1,7 +1,6 @@
 package org.sang.quartz;
 
 import org.quartz.JobExecutionContext;
-import org.quartz.JobExecutionException;
 import org.springframework.scheduling.quartz.QuartzJobBean;
 
 import java.util.Date;
