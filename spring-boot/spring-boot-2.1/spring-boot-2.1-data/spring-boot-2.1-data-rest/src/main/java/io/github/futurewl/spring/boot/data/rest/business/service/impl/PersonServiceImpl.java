@@ -13,18 +13,22 @@ import org.springframework.stereotype.Service;
 @Service
 public class PersonServiceImpl implements PersonService {
 
+    @Override
     public void handlePersonCreateBefore(Person person) {
         System.out.println("创建 person 之前：" + person);
     }
 
+    @Override
     public void handlePersonCreateAfter(Person person) {
         System.out.println("创建 person 之后：" + person);
     }
 
+    @Override
     public void handlePersonSaveBefore(Person person) {
         System.out.println("Save person 之前：" + person);
     }
 
+    @Override
     public void handlePersonSaveAfter(Person person) {
         System.out.println("Save person 之后：" + person);
     }
