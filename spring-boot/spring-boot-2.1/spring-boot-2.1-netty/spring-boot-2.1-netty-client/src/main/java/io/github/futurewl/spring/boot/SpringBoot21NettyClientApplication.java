@@ -1,19 +1,19 @@
 package io.github.futurewl.spring.boot;
 
 import io.netty.bootstrap.Bootstrap;
-import io.netty.buffer.ByteBuf;
-import io.netty.buffer.Unpooled;
-import io.netty.channel.ChannelHandlerContext;
+import io.netty.channel.Channel;
 import io.netty.channel.EventLoopGroup;
-import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 /**
- * 功能描述：
+ * 功能描述：Netty 客户端启动类
  *
  * @author weilai create by 2019-07-04:20:44
  * @version 1.0
@@ -27,24 +27,18 @@ public class SpringBoot21NettyClientApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        for (int i = 0; i < 50; i++) {
-            EventLoopGroup group = new NioEventLoopGroup();
-            Bootstrap bootstrap = new Bootstrap();
-            bootstrap.group(group)
-                    .channel(NioSocketChannel.class)
-                    .handler(new SimpleChannelInboundHandler<ByteBuf>() {
-
-                        @Override
-                        protected void channelRead0(ChannelHandlerContext ctx, ByteBuf msg) throws Exception {
-
-                        }
-
-                        @Override
-                        public void channelActive(ChannelHandlerContext ctx) throws Exception {
-                            super.channelActive(ctx);
-                            ctx.channel().writeAndFlush(Unpooled.copiedBuffer("Hello".getBytes()));
-                        }
-                    }).connect("localhost", 8888).sync();
+        EventLoopGroup group = new NioEventLoopGroup();
+        Bootstrap bootstrap = new Bootstrap()
+                .group(group)
+                .channel(NioSocketChannel.class)
+                .handler(new ClientChannelInitializer());
+        Channel channel = bootstrap
+                .connect("localhost", 8888)
+                .sync()
+                .channel();
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        for (; ; ) {
+            channel.writeAndFlush(bufferedReader.readLine() + "\r\n");
         }
     }
 }
