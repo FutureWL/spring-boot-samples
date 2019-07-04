@@ -1,11 +1,12 @@
 package io.github.futurewl.spring.boot;
 
 import io.netty.channel.Channel;
+import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.channel.group.ChannelGroup;
-import io.netty.channel.group.DefaultChannelGroup;
-import io.netty.util.concurrent.GlobalEventExecutor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 /**
  * 功能描述：服务端处理类
@@ -13,9 +14,12 @@ import io.netty.util.concurrent.GlobalEventExecutor;
  * @author weilai create by 2019-07-04:21:44
  * @version 1.0
  */
+@Component
+@ChannelHandler.Sharable
 public class ServerHandler extends SimpleChannelInboundHandler<String> {
 
-    private static ChannelGroup channelGroup = new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);
+    @Autowired
+    public ChannelGroup channelGroup;
 
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, String msg) throws Exception {
