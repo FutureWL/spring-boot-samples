@@ -22,6 +22,7 @@
         <module>spring-boot-2.1-cloud-native</module>
         <module>spring-boot-2.1-web</module>
         <module>spring-boot-2.1-netty</module>
+        <module>spring-boot-2.1-mq</module>
     </modules>
 
     <dependencyManagement>
