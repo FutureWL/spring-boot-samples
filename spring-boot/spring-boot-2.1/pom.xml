@@ -15,7 +15,6 @@
     <modules>
         <module>spring-boot-2.1-admin</module>
         <module>spring-boot-2.1-application</module>
-        <module>spring-boot-2.1-mq-jms</module>
         <module>spring-boot-2.1-security</module>
         <module>spring-boot-2.1-cache</module>
         <module>spring-boot-2.1-data</module>

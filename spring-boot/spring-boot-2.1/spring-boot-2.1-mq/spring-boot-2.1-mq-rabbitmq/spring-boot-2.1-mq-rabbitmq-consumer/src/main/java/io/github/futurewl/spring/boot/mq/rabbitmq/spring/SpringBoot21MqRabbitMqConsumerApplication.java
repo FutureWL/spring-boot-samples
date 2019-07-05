@@ -12,7 +12,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 public class SpringBoot21MqRabbitMqConsumerApplication {
-    @RabbitListener(queues = "my-queue")
+
+    @RabbitListener(queues = "rgb-rims-iot-queue")
     public void receiveMessage(String message) {
         System.out.println("Received <" + message + ">");
     }

@@ -1,0 +1,5 @@
+spring:
+  rabbitmq:
+    port: 32783
+    username: root
+    password: root123
