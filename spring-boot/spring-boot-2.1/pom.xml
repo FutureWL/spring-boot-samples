@@ -18,7 +18,7 @@
         <module>spring-boot-2.1-security</module>
         <module>spring-boot-2.1-cache</module>
         <module>spring-boot-2.1-data</module>
-        <module>spring-boot-2.1-cloud-native</module>
+        <!--        <module>spring-boot-2.1-cloud-native</module>-->
         <module>spring-boot-2.1-web</module>
         <module>spring-boot-2.1-netty</module>
         <module>spring-boot-2.1-mq</module>
@@ -37,20 +37,22 @@
     </dependencyManagement>
 
     <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>${spring-boot-2-1-x.version}</version>
-                <executions>
-                    <execution>
-                        <goals>
-<!--                            <goal>repackage</goal>-->
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>${spring-boot-2-1-x.version}</version>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>repackage</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </pluginManagement>
     </build>
 
 </project>
