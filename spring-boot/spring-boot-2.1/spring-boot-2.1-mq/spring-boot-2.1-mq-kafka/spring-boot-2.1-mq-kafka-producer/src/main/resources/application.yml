@@ -1,0 +1,5 @@
+server:
+  port: 11000
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
