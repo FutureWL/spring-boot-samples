@@ -1,0 +1,30 @@
+package io.github.futurewl.entity;
+
+import lombok.Data;
+
+import javax.persistence.*;
+import java.io.Serializable;
+
+/**
+ * 功能描述：
+ *
+ * @author weilai
+ */
+@Data
+@Entity
+@Table(name = "t_user")
+@org.hibernate.annotations.Table(appliesTo = "t_user", comment = "用户表")
+public class User implements Serializable {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(columnDefinition = "bigint(20) comment 'ID'")
+    private Long id;
+
+    @Column(columnDefinition = "varchar(50) comment '用户名'")
+    private String username;
+
+    @Column(columnDefinition = "varchar(50) comment '邮箱'")
+    private String email;
+
+}

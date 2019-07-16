@@ -1,4 +1,4 @@
-package io.github.futurewl.spring.boot.data.jpa;
+package io.github.futurewl;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,8 +10,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @version 1.0
  */
 @SpringBootApplication
-public class DataJpaApplication {
+public class SpringBoot21DataJpaApplication {
     public static void main(String[] args) {
-        SpringApplication.run(DataJpaApplication.class, args);
+        SpringApplication.run(SpringBoot21DataJpaApplication.class, args);
     }
 }
