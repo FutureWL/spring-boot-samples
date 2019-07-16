@@ -2,8 +2,12 @@ package io.github.futurewl.controller;
 
 import io.github.futurewl.entity.User;
 import io.github.futurewl.repository.UserCrudRepository;
+import io.github.futurewl.repository.UserPagingAndSortingRepository;
 import io.github.futurewl.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,6 +29,9 @@ public class UserController {
 
     @Autowired
     private UserCrudRepository userCrudRepository;
+
+    @Autowired
+    private UserPagingAndSortingRepository userPagingAndSortingRepository;
 
     @GetMapping("/")
     public ModelAndView index() {
@@ -61,4 +68,30 @@ public class UserController {
     public void delete(@RequestParam Long id) {
         userCrudRepository.deleteById(id);
     }
+
+    @GetMapping(path = "/page")
+    @ResponseBody
+    public Page<User> getAllUserByPage() {
+        return userPagingAndSortingRepository.findAll(
+                new PageRequest(
+                        1,
+                        20,
+                        new Sort(
+                                new Sort.Order(Sort.Direction.ASC,
+                                        "name"
+                                )
+                        )
+                )
+        );
+    }
+
+
+    @GetMapping(path = "/sort")
+    @ResponseBody
+    public Iterable<User> getAllUsersWithSort() {
+        return userPagingAndSortingRepository.findAll(
+                new Sort(new Sort.Order(Sort.Direction.ASC, "name"))
+        );
+    }
+
 }
