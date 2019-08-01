@@ -71,12 +71,12 @@ public class SendmailApplicationTests {
 //            ClassLoader loader = SendmailApplication.class.getClassLoader();
 //            configuration
 //            .setClassLoaderForTemplateLoading(loader,"ftl");
-//            Template template = configuration.getTemplate("mailtemplate.ftl");
+//            Template templates = configuration.getTemplate("mailtemplate.ftl");
 //            StringWriter mail = new StringWriter();
 //            User user = new User();
 //            user.setGender("男");
 //            user.setUsername("江南一点雨");
-//            template.process(user, mail);
+//            templates.process(user, mail);
 //            mailService.sendHtmlMail("1510161612@qq.com",
 //                    "584991843@qq.com",
 //                    "测试邮件主题",
