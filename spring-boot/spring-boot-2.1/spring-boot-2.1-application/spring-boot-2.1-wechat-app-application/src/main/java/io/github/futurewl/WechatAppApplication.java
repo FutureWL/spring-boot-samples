@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.io.IOException;
 
 /**
- * 功能描述：
+ * 功能描述：微信小程序后端服务
  *
  * @author weilai
  */
