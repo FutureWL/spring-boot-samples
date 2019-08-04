@@ -19,6 +19,7 @@
         <module>spring-boot-2.1-poi-application</module>
         <module>spring-boot-2.1-web-application</module>
         <module>spring-boot-2.1-wechat-app-application</module>
+        <module>spring-boot-2.1-ck-application</module>
     </modules>
 
 </project>
