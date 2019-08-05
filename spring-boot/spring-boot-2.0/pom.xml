@@ -13,8 +13,6 @@
     <packaging>pom</packaging>
     <modules>
 <!--        <module>spring-boot-2.0-vue</module>-->
-        <module>spring-boot-2.0-web</module>
-        <module>spring-boot-2.0-flowable</module>
     </modules>
 
     <dependencyManagement>
