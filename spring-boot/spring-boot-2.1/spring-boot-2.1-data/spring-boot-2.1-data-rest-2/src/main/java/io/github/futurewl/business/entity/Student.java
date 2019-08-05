@@ -1,4 +1,4 @@
-package io.github.futurewl.entity;
+package io.github.futurewl.business.entity;
 
 import lombok.Data;
 
@@ -19,7 +19,7 @@ public class Student {
 
     private String name;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.PERSIST)
     private Course course;
 
 }

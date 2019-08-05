@@ -1,6 +1,6 @@
-package io.github.futurewl.repository;
+package io.github.futurewl.business.repository;
 
-import io.github.futurewl.entity.Teacher;
+import io.github.futurewl.business.entity.Teacher;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

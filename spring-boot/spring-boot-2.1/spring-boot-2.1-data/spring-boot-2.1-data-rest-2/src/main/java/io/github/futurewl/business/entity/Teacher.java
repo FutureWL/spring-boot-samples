@@ -1,4 +1,4 @@
-package io.github.futurewl.entity;
+package io.github.futurewl.business.entity;
 
 import lombok.Data;
 
@@ -28,13 +28,7 @@ public class Teacher {
      * CascadeType.REFRESH：级联刷新
      */
 
-    @OneToOne(mappedBy = "teacher", cascade = {
-//            CascadeType.REFRESH,
-//            CascadeType.DETACH,
-//            CascadeType.MERGE,
-//            CascadeType.PERSIST,
-//            CascadeType.REMOVE
-    })
+    @OneToOne(mappedBy = "teacher")
     private Course course;
 
 }

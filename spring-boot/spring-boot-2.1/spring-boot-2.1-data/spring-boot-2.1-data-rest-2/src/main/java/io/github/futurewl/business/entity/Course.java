@@ -1,9 +1,10 @@
-package io.github.futurewl.entity;
+package io.github.futurewl.business.entity;
 
 import lombok.Data;
+import lombok.ToString;
 
 import javax.persistence.*;
-import java.util.List;
+import java.util.Set;
 
 /**
  * 功能描述：课程
@@ -12,6 +13,7 @@ import java.util.List;
  */
 @Data
 @Entity
+@ToString(exclude = {"studentList"})
 public class Course {
 
     @Id
@@ -20,15 +22,10 @@ public class Course {
 
     private String name;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.PERSIST)
     private Teacher teacher;
 
-    @OneToMany(
-            mappedBy = "course",
-            cascade = {
-                    CascadeType.DETACH,
-                    CascadeType.REFRESH
-            })
-    private List<Student> studentList;
+    @OneToMany(mappedBy = "course")
+    private Set<Student> studentList;
 
 }
