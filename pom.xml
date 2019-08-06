@@ -34,6 +34,8 @@
         <module>spring-cloud</module>
         <module>spring-data</module>
         <module>spring-framework</module>
+        <module>struts2-hibernate-spring</module>
+        <module>java</module>
     </modules>
 
 </project>

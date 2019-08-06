@@ -20,6 +20,7 @@
         <module>spring-boot-2.1-web-application</module>
         <module>spring-boot-2.1-wechat-app-application</module>
         <module>spring-boot-2.1-ck-application</module>
+        <module>spring-boot-2.1-sse-application</module>
     </modules>
 
 </project>
