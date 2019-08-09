@@ -1,9 +1,8 @@
 package io.github.futurewl.controller;
 
 import io.github.futurewl.entity.User;
-import io.github.futurewl.repository.UserCrudRepository;
-import io.github.futurewl.repository.UserPagingAndSortingRepository;
 import io.github.futurewl.repository.UserRepository;
+import io.github.futurewl.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -25,13 +24,10 @@ import org.springframework.web.servlet.ModelAndView;
 public class UserController {
 
     @Autowired
+    private UserService userService;
+
+    @Autowired
     private UserRepository userRepository;
-
-    @Autowired
-    private UserCrudRepository userCrudRepository;
-
-    @Autowired
-    private UserPagingAndSortingRepository userPagingAndSortingRepository;
 
     @GetMapping("/")
     public ModelAndView index() {
@@ -57,31 +53,22 @@ public class UserController {
         return userRepository.findAll();
     }
 
-
     @GetMapping("/info")
     @ResponseBody
     public User findOne(@RequestParam Long id) {
-        return userCrudRepository.findById(id).get();
+        return userRepository.findById(id).get();
     }
 
     @GetMapping(path = "/delete")
     public void delete(@RequestParam Long id) {
-        userCrudRepository.deleteById(id);
+        userRepository.deleteById(id);
     }
 
     @GetMapping(path = "/page")
     @ResponseBody
     public Page<User> getAllUserByPage() {
-        return userPagingAndSortingRepository.findAll(
-                new PageRequest(
-                        1,
-                        20,
-                        new Sort(
-                                new Sort.Order(Sort.Direction.ASC,
-                                        "name"
-                                )
-                        )
-                )
+        return userRepository.findAll(
+                new PageRequest(1, 20, new Sort(new Sort.Order(Sort.Direction.ASC, "name")))
         );
     }
 
@@ -89,7 +76,7 @@ public class UserController {
     @GetMapping(path = "/sort")
     @ResponseBody
     public Iterable<User> getAllUsersWithSort() {
-        return userPagingAndSortingRepository.findAll(
+        return userRepository.findAll(
                 new Sort(new Sort.Order(Sort.Direction.ASC, "name"))
         );
     }

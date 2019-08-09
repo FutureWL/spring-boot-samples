@@ -1,6 +1,6 @@
-package io.github.futurewl.repository;
+package io.github.futurewl.security.repository;
 
-import io.github.futurewl.entity.User;
+import io.github.futurewl.security.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
@@ -9,6 +9,4 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * @author weilai
  */
 public interface UserRepository extends JpaRepository<User, Long> {
-
-
 }

@@ -27,6 +27,10 @@ public class PayCompletedListener {
         Long payRecordId = payCompletedEvent.getPayRecordId();
         SseEmitter sseEmitter = sseEmitterMap.get(payRecordId);
         sseEmitter.send("支付成功");
+    }
+
+    public void end(Long payRecordId){
+        SseEmitter sseEmitter = sseEmitterMap.get(payRecordId);
         sseEmitter.complete();
     }
 

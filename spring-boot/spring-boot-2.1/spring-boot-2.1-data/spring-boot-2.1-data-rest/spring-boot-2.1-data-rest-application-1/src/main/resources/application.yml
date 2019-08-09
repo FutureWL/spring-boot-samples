@@ -1,0 +1,19 @@
+server:
+  port: 8889
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans: true
+    open-in-view: true
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/db_spring_boot_data_rest_1?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  data:
+    rest:
+      base-path: /api/v1 #指定restful的前缀

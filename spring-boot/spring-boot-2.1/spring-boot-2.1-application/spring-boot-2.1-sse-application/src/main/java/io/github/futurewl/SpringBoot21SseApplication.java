@@ -26,7 +26,7 @@ public class SpringBoot21SseApplication {
 
     @GetMapping("/push")
     public SseEmitter push(@RequestParam Long payRecordId) {
-        final SseEmitter emitter = new SseEmitter();
+        final SseEmitter emitter = new SseEmitter(0L);
         try {
             payCompletedListener.addSseEmitterMap(payRecordId, emitter);
         } catch (Exception e) {
@@ -39,6 +39,11 @@ public class SpringBoot21SseApplication {
     public String payCallback(Long payRecordId) {
         applicationContext.publishEvent(new PayCompletedEvent(this, payRecordId));
         return "请到监听出查看消息";
+    }
+
+    @GetMapping("/end")
+    public void end(Long payRecordId) {
+        payCompletedListener.end(payRecordId);
     }
 
 

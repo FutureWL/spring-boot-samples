@@ -24,8 +24,6 @@
         <module>spring-boot-2.1-nosql-mongodb</module>
         <module>spring-boot-2.1-nosql-redis</module>
         <module>spring-boot-2.1-jdbc-sharding-sphere</module>
-        <module>spring-boot-2.1-data-rest-redis</module>
-        <module>spring-boot-2.1-data-rest-2</module>
     </modules>
 
 </project>
