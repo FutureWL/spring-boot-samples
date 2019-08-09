@@ -1,16 +1,21 @@
 package io.github.futurewl.business.entity;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.*;
+import java.util.Set;
 
 /**
  * 功能描述：
  *
  * @author weilai
  */
-@Data
+@Getter
+@Setter
 @Entity
+@ToString(exclude = "courses")
 public class Student {
 
     @Id
@@ -19,7 +24,7 @@ public class Student {
 
     private String name;
 
-    @ManyToOne(cascade = CascadeType.PERSIST)
-    private Course course;
+    @ManyToMany(cascade = CascadeType.PERSIST)
+    private Set<Course> courses;
 
 }

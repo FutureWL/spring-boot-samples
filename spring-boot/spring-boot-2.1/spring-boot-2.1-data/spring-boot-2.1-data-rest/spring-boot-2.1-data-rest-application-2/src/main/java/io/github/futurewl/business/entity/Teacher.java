@@ -27,7 +27,6 @@ public class Teacher {
      * CascadeType.REMOVE：级联删除：
      * CascadeType.REFRESH：级联刷新
      */
-
     @OneToOne(mappedBy = "teacher")
     private Course course;
 

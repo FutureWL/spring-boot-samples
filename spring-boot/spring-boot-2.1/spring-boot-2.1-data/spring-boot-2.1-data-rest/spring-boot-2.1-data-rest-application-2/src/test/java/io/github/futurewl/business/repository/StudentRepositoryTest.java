@@ -41,13 +41,16 @@ public class StudentRepositoryTest {
         Set<Student> studentSet = new HashSet<>();
         studentSet.add(student);
 
-        course.setStudentList(studentSet);
+        course.setStudents(studentSet);
 
         Teacher teacher = new Teacher();
         teacher.setName("语文老师");
         teacher.setCourse(course);
 
-        student.setCourse(course);
+        Set<Course> courses = new HashSet<>();
+        courses.add(course);
+
+        student.setCourses(courses);
 
 //        studentRepository.save(student);
         teacherRepository.save(teacher);

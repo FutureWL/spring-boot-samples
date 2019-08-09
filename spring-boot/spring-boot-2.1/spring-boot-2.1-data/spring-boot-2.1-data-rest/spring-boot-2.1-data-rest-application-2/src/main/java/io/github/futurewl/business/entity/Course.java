@@ -1,6 +1,7 @@
 package io.github.futurewl.business.entity;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
@@ -11,9 +12,10 @@ import java.util.Set;
  *
  * @author weilai
  */
-@Data
+@Getter
+@Setter
 @Entity
-@ToString(exclude = {"studentList"})
+@ToString(exclude = {"students"})
 public class Course {
 
     @Id
@@ -25,7 +27,7 @@ public class Course {
     @OneToOne(cascade = CascadeType.PERSIST)
     private Teacher teacher;
 
-    @OneToMany(mappedBy = "course")
-    private Set<Student> studentList;
+    @ManyToMany(mappedBy = "courses")
+    private Set<Student> students;
 
 }

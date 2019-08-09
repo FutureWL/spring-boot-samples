@@ -11,6 +11,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class SpringBoot21DataRestApplication2 {
     public static void main(String[] args) {
-        SpringApplication.run(SpringBoot21DataRest2Application.class, args);
+        SpringApplication.run(SpringBoot21DataRestApplication2.class, args);
     }
 }
