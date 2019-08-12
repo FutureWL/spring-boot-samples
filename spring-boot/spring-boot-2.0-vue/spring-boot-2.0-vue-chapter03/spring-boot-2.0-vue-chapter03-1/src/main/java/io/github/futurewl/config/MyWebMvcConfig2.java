@@ -1,4 +1,4 @@
-package org.sang;
+package io.github.futurewl.config;
 
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
