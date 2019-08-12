@@ -1,17 +1,17 @@
-package org.sang;
+package io.github.futurewl.entity;
 
 /**
  * Created by sang on 2018/7/10.
  */
-public class Author {
+public class Book {
     private String name;
-    private int age;
+    private String author;
 
     @Override
     public String toString() {
-        return "Author{" +
+        return "Book{" +
                 "name='" + name + '\'' +
-                ", age=" + age +
+                ", author='" + author + '\'' +
                 '}';
     }
 
@@ -23,11 +23,11 @@ public class Author {
         this.name = name;
     }
 
-    public int getAge() {
-        return age;
+    public String getAuthor() {
+        return author;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setAuthor(String author) {
+        this.author = author;
     }
 }

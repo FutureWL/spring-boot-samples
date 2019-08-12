@@ -1,4 +1,4 @@
-package org.sang;
+package io.github.futurewl;
 
 import org.springframework.boot.web.servlet.error.DefaultErrorAttributes;
 import org.springframework.web.context.request.WebRequest;

@@ -1,4 +1,4 @@
-package org.sang;
+package io.github.futurewl.exception;
 
 import org.springframework.web.bind.annotation.ControllerAdvice;
 

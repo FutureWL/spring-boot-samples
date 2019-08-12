@@ -1,5 +1,7 @@
-package org.sang;
+package io.github.futurewl.controller;
 
+import io.github.futurewl.entity.Author;
+import io.github.futurewl.entity.Book;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -32,6 +34,7 @@ public class HelloController {
     public String hello2() {
         return "hello";
     }
+
     @GetMapping("/hello3")
     @ResponseBody
     public String hello3(String aaa) {

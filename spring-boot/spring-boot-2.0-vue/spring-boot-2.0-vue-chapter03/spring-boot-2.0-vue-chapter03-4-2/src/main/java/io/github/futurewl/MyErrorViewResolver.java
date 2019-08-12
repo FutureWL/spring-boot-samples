@@ -1,4 +1,4 @@
-package org.sang;
+package io.github.futurewl;
 
 import org.springframework.boot.autoconfigure.web.servlet.error.ErrorViewResolver;
 import org.springframework.http.HttpStatus;
