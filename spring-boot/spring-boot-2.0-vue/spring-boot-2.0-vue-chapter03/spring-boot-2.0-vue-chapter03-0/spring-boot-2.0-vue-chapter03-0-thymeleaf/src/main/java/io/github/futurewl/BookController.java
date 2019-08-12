@@ -1,4 +1,4 @@
-package org.sang;
+package io.github.futurewl;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,6 +12,7 @@ import java.util.List;
  */
 @Controller
 public class BookController {
+
     @GetMapping("/books")
     public ModelAndView books() {
         List<Book> books = new ArrayList<>();
@@ -30,4 +31,5 @@ public class BookController {
         mv.setViewName("books");
         return mv;
     }
+
 }
