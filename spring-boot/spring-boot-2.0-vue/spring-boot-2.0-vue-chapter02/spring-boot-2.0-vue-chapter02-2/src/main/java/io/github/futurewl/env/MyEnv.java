@@ -1,4 +1,4 @@
-package org.sang;
+package io.github.futurewl.env;
 
 import org.springframework.context.EnvironmentAware;
 import org.springframework.core.env.Environment;
