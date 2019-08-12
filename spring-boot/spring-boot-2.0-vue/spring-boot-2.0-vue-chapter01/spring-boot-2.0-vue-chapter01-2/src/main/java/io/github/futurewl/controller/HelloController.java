@@ -1,4 +1,4 @@
-package org.sang.controller;
+package io.github.futurewl.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

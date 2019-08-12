@@ -1,4 +1,4 @@
-package org.sang.config;
+package io.github.futurewl.config;
 
 import org.apache.catalina.Context;
 import org.apache.catalina.connector.Connector;
@@ -34,7 +34,7 @@ public class TomcatConfig {
         connector.setScheme("http");
         connector.setPort(8080);
         connector.setSecure(false);
-        connector.setRedirectPort(8081);
+        connector.setRedirectPort(9999);
         return connector;
     }
 }
