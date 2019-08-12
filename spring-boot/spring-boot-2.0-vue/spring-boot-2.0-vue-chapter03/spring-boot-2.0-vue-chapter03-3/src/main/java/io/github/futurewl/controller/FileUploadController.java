@@ -1,4 +1,4 @@
-package org.sang;
+package io.github.futurewl.controller;
 
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

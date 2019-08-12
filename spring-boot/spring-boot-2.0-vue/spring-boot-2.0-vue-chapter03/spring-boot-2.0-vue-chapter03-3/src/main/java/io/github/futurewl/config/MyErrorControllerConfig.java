@@ -1,5 +1,6 @@
-package org.sang;
+package io.github.futurewl.config;
 
+import io.github.futurewl.controller.MyErrorController;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.boot.autoconfigure.AutoConfigureBefore;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;

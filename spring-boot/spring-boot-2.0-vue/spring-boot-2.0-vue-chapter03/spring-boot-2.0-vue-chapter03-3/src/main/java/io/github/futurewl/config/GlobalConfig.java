@@ -1,4 +1,4 @@
-package org.sang;
+package io.github.futurewl.config;
 
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ModelAttribute;

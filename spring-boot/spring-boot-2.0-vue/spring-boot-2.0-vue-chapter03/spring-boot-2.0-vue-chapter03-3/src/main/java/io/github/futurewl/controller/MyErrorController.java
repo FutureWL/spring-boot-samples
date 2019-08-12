@@ -1,4 +1,4 @@
-package org.sang;
+package io.github.futurewl.controller;
 
 import org.springframework.boot.autoconfigure.web.ErrorProperties;
 import org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController;
