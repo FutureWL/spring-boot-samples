@@ -1,4 +1,4 @@
-package org.sang;
+package io.github.futurewl;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class CommandlinerunnerApplicationTests {
+public class SpringBoot20VueChapter4ApplicationCommandLineRunnerTests {
 
 	@Test
 	public void contextLoads() {

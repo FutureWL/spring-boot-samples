@@ -14,7 +14,7 @@
 
     <modules>
 <!--        <module>spring-boot-2.0-vue-chapter04-aop</module>-->
-<!--        <module>spring-boot-2.0-vue-chapter04-commandlinerunner</module>-->
+        <module>spring-boot-2.0-vue-chapter04-commandlinerunner</module>
         <module>spring-boot-2.0-vue-chapter04-cors</module>
         <module>spring-boot-2.0-vue-chapter04-cors2</module>
         <module>spring-boot-2.0-vue-chapter04-importxml</module>

@@ -1,4 +1,4 @@
-package org.sang;
+package io.github.futurewl;
 
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -19,8 +19,7 @@ public class MyApplicationRunner2 implements ApplicationRunner {
         System.out.println("2-nonOptionArgs>>>" + nonOptionArgs);
         Set<String> optionNames = args.getOptionNames();
         for (String optionName : optionNames) {
-            System.out.println("2-key:" + optionName + ";value:" +
-                    args.getOptionValues(optionName));
+            System.out.println("2-key:" + optionName + ";value:" + args.getOptionValues(optionName));
         }
     }
 }
