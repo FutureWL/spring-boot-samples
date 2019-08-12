@@ -13,7 +13,7 @@
     <packaging>pom</packaging>
 
     <modules>
-<!--        <module>spring-boot-2.0-vue-chapter03-0-freemarker</module>-->
+        <module>spring-boot-2.0-vue-chapter03-0-freemarker</module>
         <module>spring-boot-2.0-vue-chapter03-0-thymeleaf</module>
     </modules>
 
