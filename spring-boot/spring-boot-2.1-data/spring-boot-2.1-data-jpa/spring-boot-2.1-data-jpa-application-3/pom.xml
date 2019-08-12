@@ -9,7 +9,15 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-boot-2.1-data-jpa-application-2</artifactId>
+    <artifactId>spring-boot-2.1-data-jpa-application-3</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <plugin>
@@ -18,4 +26,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
