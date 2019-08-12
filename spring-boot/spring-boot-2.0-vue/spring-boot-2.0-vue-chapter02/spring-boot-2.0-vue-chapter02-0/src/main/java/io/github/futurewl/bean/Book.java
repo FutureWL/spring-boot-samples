@@ -1,4 +1,4 @@
-package org.sang.props;
+package io.github.futurewl.bean;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.PropertySource;
@@ -8,9 +8,13 @@ import org.springframework.stereotype.Component;
 @PropertySource(value = "classpath:book.properties")
 @ConfigurationProperties("book")
 public class Book {
+
     private String name;
+
     private String author;
+
     private Float price;
+
     //省略getter/setter
 
     @Override

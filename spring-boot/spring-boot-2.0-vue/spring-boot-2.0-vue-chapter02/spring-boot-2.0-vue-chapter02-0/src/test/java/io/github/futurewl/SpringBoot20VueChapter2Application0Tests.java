@@ -1,5 +1,6 @@
-package org.sang;
+package io.github.futurewl;
 
+import io.github.futurewl.bean.Book;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,17 +9,13 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class Chapter021ApplicationTests {
+public class SpringBoot20VueChapter2Application0Tests {
 
-	//	@Autowired
-//	User user;
-	@Autowired
-	Users users;
-
-	@Test
-	public void contextLoads() {
-//		System.out.println(user);
-		System.out.println(users);
-	}
+    @Autowired
+    Book book;
+    @Test
+    public void contextLoads() {
+        System.out.println(book);
+    }
 
 }

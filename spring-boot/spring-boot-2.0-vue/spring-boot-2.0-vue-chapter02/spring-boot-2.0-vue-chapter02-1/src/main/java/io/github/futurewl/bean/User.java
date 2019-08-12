@@ -1,4 +1,4 @@
-package org.sang;
+package io.github.futurewl.bean;
 
 import java.util.List;
 
