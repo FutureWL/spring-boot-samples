@@ -1,5 +1,6 @@
-package org.sang;
+package io.github.futurewl.config;
 
+import io.github.futurewl.interceptor.MyInterceptor1;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
@@ -9,10 +10,12 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  */
 @Configuration
 public class WebMvcConfig implements WebMvcConfigurer {
+
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new MyInterceptor1())
                 .addPathPatterns("/**")
                 .excludePathPatterns("/hello");
     }
+
 }
