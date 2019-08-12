@@ -16,7 +16,7 @@
         <module>spring-boot-2.0-vue-chapter02-0</module>
         <module>spring-boot-2.0-vue-chapter02-1</module>
         <module>spring-boot-2.0-vue-chapter02-2</module>
-<!--        <module>spring-boot-2.0-vue-chapter02-3</module>-->
+        <module>spring-boot-2.0-vue-chapter02-3</module>
     </modules>
 
 </project>

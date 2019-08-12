@@ -1,4 +1,4 @@
-package org.sang;
+package io.github.futurewl;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
