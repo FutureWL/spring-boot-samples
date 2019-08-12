@@ -1,4 +1,4 @@
-package org.sang;
+package io.github.futurewl.bean;
 
 /**
  * Created by sang on 2018/7/13.
