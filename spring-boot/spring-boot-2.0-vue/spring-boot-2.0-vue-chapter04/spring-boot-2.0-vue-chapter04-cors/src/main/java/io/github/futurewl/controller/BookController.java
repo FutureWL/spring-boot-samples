@@ -9,16 +9,14 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/book")
 public class BookController {
 
-    @PostMapping("/")
-//    @CrossOrigin(value = "http://localhost:8081"
-//            ,maxAge = 1800,allowedHeaders = "*")
+    @PostMapping("/add")
+    @CrossOrigin(value = "http://localhost:8081", maxAge = 1800, allowedHeaders = "*")
     public String addBook(String name) {
         return "receive:" + name;
     }
 
     @DeleteMapping("/{id}")
-//    @CrossOrigin(value = "http://localhost:8081"
-//            ,maxAge = 1800,allowedHeaders = "*")
+    @CrossOrigin(value = "http://localhost:8081", maxAge = 1800, allowedHeaders = "*")
     public String deleteBookById(@PathVariable Long id) {
         return String.valueOf(id);
     }
