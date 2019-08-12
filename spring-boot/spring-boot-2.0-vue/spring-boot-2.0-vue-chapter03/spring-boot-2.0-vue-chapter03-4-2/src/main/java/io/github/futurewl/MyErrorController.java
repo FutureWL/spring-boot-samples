@@ -21,28 +21,30 @@ import java.util.Map;
  */
 @Controller
 public class MyErrorController extends BasicErrorController {
+
     @Autowired
-    public MyErrorController(ErrorAttributes errorAttributes,
-                             ServerProperties serverProperties,
-                             List<ErrorViewResolver> errorViewResolvers) {
+    public MyErrorController(
+            ErrorAttributes errorAttributes,
+            ServerProperties serverProperties,
+            List<ErrorViewResolver> errorViewResolvers) {
         super(errorAttributes, serverProperties.getError(), errorViewResolvers);
     }
+
     @Override
-    public ModelAndView errorHtml(HttpServletRequest request,
-                                  HttpServletResponse response) {
+    public ModelAndView errorHtml(HttpServletRequest request, HttpServletResponse response) {
         HttpStatus status = getStatus(request);
-        Map<String, Object> model = getErrorAttributes(
-                request, isIncludeStackTrace(request, MediaType.TEXT_HTML));
+        Map<String, Object> model = getErrorAttributes(request, isIncludeStackTrace(request, MediaType.TEXT_HTML));
         model.put("custommsg", "出错啦！");
         ModelAndView modelAndView = new ModelAndView("myErrorPage", model, status);
         return modelAndView;
     }
+
     @Override
     public ResponseEntity<Map<String, Object>> error(HttpServletRequest request) {
-        Map<String, Object> body = getErrorAttributes(request,
-                isIncludeStackTrace(request, MediaType.ALL));
+        Map<String, Object> body = getErrorAttributes(request, isIncludeStackTrace(request, MediaType.ALL));
         body.put("custommsg", "出错啦！");
         HttpStatus status = getStatus(request);
         return new ResponseEntity<>(body, status);
     }
+
 }

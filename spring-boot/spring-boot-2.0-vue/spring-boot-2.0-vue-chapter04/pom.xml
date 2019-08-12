@@ -13,18 +13,18 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>spring-boot-2.0-vue-chapter04-aop</module>
-        <module>spring-boot-2.0-vue-chapter04-commandlinerunner</module>
+<!--        <module>spring-boot-2.0-vue-chapter04-aop</module>-->
+<!--        <module>spring-boot-2.0-vue-chapter04-commandlinerunner</module>-->
         <module>spring-boot-2.0-vue-chapter04-cors</module>
-        <module>spring-boot-2.0-vue-chapter04-cors2</module>
-        <module>spring-boot-2.0-vue-chapter04-importxml</module>
-        <module>spring-boot-2.0-vue-chapter04-interceptor</module>
-        <module>spring-boot-2.0-vue-chapter04-jdbctemplate</module>
-        <module>spring-boot-2.0-vue-chapter04-lombok</module>
-        <module>spring-boot-2.0-vue-chapter04-mvcconfig</module>
-        <module>spring-boot-2.0-vue-chapter04-other</module>
-        <module>spring-boot-2.0-vue-chapter04-servlet</module>
-        <module>spring-boot-2.0-vue-chapter04-viewcontroller</module>
+<!--        <module>spring-boot-2.0-vue-chapter04-cors2</module>-->
+<!--        <module>spring-boot-2.0-vue-chapter04-importxml</module>-->
+<!--        <module>spring-boot-2.0-vue-chapter04-interceptor</module>-->
+<!--        <module>spring-boot-2.0-vue-chapter04-jdbctemplate</module>-->
+<!--        <module>spring-boot-2.0-vue-chapter04-lombok</module>-->
+<!--        <module>spring-boot-2.0-vue-chapter04-mvcconfig</module>-->
+<!--        <module>spring-boot-2.0-vue-chapter04-other</module>-->
+<!--        <module>spring-boot-2.0-vue-chapter04-servlet</module>-->
+<!--        <module>spring-boot-2.0-vue-chapter04-viewcontroller</module>-->
     </modules>
 
 </project>

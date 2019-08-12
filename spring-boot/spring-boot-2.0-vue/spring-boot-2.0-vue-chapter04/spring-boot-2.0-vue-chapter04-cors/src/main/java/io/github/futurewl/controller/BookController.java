@@ -1,4 +1,6 @@
-package org.sang;
+package io.github.futurewl.controller;
+
+import org.springframework.web.bind.annotation.*;
 
 /**
  * Created by sang on 2018/7/12.
@@ -6,6 +8,7 @@ package org.sang;
 @RestController
 @RequestMapping("/book")
 public class BookController {
+
     @PostMapping("/")
 //    @CrossOrigin(value = "http://localhost:8081"
 //            ,maxAge = 1800,allowedHeaders = "*")
