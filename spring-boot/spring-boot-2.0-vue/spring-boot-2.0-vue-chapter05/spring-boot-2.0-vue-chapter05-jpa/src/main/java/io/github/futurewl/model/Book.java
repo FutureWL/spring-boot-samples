@@ -1,4 +1,6 @@
-package org.sang.model;
+package io.github.futurewl.model;
+
+import javax.persistence.*;
 
 /**
  * Created by sang on 2018/7/15.
@@ -8,7 +10,7 @@ public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    @Column(name = "book_name",nullable = false)
+    @Column(name = "book_name", nullable = false)
     private String name;
     private String author;
     private Float price;

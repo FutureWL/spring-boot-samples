@@ -1,14 +1,12 @@
 package io.github.futurewl;
 
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("io.github.futurewl.mapper")
-public class MybatisApplication {
+public class SpringBoot20VueChapter5ApplicationJpa {
 
     public static void main(String[] args) {
-        SpringApplication.run(MybatisApplication.class, args);
+        SpringApplication.run(SpringBoot20VueChapter5ApplicationJpa.class, args);
     }
 }

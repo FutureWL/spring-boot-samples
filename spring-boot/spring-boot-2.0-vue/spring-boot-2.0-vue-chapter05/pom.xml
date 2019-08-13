@@ -13,11 +13,11 @@
     <packaging>pom</packaging>
 
     <modules>
-<!--        <module>spring-boot-2.0-vue-chapter05-jpa</module>-->
+        <module>spring-boot-2.0-vue-chapter05-mybatis</module>
+        <module>spring-boot-2.0-vue-chapter05-jpa</module>
 <!--        <module>spring-boot-2.0-vue-chapter05-multijdbc</module>-->
 <!--        <module>spring-boot-2.0-vue-chapter05-multimybatis</module>-->
 <!--        <module>spring-boot-2.0-vue-chapter05-multijpa</module>-->
-        <module>spring-boot-2.0-vue-chapter05-mybatis</module>
     </modules>
 
 </project>
