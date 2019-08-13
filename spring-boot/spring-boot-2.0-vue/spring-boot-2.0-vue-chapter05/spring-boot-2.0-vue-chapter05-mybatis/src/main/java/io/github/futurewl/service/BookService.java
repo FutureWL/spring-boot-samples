@@ -1,7 +1,7 @@
-package org.sang.service;
+package io.github.futurewl.service;
 
-import org.sang.mapper.BookMapper;
-import org.sang.model.Book;
+import io.github.futurewl.mapper.BookMapper;
+import io.github.futurewl.model.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

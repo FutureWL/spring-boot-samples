@@ -1,4 +1,4 @@
-package org.sang.model;
+package io.github.futurewl.model;
 
 /**
  * Created by sang on 2018/7/15.

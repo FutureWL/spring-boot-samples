@@ -1,7 +1,7 @@
-package org.sang.mapper;
+package io.github.futurewl.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
-import org.sang.model.Book;
+import io.github.futurewl.model.Book;
 
 import java.util.List;
 
@@ -11,8 +11,12 @@ import java.util.List;
 @Mapper
 public interface BookMapper {
     int addBook(Book book);
+
     int deleteBookById(Integer id);
+
     int updateBookById(Book book);
+
     Book getBookById(Integer id);
+
     List<Book> getAllBooks();
 }

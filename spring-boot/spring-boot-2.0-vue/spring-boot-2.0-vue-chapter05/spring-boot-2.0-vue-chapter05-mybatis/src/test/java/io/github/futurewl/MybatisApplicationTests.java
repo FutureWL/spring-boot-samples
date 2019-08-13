@@ -1,4 +1,4 @@
-package org.sang;
+package io.github.futurewl;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

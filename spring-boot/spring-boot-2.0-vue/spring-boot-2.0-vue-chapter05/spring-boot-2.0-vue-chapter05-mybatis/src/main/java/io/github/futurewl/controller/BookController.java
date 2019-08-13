@@ -1,7 +1,7 @@
-package org.sang.controller;
+package io.github.futurewl.controller;
 
-import org.sang.model.Book;
-import org.sang.service.BookService;
+import io.github.futurewl.service.BookService;
+import io.github.futurewl.model.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,6 +15,7 @@ import java.util.List;
 public class BookController {
     @Autowired
     BookService bookService;
+
     @GetMapping("/bookOps")
     public void bookOps() {
         Book b1 = new Book();
@@ -27,12 +28,12 @@ public class BookController {
         b2.setName("朝花夕拾");
         b2.setAuthor("鲁迅");
         int updateBook = bookService.updateBook(b2);
-        System.out.println("updateBook>>>"+updateBook);
+        System.out.println("updateBook>>>" + updateBook);
         Book b3 = bookService.getBookById(1);
-        System.out.println("getBookById>>>"+b3);
+        System.out.println("getBookById>>>" + b3);
         int delete = bookService.deleteBookById(2);
-        System.out.println("deleteBookById>>>"+delete);
+        System.out.println("deleteBookById>>>" + delete);
         List<Book> allBooks = bookService.getAllBooks();
-        System.out.println("getAllBooks>>>"+allBooks);
+        System.out.println("getAllBooks>>>" + allBooks);
     }
 }
