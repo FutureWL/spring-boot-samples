@@ -19,10 +19,10 @@
         <module>spring-boot-2.0-vue-chapter04-cors2</module>
         <module>spring-boot-2.0-vue-chapter04-importxml</module>
         <module>spring-boot-2.0-vue-chapter04-interceptor</module>
-<!--        <module>spring-boot-2.0-vue-chapter04-jdbctemplate</module>-->
-<!--        <module>spring-boot-2.0-vue-chapter04-lombok</module>-->
-<!--        <module>spring-boot-2.0-vue-chapter04-mvcconfig</module>-->
-<!--        <module>spring-boot-2.0-vue-chapter04-other</module>-->
+        <module>spring-boot-2.0-vue-chapter04-jdbctemplate</module>
+        <module>spring-boot-2.0-vue-chapter04-lombok</module>
+        <module>spring-boot-2.0-vue-chapter04-mvcconfig</module>
+        <module>spring-boot-2.0-vue-chapter04-other</module>
         <module>spring-boot-2.0-vue-chapter04-servlet</module>
         <module>spring-boot-2.0-vue-chapter04-viewcontroller</module>
     </modules>
