@@ -13,6 +13,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.annotation.Resource;
 import javax.sql.DataSource;
+import java.util.Objects;
 
 /**
  * Created by sang on 2018/7/16.
@@ -20,27 +21,32 @@ import javax.sql.DataSource;
 
 @Configuration
 @EnableTransactionManagement
-@EnableJpaRepositories(basePackages = "org.sang.dao2",
-entityManagerFactoryRef = "entityManagerFactoryBeanTwo",
-transactionManagerRef = "platformTransactionManagerTwo")
+@EnableJpaRepositories(basePackages = "io.github.futurewl.dao2",
+        entityManagerFactoryRef = "entityManagerFactoryBeanTwo",
+        transactionManagerRef = "platformTransactionManagerTwo")
 public class JpaConfigTwo {
+
     @Resource(name = "dsTwo")
     DataSource dsTwo;
+
     @Autowired
     JpaProperties jpaProperties;
+
     @Bean
-    LocalContainerEntityManagerFactoryBean entityManagerFactoryBeanTwo(
-            EntityManagerFactoryBuilder builder) {
-        return builder.dataSource(dsTwo)
+    LocalContainerEntityManagerFactoryBean entityManagerFactoryBeanTwo(EntityManagerFactoryBuilder builder) {
+        return builder
+                .dataSource(dsTwo)
                 .properties(jpaProperties.getProperties())
-                .packages("org.sang.model")
+                .packages("io.github.futurewl.model")
                 .persistenceUnit("pu2")
                 .build();
     }
+
     @Bean
-    PlatformTransactionManager platformTransactionManagerTwo(
-            EntityManagerFactoryBuilder builder) {
-        LocalContainerEntityManagerFactoryBean factoryTwo = entityManagerFactoryBeanTwo(builder);
-        return new JpaTransactionManager(factoryTwo.getObject());
+    PlatformTransactionManager platformTransactionManagerTwo(EntityManagerFactoryBuilder builder) {
+        return new JpaTransactionManager(
+                Objects.requireNonNull(
+                        entityManagerFactoryBeanTwo(builder)
+                                .getObject()));
     }
 }

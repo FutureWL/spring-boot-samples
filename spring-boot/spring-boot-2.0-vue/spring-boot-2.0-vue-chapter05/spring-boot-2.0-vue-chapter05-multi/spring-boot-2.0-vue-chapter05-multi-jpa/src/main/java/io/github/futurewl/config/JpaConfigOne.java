@@ -14,6 +14,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.annotation.Resource;
 import javax.sql.DataSource;
+import java.util.Objects;
 
 /**
  * Created by sang on 2018/7/16.
@@ -21,28 +22,34 @@ import javax.sql.DataSource;
 
 @Configuration
 @EnableTransactionManagement
-@EnableJpaRepositories(basePackages = "org.sang.dao1",
+@EnableJpaRepositories(
+        basePackages = "io.github.futurewl.dao1",
         entityManagerFactoryRef = "entityManagerFactoryBeanOne",
         transactionManagerRef = "platformTransactionManagerOne")
 public class JpaConfigOne {
+
     @Resource(name = "dsOne")
     DataSource dsOne;
+
     @Autowired
     JpaProperties jpaProperties;
+
     @Bean
     @Primary
-    LocalContainerEntityManagerFactoryBean entityManagerFactoryBeanOne(
-            EntityManagerFactoryBuilder builder) {
-        return builder.dataSource(dsOne)
+    LocalContainerEntityManagerFactoryBean entityManagerFactoryBeanOne(EntityManagerFactoryBuilder builder) {
+        return builder
+                .dataSource(dsOne)
                 .properties(jpaProperties.getProperties())
-                .packages("org.sang.model")
+                .packages("io.github.futurewl.model")
                 .persistenceUnit("pu1")
                 .build();
     }
+
     @Bean
-    PlatformTransactionManager platformTransactionManagerOne(
-            EntityManagerFactoryBuilder builder) {
-        LocalContainerEntityManagerFactoryBean factoryOne = entityManagerFactoryBeanOne(builder);
-        return new JpaTransactionManager(factoryOne.getObject());
+    PlatformTransactionManager platformTransactionManagerOne(EntityManagerFactoryBuilder builder) {
+        return new JpaTransactionManager(
+                Objects.requireNonNull(
+                        entityManagerFactoryBeanOne(builder)
+                                .getObject()));
     }
 }

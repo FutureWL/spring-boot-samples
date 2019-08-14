@@ -13,7 +13,7 @@ import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class MutijpaApplicationTests {
+public class SpringBoot20VueChapter5ApplicationMultiJpaTests {
 	@Autowired
 	UserDao userDao;
 	@Autowired
