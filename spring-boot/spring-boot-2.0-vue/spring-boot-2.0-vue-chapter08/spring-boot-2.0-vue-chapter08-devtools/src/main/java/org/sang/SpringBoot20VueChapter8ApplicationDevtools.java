@@ -5,13 +5,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@SpringBootApplication
 @RestController
-public class DevtoolsApplication {
+@SpringBootApplication
+public class SpringBoot20VueChapter8ApplicationDevtools {
 
 	public static void main(String[] args) {
 //		System.setProperty("spring.devtools.restart.enabled", "false");
-		SpringApplication.run(DevtoolsApplication.class, args);
+		SpringApplication.run(SpringBoot20VueChapter8ApplicationDevtools.class, args);
 	}
 
 	@GetMapping("/hello")

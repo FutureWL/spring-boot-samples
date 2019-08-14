@@ -24,7 +24,7 @@
         <module>spring-boot-2.0-vue-chapter05</module>
         <module>spring-boot-2.0-vue-chapter06</module>
         <!--        <module>spring-boot-2.0-vue-chapter07</module>-->
-        <!--        <module>spring-boot-2.0-vue-chapter08</module>-->
+                <module>spring-boot-2.0-vue-chapter08</module>
         <!--        <module>spring-boot-2.0-vue-chapter09</module>-->
         <!--        <module>spring-boot-2.0-vue-chapter10</module>-->
         <!--        <module>spring-boot-2.0-vue-chapter11</module>-->

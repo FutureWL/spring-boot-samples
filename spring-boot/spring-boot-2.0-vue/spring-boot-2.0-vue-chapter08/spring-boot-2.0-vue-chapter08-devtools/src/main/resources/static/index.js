@@ -1,3 +1,3 @@
 function aaa() {
-    return "aaa ccc ddd";
+    alert("aaa ccc dddddd");
 }
