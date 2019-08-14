@@ -15,8 +15,9 @@ import javax.sql.DataSource;
  * Created by sang on 2018/7/16.
  */
 @Configuration
-@MapperScan(value = "org.sang.mapper1", sqlSessionFactoryRef = "sqlSessionFactoryBean1")
+@MapperScan(value = "io.github.futurewl.mapper1", sqlSessionFactoryRef = "sqlSessionFactoryBean1")
 public class MyBatisConfigOne {
+
     @Autowired
     @Qualifier("dsOne")
     DataSource dsOne;
@@ -27,6 +28,7 @@ public class MyBatisConfigOne {
         factoryBean.setDataSource(dsOne);
         return factoryBean.getObject();
     }
+
     @Bean
     SqlSessionTemplate sqlSessionTemplate1() throws Exception {
         return new SqlSessionTemplate(sqlSessionFactoryBean1());

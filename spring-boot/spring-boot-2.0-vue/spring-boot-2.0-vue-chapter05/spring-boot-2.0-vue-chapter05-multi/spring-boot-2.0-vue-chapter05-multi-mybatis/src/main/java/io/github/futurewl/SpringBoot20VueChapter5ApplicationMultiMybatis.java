@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MultimybatisApplication {
+public class SpringBoot20VueChapter5ApplicationMultiMybatis {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MultimybatisApplication.class, args);
+		SpringApplication.run(SpringBoot20VueChapter5ApplicationMultiMybatis.class, args);
 	}
 }

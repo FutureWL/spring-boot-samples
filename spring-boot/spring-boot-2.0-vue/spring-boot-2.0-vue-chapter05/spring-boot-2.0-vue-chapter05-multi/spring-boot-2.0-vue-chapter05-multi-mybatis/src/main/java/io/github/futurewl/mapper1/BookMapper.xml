@@ -3,7 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="io.github.futurewl.mapper1.BookMapper">
-<select id="getAllBooks" resultType="Book">
+<select id="getAllBooks" resultType="io.github.futurewl.model.Book">
     select * from book;
 </select>
 </mapper>

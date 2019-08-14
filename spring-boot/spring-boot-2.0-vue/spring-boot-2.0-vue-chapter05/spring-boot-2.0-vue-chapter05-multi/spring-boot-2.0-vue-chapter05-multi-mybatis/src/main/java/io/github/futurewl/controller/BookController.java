@@ -14,15 +14,17 @@ import java.util.List;
  */
 @RestController
 public class BookController {
+
     @Autowired
     BookMapper bookMapper;
     @Autowired
     BookMapper2 bookMapper2;
+
     @GetMapping("/test1")
     public void test1() {
         List<Book> books1 = bookMapper.getAllBooks();
         List<Book> books2 = bookMapper2.getAllBooks();
-        System.out.println("books1:"+books1);
-        System.out.println("books2:"+books2);
+        System.out.println("books1:" + books1);
+        System.out.println("books2:" + books2);
     }
 }

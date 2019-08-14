@@ -13,7 +13,7 @@ import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class MultimybatisApplicationTests {
+public class SpringBoot20VueChapter5ApplicationMultiMybatisTests {
 
 	@Autowired
 	BookMapper bookMapper;
