@@ -1,4 +1,4 @@
-package org.sang;
+package io.github.futurewl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
@@ -13,8 +13,10 @@ import java.util.List;
  */
 @RestController
 public class BookController {
+
     @Autowired
     BookDao bookDao;
+
     @Autowired
     MongoTemplate mongoTemplate;
 

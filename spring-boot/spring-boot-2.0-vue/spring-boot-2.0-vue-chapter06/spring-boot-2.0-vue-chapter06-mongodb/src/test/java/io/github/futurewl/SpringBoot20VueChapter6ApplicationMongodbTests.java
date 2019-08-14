@@ -1,4 +1,4 @@
-package org.sang;
+package io.github.futurewl;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -11,7 +11,7 @@ import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class MongodbApplicationTests {
+public class SpringBoot20VueChapter6ApplicationMongodbTests {
 
 	@Autowired
 	MongoTemplate mongoTemplate;
