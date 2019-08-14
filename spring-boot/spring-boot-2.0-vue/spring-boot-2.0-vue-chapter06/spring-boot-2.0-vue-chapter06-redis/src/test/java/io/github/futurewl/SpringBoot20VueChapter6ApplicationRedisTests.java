@@ -1,4 +1,4 @@
-package org.sang;
+package io.github.futurewl;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -11,7 +11,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class RedisApplicationTests {
+public class SpringBoot20VueChapter6ApplicationRedisTests {
 
 	@Autowired
 	StringRedisTemplate stringRedisTemplate;

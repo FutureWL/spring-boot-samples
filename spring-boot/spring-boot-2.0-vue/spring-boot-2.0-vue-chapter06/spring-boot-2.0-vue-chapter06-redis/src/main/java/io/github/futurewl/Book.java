@@ -1,4 +1,4 @@
-package org.sang;
+package io.github.futurewl;
 
 import java.io.Serializable;
 
