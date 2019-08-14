@@ -1,4 +1,4 @@
-package org.sang.test;
+package io.github.futurewl;
 
 import org.springframework.stereotype.Service;
 

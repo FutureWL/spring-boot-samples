@@ -1,4 +1,4 @@
-package org.sang.test01;
+package io.github.futurewl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.hamcrest.Matchers;
@@ -24,7 +24,7 @@ import org.springframework.web.context.WebApplicationContext;
 @RunWith(SpringRunner.class)
 //@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @SpringBootTest
-public class Test01ApplicationTests {
+public class SpringBoot20VueChapter8ApplicationTest01Tests {
 //    @Autowired
     @MockBean
     HelloService helloService;

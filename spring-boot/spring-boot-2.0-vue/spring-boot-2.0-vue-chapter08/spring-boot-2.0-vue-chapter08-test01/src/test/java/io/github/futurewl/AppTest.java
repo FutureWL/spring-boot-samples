@@ -1,4 +1,4 @@
-package org.sang.test01;
+package io.github.futurewl;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -8,11 +8,12 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 //@SpringBootTest
-@ContextConfiguration(classes = Test01Application.class)
+@ContextConfiguration(classes = SpringBoot20VueChapter8ApplicationTest01.class)
 public class AppTest {
-//    @Autowired
+    //    @Autowired
     @MockBean(name = "helloService")
     BaseHelloService baseHelloService;
+
     @Test
     public void test1() {
         String hello = baseHelloService.sayHello("Michael");

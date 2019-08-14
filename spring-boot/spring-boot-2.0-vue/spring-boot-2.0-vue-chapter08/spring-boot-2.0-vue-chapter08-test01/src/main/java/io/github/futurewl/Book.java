@@ -1,4 +1,4 @@
-package org.sang.test01;
+package io.github.futurewl;
 
 public class Book {
     private Integer id;

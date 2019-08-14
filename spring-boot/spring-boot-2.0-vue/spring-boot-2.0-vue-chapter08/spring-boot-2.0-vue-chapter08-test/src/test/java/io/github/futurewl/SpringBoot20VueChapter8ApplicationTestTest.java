@@ -1,4 +1,4 @@
-package org.sang.test;
+package io.github.futurewl;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -14,7 +14,7 @@ import org.springframework.web.context.WebApplicationContext;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class AppTest {
+public class SpringBoot20VueChapter8ApplicationTestTest {
 
     MockMvc mockMvc;
 
@@ -31,10 +31,9 @@ public class AppTest {
 
     @Test
     public void test2() throws Exception {
-        mockMvc.perform(
-                MockMvcRequestBuilders.get("/hello", "name=aaa")).andDo(
-                MockMvcResultHandlers.print()
-        );
+        mockMvc.perform(MockMvcRequestBuilders
+                .get("/hello", "name=aaa"))
+                .andDo(MockMvcResultHandlers.print());
     }
 
     @Test

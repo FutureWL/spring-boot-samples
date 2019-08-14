@@ -14,8 +14,8 @@
 
     <modules>
         <module>spring-boot-2.0-vue-chapter08-devtools</module>
-<!--        <module>spring-boot-2.0-vue-chapter08-test</module>-->
-<!--        <module>spring-boot-2.0-vue-chapter08-test01</module>-->
+        <module>spring-boot-2.0-vue-chapter08-test</module>
+        <module>spring-boot-2.0-vue-chapter08-test01</module>
     </modules>
 
 </project>
