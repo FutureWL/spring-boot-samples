@@ -1,4 +1,5 @@
 var stompClient = null;
+
 function connect() {
     var socket = new SockJS('/chat');
     stompClient = Stomp.over(socket);
@@ -8,16 +9,23 @@ function connect() {
         });
     });
 }
+
 function sendMsg() {
     stompClient.send("/app/chat", {},
-        JSON.stringify({'content':$("#content").val(),
-            'to':$("#to").val()}));
+        JSON.stringify({
+            'content': $("#content").val(),
+            'to': $("#to").val()
+        }));
 }
+
 function showGreeting(message) {
     $("#chatsContent")
-        .append("<div>" + message.from+":"+message.content + "</div>");
+        .append("<div>" + message.from + ":" + message.content + "</div>");
 }
+
 $(function () {
     connect();
-    $( "#send" ).click(function() { sendMsg(); });
+    $("#send").click(function () {
+        sendMsg();
+    });
 });
