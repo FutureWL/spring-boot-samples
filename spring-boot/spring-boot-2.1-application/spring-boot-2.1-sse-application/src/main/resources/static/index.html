@@ -5,15 +5,42 @@
     <title>Title</title>
 </head>
 <body>
-<h1>SSE</h1>
 
 
+<button onclick="hello()">按钮</button>
+
+<script>
+
+    function hello() {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open("GET", "/hello", true)
+        xmlHttp.onreadystatechange = function () {
+            console.log(xmlHttp.response)
+        }
+        xmlHttp.send()
+    }
 
 
+    if (typeof (EventSource) !== "undefined") {
+        var eventSource = new EventSource("/getData2");
+        eventSource.onmessage = function (event) {
+            console.log(event.data)
+        }
+        eventSource.addEventListener('error', function (event) {
+            console.log('错误' + event)
+        })
 
+        eventSource.addEventListener('open', function (event) {
+            console.log('建立链接' + event)
+        })
 
+        eventSource.addEventListener('finish', function (event) {
+            console.log('数据接收完毕，关闭EventSource')
+            eventSource.close()
+            console.log(event);
+        }, false)
 
-
-
+    }
+</script>
 </body>
 </html>

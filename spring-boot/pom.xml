@@ -21,6 +21,7 @@
         <module>spring-boot-2.1-web</module>
         <module>spring-boot-2.1-netty</module>
         <module>spring-boot-2.1-mq</module>
+        <module>spring-boot-2.1-angular</module>
     </modules>
 
 </project>

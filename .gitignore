@@ -8,3 +8,5 @@ target/
 *.mvn
 mvnw
 mvnw.cmd
+
+**/node_modules
