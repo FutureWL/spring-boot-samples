@@ -13,6 +13,8 @@ import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * 功能描述：
@@ -28,6 +30,9 @@ public class SpringBoot21SseApplication {
 
     @Autowired
     PayCompletedListener payCompletedListener;
+
+
+    private static Map<String, SseEmitter> stringSseEmitterMap = new HashMap<>();
 
     @GetMapping(value = "/push")
     public SseEmitter push(@RequestParam Long payRecordId) {
@@ -74,12 +79,12 @@ public class SpringBoot21SseApplication {
                 while (true) {
                     emitter.send(System.currentTimeMillis());
                     Thread.sleep(1000L);
-                    if (time == 3) {
-                        emitter.send(SseEmitter.event().name("finish").id("666").data("HaHa"));
-                        emitter.complete();
-                        break;
-                    }
-                    time++;
+//                    if (time == 3) {
+//                        emitter.send(SseEmitter.event().name("finish").id("666").data("HaHa"));
+//                        emitter.complete();
+//                        break;
+//                    }
+//                    time++;
                 }
             } catch (IOException e) {
                 e.printStackTrace();
@@ -87,7 +92,13 @@ public class SpringBoot21SseApplication {
                 e.printStackTrace();
             }
         }).start();
+        stringSseEmitterMap.put("sse", emitter);
         return emitter;
+    }
+
+    @GetMapping("/close")
+    public void close() {
+        stringSseEmitterMap.get("sse").complete();
     }
 
     @GetMapping("/hello")

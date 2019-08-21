@@ -28,6 +28,12 @@ public class SpringBoot21MqRabbitMqProducerApplication implements CommandLineRun
         return new Queue("my-queue");
     }
 
+    @Bean
+    public Queue queue2() {
+        Queue queue = new Queue("my-queue2");
+        return queue;
+    }
+
     public static void main(String[] args) {
         SpringApplication.run(SpringBoot21MqRabbitMqProducerApplication.class, args);
     }
@@ -41,7 +47,10 @@ public class SpringBoot21MqRabbitMqProducerApplication implements CommandLineRun
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                rabbitTemplate.convertAndSend("my-queue", "来自RabbitMQ的问候" + new Date());
+                rabbitTemplate.convertAndSend(
+                        "my-queue",
+                        "来自RabbitMQ的问候" + new Date()
+                );
             }
         }).start();
 

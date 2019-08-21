@@ -9,11 +9,22 @@
 
 <button onclick="hello()">按钮</button>
 
+<button onclick="close()">关闭</button>
+
 <script>
 
     function hello() {
         var xmlHttp = new XMLHttpRequest();
         xmlHttp.open("GET", "/hello", true)
+        xmlHttp.onreadystatechange = function () {
+            console.log(xmlHttp.response)
+        }
+        xmlHttp.send()
+    }
+
+    function close(){
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open("GET","/close",true)
         xmlHttp.onreadystatechange = function () {
             console.log(xmlHttp.response)
         }
