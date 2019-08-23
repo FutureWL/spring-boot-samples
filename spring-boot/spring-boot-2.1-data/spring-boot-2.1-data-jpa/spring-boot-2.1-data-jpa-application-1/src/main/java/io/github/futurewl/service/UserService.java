@@ -11,4 +11,8 @@ public interface UserService {
 
     User findById(Long id);
 
+    void test();
+
+
+    void test2();
 }

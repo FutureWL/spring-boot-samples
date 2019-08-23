@@ -1,6 +1,7 @@
 package io.github.futurewl.entity;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
@@ -12,10 +13,13 @@ import java.util.Set;
  *
  * @author weilai
  */
-@Data
-@ToString(exclude = "users")
+@Getter
+@Setter
 @Entity
 @Table(name = "t_role")
+@ToString(
+        exclude = "users"
+)
 @org.hibernate.annotations.Table(appliesTo = "t_role", comment = "角色表")
 public class Role implements Serializable {
 
@@ -27,9 +31,9 @@ public class Role implements Serializable {
     private String name;
 
 
-    @OneToMany(mappedBy = "role")
+    @ManyToMany(mappedBy = "roles", fetch = FetchType.EAGER)
     private Set<User> users;
 
-//    @OneToOne(mappedBy = "role")
-//    private User user;
+    @ManyToMany(cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
+    private Set<Permission> permissions;
 }

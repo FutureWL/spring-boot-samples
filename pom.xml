@@ -36,6 +36,7 @@
         <module>spring-framework</module>
         <module>struts2-hibernate-spring</module>
         <module>java</module>
+        <module>hibernate</module>
     </modules>
 
 </project>

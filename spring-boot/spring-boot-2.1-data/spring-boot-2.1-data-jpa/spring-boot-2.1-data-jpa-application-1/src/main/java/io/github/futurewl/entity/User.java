@@ -1,16 +1,21 @@
 package io.github.futurewl.entity;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Set;
 
 /**
  * 功能描述：
  *
  * @author weilai
  */
-@Data
+@Getter
+@Setter
+@ToString
 @Entity
 @Table(name = "t_user")
 @org.hibernate.annotations.Table(appliesTo = "t_user", comment = "用户表")
@@ -27,7 +32,6 @@ public class User implements Serializable {
     @Column(columnDefinition = "varchar(50) comment '邮箱'")
     private String email;
 
-    @ManyToOne
-    private Role role;
-
+    @ManyToMany(cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
+    private Set<Role> roles;
 }
