@@ -17,7 +17,7 @@ import java.io.Serializable;
 public class User implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(columnDefinition = "bigint(20) comment 'ID'")
     private Long id;
 
@@ -26,5 +26,8 @@ public class User implements Serializable {
 
     @Column(columnDefinition = "varchar(50) comment '邮箱'")
     private String email;
+
+    @ManyToOne
+    private Role role;
 
 }

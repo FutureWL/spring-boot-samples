@@ -10,8 +10,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @version 1.0
  */
 @SpringBootApplication
-public class SpringBoot21DataJpaApplication {
+public class SpringBoot21DataJpaApplication1 {
     public static void main(String[] args) {
-        SpringApplication.run(SpringBoot21DataJpaApplication.class, args);
+        SpringApplication.run(SpringBoot21DataJpaApplication1.class, args);
     }
 }

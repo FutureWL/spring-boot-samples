@@ -11,6 +11,7 @@
 
     <artifactId>spring-boot-2.1-data-jpa-application-1</artifactId>
     <build>
+
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
