@@ -18,4 +18,8 @@ public interface UserRepository extends JpaRepository<User, Long> {
 
     Set<User> findAllByRolesPermissions(Permission permission);
 
+    Set<User> findAllByRoles_Permissions(Permission permission);
+
+    Set<User> findAllByRoles_Permissions_Name(String name);
+
 }

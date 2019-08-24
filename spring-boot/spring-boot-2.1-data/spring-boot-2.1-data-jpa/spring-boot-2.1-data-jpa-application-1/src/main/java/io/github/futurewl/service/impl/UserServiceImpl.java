@@ -144,7 +144,7 @@ public class UserServiceImpl implements UserService {
      * Permission(id=7, name=更新),
      * Permission(id=9, name=查询),
      * Permission(id=8, name=删除)])]
-     *
+     * <p>
      * [
      * User(id=1, username=管理员, email=624263934@qq.com,
      * roles=[Role(id=1, name=管理员,
@@ -159,7 +159,7 @@ public class UserServiceImpl implements UserService {
      * Permission(id=8, name=删除),
      * Permission(id=6, name=新增),
      * Permission(id=7, name=更新)])]),
-     *
+     * <p>
      * User(id=2, username=管理员, email=624263934@qq.com,
      * roles=[Role(id=1, name=管理员,
      * permissions=[
@@ -173,7 +173,6 @@ public class UserServiceImpl implements UserService {
      * Permission(id=8, name=删除),
      * Permission(id=6, name=新增),
      * Permission(id=7, name=更新)])])]
-     *
      */
     public void test2() {
 
@@ -192,6 +191,10 @@ public class UserServiceImpl implements UserService {
 //        Permission permission = permissionRepository.findById(1L).orElse(null);
 //        Set<User> users = userRepository.findAllByRolesPermissions(permission);
 //        System.out.println(users);
+
+        Permission permission = permissionRepository.findById(1L).orElse(null);
+        Set<User> users = userRepository.findAllByRoles_Permissions_Name(permission.getName());
+        System.out.println(users);
 
     }
 

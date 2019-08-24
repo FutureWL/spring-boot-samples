@@ -34,6 +34,6 @@ public class Role implements Serializable {
     @ManyToMany(mappedBy = "roles", fetch = FetchType.EAGER)
     private Set<User> users;
 
-    @ManyToMany(cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Set<Permission> permissions;
 }

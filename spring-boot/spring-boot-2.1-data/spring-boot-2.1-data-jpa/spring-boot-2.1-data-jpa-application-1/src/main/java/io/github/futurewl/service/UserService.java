@@ -13,6 +13,5 @@ public interface UserService {
 
     void test();
 
-
     void test2();
 }

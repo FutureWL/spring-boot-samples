@@ -10,8 +10,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>spring-boot-2.1-data-jpa-application-1</artifactId>
-    <build>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-rest</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

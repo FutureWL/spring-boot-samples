@@ -19,7 +19,7 @@ import java.io.IOException;
  */
 @RestController
 @SpringBootApplication
-public class WebApplication {
+public class SpringBoot21WebApplication {
 
     @PostMapping("/upload")
     public void update(MultipartFile file) {
@@ -46,6 +46,6 @@ public class WebApplication {
 
 
     public static void main(String[] args) {
-        SpringApplication.run(WebApplication.class, args);
+        SpringApplication.run(SpringBoot21WebApplication.class, args);
     }
 }
