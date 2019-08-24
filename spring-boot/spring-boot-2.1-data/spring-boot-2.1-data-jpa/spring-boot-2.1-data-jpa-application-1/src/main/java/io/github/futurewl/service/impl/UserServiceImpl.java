@@ -100,10 +100,99 @@ public class UserServiceImpl implements UserService {
     }
 
 
+    /**
+     * [User(id=1, username=管理员, email=624263934@qq.com,
+     * roles=[
+     * Role(id=1, name=管理员,
+     * permissions=[
+     * Permission(id=1, name=新增),
+     * Permission(id=3, name=删除),
+     * Permission(id=4, name=查询),
+     * Permission(id=2, name=更新)]),
+     * Role(id=2, name=管理员,
+     * permissions=[
+     * Permission(id=7, name=更新),
+     * Permission(id=6, name=新增),
+     * Permission(id=8, name=删除),
+     * Permission(id=9, name=查询)])]),
+     * User(id=2, username=管理员, email=624263934@qq.com,
+     * roles=[
+     * Role(id=1, name=管理员,
+     * permissions=[
+     * Permission(id=1, name=新增),
+     * Permission(id=3, name=删除),
+     * Permission(id=4, name=查询),
+     * Permission(id=2, name=更新)]),
+     * Role(id=2, name=管理员,
+     * permissions=[
+     * Permission(id=7, name=更新),
+     * Permission(id=6, name=新增),
+     * Permission(id=8, name=删除),
+     * Permission(id=9, name=查询)])])]
+     * <p>
+     * <p>
+     * [Role(id=1, name=管理员,
+     * permissions=[
+     * Permission(id=4, name=查询),
+     * Permission(id=1, name=新增),
+     * Permission(id=3, name=删除),
+     * Permission(id=2, name=更新)])]
+     * <p>
+     * [Role(id=2, name=管理员,
+     * permissions=[
+     * Permission(id=6, name=新增),
+     * Permission(id=7, name=更新),
+     * Permission(id=9, name=查询),
+     * Permission(id=8, name=删除)])]
+     *
+     * [
+     * User(id=1, username=管理员, email=624263934@qq.com,
+     * roles=[Role(id=1, name=管理员,
+     * permissions=[
+     * Permission(id=1, name=新增),
+     * Permission(id=4, name=查询),
+     * Permission(id=2, name=更新),
+     * Permission(id=3, name=删除)]),
+     * Role(id=2, name=管理员,
+     * permissions=[
+     * Permission(id=9, name=查询),
+     * Permission(id=8, name=删除),
+     * Permission(id=6, name=新增),
+     * Permission(id=7, name=更新)])]),
+     *
+     * User(id=2, username=管理员, email=624263934@qq.com,
+     * roles=[Role(id=1, name=管理员,
+     * permissions=[
+     * Permission(id=1, name=新增),
+     * Permission(id=4, name=查询),
+     * Permission(id=2, name=更新),
+     * Permission(id=3, name=删除)]),
+     * Role(id=2, name=管理员,
+     * permissions=[
+     * Permission(id=9, name=查询),
+     * Permission(id=8, name=删除),
+     * Permission(id=6, name=新增),
+     * Permission(id=7, name=更新)])])]
+     *
+     */
     public void test2() {
-        Role adminRole = roleRepository.findById(2L).orElse(new Role());
 
-        System.out.println(adminRole);
+//        User user = userRepository.findById(1L).orElse(null);
+//        System.out.println(user);
+//        Set<Role> roles = user.getRoles();
+//        System.out.println(roles);
+//        Set<User> users = userRepository.findAllByRoles(roles.stream().findFirst().orElse(null));
+//        System.out.println(users);
+
+
+//        Permission permission = permissionRepository.findById(6L).orElse(null);
+//        Set<Role> roles1 = roleRepository.findAllByPermissions(permission);
+//        System.out.println(roles1);
+
+//        Permission permission = permissionRepository.findById(1L).orElse(null);
+//        Set<User> users = userRepository.findAllByRolesPermissions(permission);
+//        System.out.println(users);
+
     }
 
 }
