@@ -37,6 +37,7 @@
         <module>struts2-hibernate-spring</module>
         <module>java</module>
         <module>hibernate</module>
+        <module>netty</module>
     </modules>
 
 </project>

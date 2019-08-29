@@ -9,12 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>java</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>authority-management</module>
-        <module>java-mq</module>
-        <module>java-io</module>
-    </modules>
+    <artifactId>netty</artifactId>
+
 
 </project>
