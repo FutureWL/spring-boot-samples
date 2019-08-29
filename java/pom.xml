@@ -12,9 +12,9 @@
     <artifactId>java</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>authority-management</module>
         <module>java-mq</module>
         <module>java-io</module>
+        <module>java-concurrency</module>
     </modules>
 
 </project>
