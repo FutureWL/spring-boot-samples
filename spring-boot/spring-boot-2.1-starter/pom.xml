@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>spring-boot</artifactId>
+        <groupId>io.github.futurewl</groupId>
+        <version>190703</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>spring-boot-2.1-starter</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>spring-boot-2.1-starter-hello</module>
+        <module>spring-boot-2.1-starter-application</module>
+        <module>spring-boot-2.1-starter-netty</module>
+        <module>spring-boot-2.1-starter-common</module>
+    </modules>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.github.futurewl</groupId>
+                <artifactId>spring-boot-2.1-starter-hello</artifactId>
+                <version>190703</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.futurewl</groupId>
+                <artifactId>spring-boot-2.1-starter-common</artifactId>
+                <version>190703</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.futurewl</groupId>
+                <artifactId>spring-boot-2.1-starter-netty-server</artifactId>
+                <version>190703</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
