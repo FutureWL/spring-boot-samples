@@ -21,7 +21,7 @@ public class MyAuditorAware implements AuditorAware<Integer> {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 
         if (authentication == null || !authentication.isAuthenticated()) {
-            return null;
+            return Optional.empty();
         }
 
 //        return ((User) authentication.getPrincipal()).getUsername();
