@@ -1,6 +1,6 @@
-package io.github.futurewl.spring.boot.helloworld;
+package io.github.futurewl;
 
-import io.github.futurewl.spring.boot.helloworld.prop.UserProperties;
+import io.github.futurewl.prop.UserProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;

@@ -1,4 +1,4 @@
-package io.github.futurewl.spring.boot.helloworld.prop;
+package io.github.futurewl.prop;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
