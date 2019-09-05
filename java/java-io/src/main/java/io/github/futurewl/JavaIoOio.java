@@ -8,10 +8,12 @@ import java.nio.charset.StandardCharsets;
 
 public class JavaIoOio {
 
-    public static void main(String[] args) {
-
-    }
-
+    /**
+     * 普通传输，Oio
+     *
+     * @param port
+     * @throws IOException
+     */
     public void server(int port) throws IOException {
         final ServerSocket socket = new ServerSocket(port); // 创建一个 socket 对象
         try {

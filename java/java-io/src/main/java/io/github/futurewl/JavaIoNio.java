@@ -13,15 +13,29 @@ import java.util.Set;
 
 public class JavaIoNio {
 
+    /**
+     * 异步传输 Nio
+     *
+     * @param port
+     * @throws IOException
+     */
     public void server(int port) throws IOException {
+
+        //---------------------------------------------------------
         ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
         serverSocketChannel.configureBlocking(false);
         ServerSocket serverSocket = serverSocketChannel.socket();
-        InetSocketAddress address = new InetSocketAddress(port); // 将服务器绑定到选定的端口
-        serverSocket.bind(address);
+        InetSocketAddress address = new InetSocketAddress(port);
+        serverSocket.bind(address);// 将服务器绑定到选定的端口
+        //---------------------------------------------------------
+
+        //---------------------------------------------------------
         Selector selector = Selector.open(); // 打开 Selector 来处理 Channel
         serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);// 将 ServerSocket 注册到 Selector 以接受连接
         final ByteBuffer msg = ByteBuffer.wrap("Hi!\r\n".getBytes());
+        //---------------------------------------------------------
+
+        //---------------------------------------------------------
         for (; ; ) {
             try {
                 selector.select(); // 等待需要处理的新事件；阻塞将一直持续到下一个传入事件
@@ -31,6 +45,8 @@ public class JavaIoNio {
             }
             Set<SelectionKey> readKeys = selector.selectedKeys();
             Iterator<SelectionKey> iterator = readKeys.iterator();
+
+            //---------------------------------------------------------
             while (iterator.hasNext()) {
                 SelectionKey key = iterator.next();
                 iterator.remove();
@@ -59,6 +75,8 @@ public class JavaIoNio {
                     }
                 }
             }
+            //---------------------------------------------------------
         }
+        //---------------------------------------------------------
     }
 }
