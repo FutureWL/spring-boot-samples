@@ -1,0 +1,8 @@
+package io.github.futurewl.attr;
+
+import io.github.futurewl.NettyChannel;
+import io.netty.util.AttributeKey;
+
+public class AttributeMapConstant {
+    public static final AttributeKey<NettyChannel> NETTY_CHANNEL_KEY = AttributeKey.valueOf("netty.channel");
+}
