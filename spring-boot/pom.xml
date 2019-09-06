@@ -19,7 +19,7 @@
 <!--        <module>spring-boot-2.1-cache</module>-->
 <!--        <module>spring-boot-2.1-data</module>-->
 <!--        <module>spring-boot-2.1-web</module>-->
-<!--        <module>spring-boot-2.1-netty</module>-->
+        <module>spring-boot-2.1-netty</module>
 <!--        <module>spring-boot-2.1-mq</module>-->
 <!--        <module>spring-boot-2.1-angular</module>-->
 <!--        <module>spring-boot-2.1-starter</module>-->

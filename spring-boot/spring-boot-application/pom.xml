@@ -16,12 +16,19 @@
         <module>spring-boot-application-commandlinerunner</module>
         <module>spring-boot-application-importxml</module>
         <module>spring-boot-application-lombok</module>
+        <module>spring-boot-application-netty</module>
+        <module>spring-boot-application-starter</module>
+        <module>spring-boot-application-poi</module>
     </modules>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
     </dependencies>
 

@@ -14,30 +14,35 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- netty version -->
+        <netty.version>4.1.39.Final</netty.version>
         <!-- spring boot version -->
         <spring-boot-1-5-x.version>1.5.21.RELEASE</spring-boot-1-5-x.version>
         <spring-boot-2-0-x.version>2.0.9.RELEASE</spring-boot-2-0-x.version>
         <spring-boot-2-1-x.version>2.1.7.RELEASE</spring-boot-2-1-x.version>
         <!-- spring cloud greenwich version -->
         <spring-cloud-greenwich.version>Greenwich.SR2</spring-cloud-greenwich.version>
-        <spring-cloud-greenwich-spring-boot.version>${spring-boot-2-1-x.version}</spring-cloud-greenwich-spring-boot.version>
+        <spring-cloud-greenwich-spring-boot.version>${spring-boot-2-1-x.version}
+        </spring-cloud-greenwich-spring-boot.version>
         <!-- spring cloud finchley version -->
         <spring-cloud-finchley.version>Finchley.SR3</spring-cloud-finchley.version>
-        <spring-cloud-finchley-spring-boot.version>${spring-boot-2-0-x.version}</spring-cloud-finchley-spring-boot.version>
+        <spring-cloud-finchley-spring-boot.version>${spring-boot-2-0-x.version}
+        </spring-cloud-finchley-spring-boot.version>
         <!-- spring cloud edgware version -->
         <spring-cloud-edgware.version>Edgware.SR6</spring-cloud-edgware.version>
-        <spring-cloud-edgware-spring-boot.version>${spring-boot-1-5-x.version}</spring-cloud-edgware-spring-boot.version>
+        <spring-cloud-edgware-spring-boot.version>${spring-boot-1-5-x.version}
+        </spring-cloud-edgware-spring-boot.version>
     </properties>
 
     <modules>
         <module>spring-boot</module>
         <module>spring-cloud</module>
-        <module>spring-data</module>
+        <!--        <module>spring-data</module>-->
         <module>spring-framework</module>
-        <module>struts2-hibernate-spring</module>
+        <!--        <module>struts2-hibernate-spring</module>-->
         <module>java</module>
-        <module>hibernate</module>
-        <module>netty</module>
+        <!--        <module>hibernate</module>-->
+        <!--        <module>netty</module>-->
     </modules>
 
 </project>
