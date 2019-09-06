@@ -12,17 +12,23 @@
     <artifactId>spring-boot</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>spring-boot-2.0-vue</module>
-        <module>spring-boot-2.1-admin</module>
-        <module>spring-boot-2.1-application</module>
-        <module>spring-boot-2.1-security</module>
-        <module>spring-boot-2.1-cache</module>
-        <module>spring-boot-2.1-data</module>
-        <module>spring-boot-2.1-web</module>
-        <module>spring-boot-2.1-netty</module>
-        <module>spring-boot-2.1-mq</module>
-        <module>spring-boot-2.1-angular</module>
-        <module>spring-boot-2.1-starter</module>
+<!--        <module>spring-boot-2.0-vue</module>-->
+<!--        <module>spring-boot-2.1-admin</module>-->
+<!--        <module>spring-boot-2.1-application</module>-->
+<!--        <module>spring-boot-2.1-security</module>-->
+<!--        <module>spring-boot-2.1-cache</module>-->
+<!--        <module>spring-boot-2.1-data</module>-->
+<!--        <module>spring-boot-2.1-web</module>-->
+<!--        <module>spring-boot-2.1-netty</module>-->
+<!--        <module>spring-boot-2.1-mq</module>-->
+<!--        <module>spring-boot-2.1-angular</module>-->
+<!--        <module>spring-boot-2.1-starter</module>-->
+        <module>spring-boot-application</module>
+        <module>spring-boot-web-application</module>
+        <module>spring-boot-data-application</module>
+        <module>spring-boot-cache-application</module>
+        <module>spring-boot-mq-application</module>
+        <module>spring-boot-webflux-application</module>
     </modules>
 
     <dependencyManagement>
