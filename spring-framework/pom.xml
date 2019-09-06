@@ -13,9 +13,25 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>spring-4.3</module>
-        <module>spring-5.0</module>
-        <module>spring-5.1</module>
+        <module>spring-framework-bean</module>
+        <module>spring-framework-aop</module>
+        <module>spring-framework-jdbc</module>
+        <module>spring-framework-mvc</module>
+        <module>spring-framework-transaction</module>
+        <module>spring-framework-log</module>
     </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-framework-bom</artifactId>
+                <version>4.3.24.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
 
 </project>

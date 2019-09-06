@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>spring-boot</artifactId>
+        <groupId>io.github.futurewl</groupId>
+        <version>190703</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>spring-boot-old</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <!--        <module>spring-boot-2.0-vue</module>-->
+        <!--        <module>spring-boot-2.1-admin</module>-->
+        <!--        <module>spring-boot-2.1-application</module>-->
+        <!--        <module>spring-boot-2.1-cache</module>-->
+        <!--        <module>spring-boot-2.1-data</module>-->
+        <!--        <module>spring-boot-2.1-web</module>-->
+        <!--        <module>spring-boot-2.1-netty</module>-->
+        <!--        <module>spring-boot-2.1-mq</module>-->
+        <!--        <module>spring-boot-2.1-angular</module>-->
+        <!--        <module>spring-boot-2.1-starter</module>-->
+    </modules>
+
+</project>
