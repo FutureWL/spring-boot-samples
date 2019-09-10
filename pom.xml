@@ -9,17 +9,22 @@
     <version>190703</version>
     <packaging>pom</packaging>
 
+    <name>00-backend-java-samples</name>
+
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- activiti version -->
+        <!--        <activiti.version>5.23.0</activiti.version>-->
+        <activiti.version>6.0.0</activiti.version>
         <!-- netty version -->
         <netty.version>4.1.39.Final</netty.version>
         <!-- spring boot version -->
         <spring-boot-1-5-x.version>1.5.21.RELEASE</spring-boot-1-5-x.version>
         <spring-boot-2-0-x.version>2.0.9.RELEASE</spring-boot-2-0-x.version>
-        <spring-boot-2-1-x.version>2.1.7.RELEASE</spring-boot-2-1-x.version>
+        <spring-boot-2-1-x.version>2.1.8.RELEASE</spring-boot-2-1-x.version>
         <!-- spring cloud greenwich version -->
         <spring-cloud-greenwich.version>Greenwich.SR2</spring-cloud-greenwich.version>
         <spring-cloud-greenwich-spring-boot.version>${spring-boot-2-1-x.version}
@@ -41,8 +46,20 @@
         <module>spring-framework</module>
         <!--        <module>struts2-hibernate-spring</module>-->
         <module>java</module>
+        <module>activiti</module>
         <!--        <module>hibernate</module>-->
         <!--        <module>netty</module>-->
     </modules>
+
+    <repositories>
+        <repository>
+            <id>aliyun</id>
+            <name>aliyun Repository</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
 </project>

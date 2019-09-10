@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" targetNamespace="http://futurewl.github.io/activiti"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI">
+    <process id="process1" name="process1">
+        <startEvent id="startevent1" name="Start"/>
+        <userTask id="usertask1" name="Expense Request"/>
+        <userTask id="usertask3" name="Handle Request"/>
+        <endEvent id="endevent1" name="End"/>
+        <sequenceFlow id="flow1" sourceRef="startevent1" targetRef="usertask1"/>
+        <sequenceFlow id="flow2" sourceRef="usertask1" targetRef="usertask3"/>
+        <sequenceFlow id="flow3" sourceRef="usertask3" targetRef="endevent1"/>
+    </process>
+    <bpmndi:BPMNDiagram id="BPMNDiagram_process1">
+        <bpmndi:BPMNPlane bpmnElement="process1" id="BPMNPlane_process1">
+            <bpmndi:BPMNShape bpmnElement="startevent1" id="BPMNShape_startevent1">
+                <omgdc:Bounds x="150" y="190" width="35" height="35"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="usertask1" id="BPMNShape_usertask1">
+                <omgdc:Bounds x="230" y="180" width="55" height="150"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="usertask3" id="BPMNShape_usertask3">
+                <omgdc:Bounds x="380" y="180" width="55" height="150"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="endevent1" id="BPMNShape_endevent1">
+                <omgdc:Bounds x="530" y="190" width="35" height="35"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNEdge bpmnElement="flow1" id="BPMNEdge_flow1">
+                <omgdi:waypoint x="185" y="207"/>
+                <omgdi:waypoint x="230" y="207"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="flow2" id="BPMNEdge_flow2">
+                <omgdi:waypoint x="335" y="207"/>
+                <omgdi:waypoint x="380" y="207"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="flow3" id="BPMNEdge_flow3">
+                <omgdi:waypoint x="485" y="207"/>
+                <omgdi:waypoint x="530" y="207"/>
+            </bpmndi:BPMNEdge>
+        </bpmndi:BPMNPlane>
+    </bpmndi:BPMNDiagram>
+</definitions>
