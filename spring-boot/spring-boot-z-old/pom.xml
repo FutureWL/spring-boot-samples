@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-boot-old</artifactId>
+    <artifactId>spring-boot-z-old</artifactId>
     <packaging>pom</packaging>
 
     <modules>
