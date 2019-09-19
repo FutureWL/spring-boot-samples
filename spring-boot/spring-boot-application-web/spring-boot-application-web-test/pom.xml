@@ -3,22 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>spring-boot</artifactId>
+        <artifactId>spring-boot-application-web</artifactId>
         <groupId>io.github.futurewl</groupId>
         <version>190703</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-boot-application-web</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>spring-boot-application-web-1</module>
-        <module>spring-boot-application-web-2</module>
-        <module>spring-boot-application-web-thymeleaf</module>
-        <module>spring-boot-application-web-freemarker</module>
-        <module>spring-boot-application-web-cors</module>
-        <module>spring-boot-application-web-test</module>
-    </modules>
+    <artifactId>spring-boot-application-web-test</artifactId>
 
     <dependencies>
         <dependency>
@@ -26,8 +17,9 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
