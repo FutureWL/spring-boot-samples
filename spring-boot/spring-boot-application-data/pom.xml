@@ -9,16 +9,16 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-boot-data-application</artifactId>
+    <artifactId>spring-boot-application-data</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>spring-boot-data-application-jdbc</module>
-        <module>spring-boot-data-application-mybatis</module>
-        <module>spring-boot-data-application-mybatis-plus</module>
-        <module>spring-boot-data-application-jpa</module>
-        <module>spring-boot-data-application-rest</module>
-        <module>spring-boot-data-application-mongodb</module>
-        <module>spring-boot-data-application-elasticsearch</module>
+        <module>spring-boot-application-data-jdbc</module>
+        <module>spring-boot-application-data-mybatis</module>
+        <module>spring-boot-application-data-mybatis-plus</module>
+        <module>spring-boot-application-data-jpa</module>
+        <module>spring-boot-application-data-rest</module>
+        <module>spring-boot-application-data-mongodb</module>
+        <module>spring-boot-application-data-elasticsearch</module>
     </modules>
 
 

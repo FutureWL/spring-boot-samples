@@ -13,13 +13,13 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-boot-application</module>
-        <module>spring-boot-web-application</module>
-        <module>spring-boot-data-application</module>
-        <module>spring-boot-cache-application</module>
-        <module>spring-boot-mq-application</module>
-        <module>spring-boot-webflux-application</module>
-        <module>spring-boot-security-application</module>
-        <module>spring-boot-test-application</module>
+        <module>spring-boot-application-web</module>
+        <module>spring-boot-application-data</module>
+        <module>spring-boot-application-cache</module>
+        <module>spring-boot-application-mq</module>
+        <module>spring-boot-application-webflux</module>
+        <module>spring-boot-application-security</module>
+        <module>spring-boot-application-test</module>
     </modules>
 
     <dependencies>
