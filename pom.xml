@@ -47,6 +47,7 @@
         <!--        <module>struts2-hibernate-spring</module>-->
         <module>java</module>
         <module>activiti</module>
+        <module>junit</module>
         <!--        <module>hibernate</module>-->
         <!--        <module>netty</module>-->
     </modules>
