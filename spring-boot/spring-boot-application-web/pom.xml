@@ -13,11 +13,14 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-boot-application-web-1</module>
-        <module>spring-boot-application-web-2</module>
+        <module>spring-boot-application-web-json</module>
         <module>spring-boot-application-web-thymeleaf</module>
         <module>spring-boot-application-web-freemarker</module>
         <module>spring-boot-application-web-cors</module>
         <module>spring-boot-application-web-test</module>
+        <module>spring-boot-application-web-json-gson</module>
+        <module>spring-boot-application-web-json-fastjson</module>
+        <module>spring-boot-application-web-static</module>
     </modules>
 
     <dependencies>
