@@ -1,2 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=/\
-  io.github.futurewl.spring.boot.starter.netty.server.SpringBootStarterNettyServerAutoConfiguration

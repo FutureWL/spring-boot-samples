@@ -19,7 +19,6 @@
         <module>spring-boot-mq-application</module>
         <module>spring-boot-webflux-application</module>
         <module>spring-boot-security-application</module>
-        <module>spring-boot-z-old</module>
     </modules>
 
     <dependencies>
