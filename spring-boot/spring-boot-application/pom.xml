@@ -19,6 +19,7 @@
         <module>spring-boot-application-netty</module>
         <module>spring-boot-application-starter</module>
         <module>spring-boot-application-poi</module>
+        <module>spring-boot-application-actuator</module>
     </modules>
 
     <dependencies>

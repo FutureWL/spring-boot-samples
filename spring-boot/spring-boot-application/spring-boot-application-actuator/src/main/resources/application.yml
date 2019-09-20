@@ -1,0 +1,11 @@
+management:
+  endpoint:
+    health:
+      show-details: when_authorized
+      roles: ADMIN
+spring:
+  security:
+    user:
+      name: weilai
+      password: weilai
+      roles: ADMIN
