@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var source = new EventSource("/sse/get_data")
+        source.onmessage = function (ev) {
+            console.info(ev.data)
+            document.getElementById('result').innerText = ev.data
+        }
+    </script>
+</head>
+<body>
+<div>xdclass test</div>
+<div id="result"></div>
+</body>
+</html>

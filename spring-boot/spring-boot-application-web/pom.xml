@@ -26,6 +26,8 @@
         <module>spring-boot-application-web-controller-advice</module>
         <module>spring-boot-application-web-custom-error-page</module>
         <module>spring-boot-application-web-servlet-filter-listener</module>
+        <module>spring-boot-application-web-sse</module>
+        <module>spring-boot-application-web-websocket</module>
     </modules>
 
     <dependencies>
