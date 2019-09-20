@@ -21,6 +21,11 @@
         <module>spring-boot-application-web-json-gson</module>
         <module>spring-boot-application-web-json-fastjson</module>
         <module>spring-boot-application-web-static</module>
+        <module>spring-boot-application-web-file</module>
+        <module>spring-boot-application-web-file-multipart</module>
+        <module>spring-boot-application-web-controller-advice</module>
+        <module>spring-boot-application-web-custom-error-page</module>
+        <module>spring-boot-application-web-servlet-filter-listener</module>
     </modules>
 
     <dependencies>
