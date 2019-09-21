@@ -6,7 +6,7 @@
 
     <groupId>io.github.futurewl</groupId>
     <artifactId>backend-java-samples</artifactId>
-    <version>190703</version>
+    <version>190921</version>
     <packaging>pom</packaging>
 
     <name>00-backend-java-samples</name>
