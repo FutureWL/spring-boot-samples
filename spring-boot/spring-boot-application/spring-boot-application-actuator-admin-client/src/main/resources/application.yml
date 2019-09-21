@@ -4,7 +4,8 @@ spring:
   boot:
     admin:
       client:
-        url: http://localhost:8080
+#        url: http://47.96.122.117:11001
+        url: http://127.0.0.1:11001
 management:
   endpoints:
     web:
