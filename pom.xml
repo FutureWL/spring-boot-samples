@@ -48,6 +48,7 @@
         <module>java</module>
         <module>activiti</module>
         <module>junit</module>
+        <module>netty</module>
         <!--        <module>hibernate</module>-->
         <!--        <module>netty</module>-->
     </modules>
