@@ -29,6 +29,8 @@
         <module>spring-boot-application-web-sse</module>
         <module>spring-boot-application-web-websocket</module>
         <module>spring-boot-application-web-websocket-point-to-point</module>
+        <module>spring-boot-application-web-swagger2</module>
+        <module>spring-boot-application-web-validation</module>
     </modules>
 
     <dependencies>

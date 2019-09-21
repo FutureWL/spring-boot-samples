@@ -22,6 +22,7 @@
         <module>spring-boot-application-actuator</module>
         <module>spring-boot-application-actuator-admin</module>
         <module>spring-boot-application-actuator-admin-client</module>
+        <module>spring-boot-application-quartz</module>
     </modules>
 
     <dependencies>

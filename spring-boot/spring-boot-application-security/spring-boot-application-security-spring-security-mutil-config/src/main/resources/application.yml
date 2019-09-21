@@ -1,0 +1,6 @@
+spring:
+  security:
+    user:
+      name: weilai
+      password: weilai
+      roles: admin

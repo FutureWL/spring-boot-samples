@@ -12,8 +12,10 @@
     <artifactId>spring-boot-security-application</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>spring-boot-application-security-spring-security</module>
-        <module>spring-boot-application-security-shiro</module>
         <module>spring-boot-application-security-oauth2</module>
+        <module>spring-boot-application-security-shiro</module>
+        <module>spring-boot-application-security-spring-security</module>
+        <module>spring-boot-application-security-spring-security-mutil-config</module>
+        <module>spring-boot-application-security-spring-security-database</module>
     </modules>
 </project>
