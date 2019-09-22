@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>msa-weather-data-eureka</artifactId>
-    <name>spring-cloud-finchley-weather-msa-weather-data-eureka</name>
+    <name>spring-cloud-finchley-weather-msa-data-eureka</name>
 
     <dependencies>
         <dependency>

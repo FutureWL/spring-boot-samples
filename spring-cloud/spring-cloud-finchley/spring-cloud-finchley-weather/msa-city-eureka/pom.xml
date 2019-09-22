@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>msa-weather-city-eureka</artifactId>
-    <name>spring-cloud-finchley-weather-msa-weather-city-eureka</name>
+    <name>spring-cloud-finchley-weather-msa-city-eureka</name>
 
     <dependencies>
         <dependency>

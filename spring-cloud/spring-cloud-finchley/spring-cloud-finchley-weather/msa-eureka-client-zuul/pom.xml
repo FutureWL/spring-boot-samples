@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>msa-weather-eureka-client-zuul</artifactId>
-    <name>spring-cloud-finchley-weather-msa-weather-eureka-client-zuul</name>
+    <name>spring-cloud-finchley-weather-msa-eureka-client-zuul</name>
 
     <dependencies>
         <dependency>

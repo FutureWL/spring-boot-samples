@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>msa-weather-collection-eureka-feign</artifactId>
-    <name>spring-cloud-finchley-weather-msa-weather-collection-eureka-feign</name>
+    <name>spring-cloud-finchley-weather-msa-collection-eureka-feign</name>
 
     <dependencies>
         <dependency>

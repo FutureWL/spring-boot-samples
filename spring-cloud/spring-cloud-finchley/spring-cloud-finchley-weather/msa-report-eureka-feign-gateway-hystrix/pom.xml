@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>msa-weather-report-eureka-feign-gateway-hystrix</artifactId>
-    <name>spring-cloud-finchley-weather-msa-weather-report-eureka-feign-gateway-hystrix</name>
+    <name>spring-cloud-finchley-weather-msa-report-eureka-feign-gateway-hystrix</name>
 
     <dependencies>
         <dependency>

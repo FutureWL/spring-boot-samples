@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>msa-weather-collection-server</artifactId>
-    <name>spring-cloud-finchley-weather-msa-weather-collection-server</name>
+    <name>spring-cloud-finchley-weather-msa-collection-server</name>
 
     <dependencies>
         <dependency>
