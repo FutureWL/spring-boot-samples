@@ -15,41 +15,41 @@
         <module>hello-world</module>
         <module>hello-world-rest</module>
         <module>hello-world-log</module>
-        <!-- micro-weather -->
-        <module>micro-weather-basic</module>
-        <module>micro-weather-quartz</module>
-        <module>micro-weather-redis</module>
-        <module>micro-weather-report</module>
-        <!-- micro-weather-eureka -->
-        <module>micro-weather-eureka-server</module>
-        <module>micro-weather-eureka-client</module>
-        <module>micro-weather-eureka-client-ribbon</module>
-        <module>micro-weather-eureka-client-feign</module>
-        <module>micro-weather-eureka-client-zuul</module>
-        <module>micro-weather-eureka-client-feign-hystrix</module>
-        <!-- micro-weather-config-->
-        <module>micro-weather-config-server</module>
-        <module>micro-weather-config-server-bus</module>
-        <module>micro-weather-config-client</module>
-        <module>micro-weather-config-client-bus</module>
-        <!-- msa-weather -->
-        <!-- msa-weather-collection -->
-        <module>msa-weather-collection-server</module>
-        <module>msa-weather-collection-eureka</module>
-        <module>msa-weather-collection-eureka-feign</module>
-        <!-- msa-weather-city-->
-        <module>msa-weather-city-server</module>
-        <module>msa-weather-city-eureka</module>
-        <!-- msa-weather-data -->
-        <module>msa-weather-data-server</module>
-        <module>msa-weather-data-eureka</module>
-        <module>msa-weather-eureka-client-zuul</module>
-        <!-- msa-weather-report -->
-        <module>msa-weather-report-server</module>
-        <module>msa-weather-report-eureka</module>
-        <module>msa-weather-report-eureka-feign</module>
-        <module>msa-weather-report-eureka-feign-gateway</module>
-        <module>msa-weather-report-eureka-feign-gateway-hystrix</module>
+        <!-- micro -->
+        <module>micro-basic</module>
+        <module>micro-quartz</module>
+        <module>micro-redis</module>
+        <module>micro-report</module>
+        <!-- micro-eureka -->
+        <module>micro-eureka-server</module>
+        <module>micro-eureka-client</module>
+        <module>micro-eureka-client-ribbon</module>
+        <module>micro-eureka-client-feign</module>
+        <module>micro-eureka-client-zuul</module>
+        <module>micro-eureka-client-feign-hystrix</module>
+        <!-- micro-config-->
+        <module>micro-config-server</module>
+        <module>micro-config-server-bus</module>
+        <module>micro-config-client</module>
+        <module>micro-config-client-bus</module>
+        <!-- msa -->
+        <!-- msa-collection -->
+        <module>msa-collection-server</module>
+        <module>msa-collection-eureka</module>
+        <module>msa-collection-eureka-feign</module>
+        <!-- msa-city-->
+        <module>msa-city-server</module>
+        <module>msa-city-eureka</module>
+        <!-- msa-data -->
+        <module>msa-data-server</module>
+        <module>msa-data-eureka</module>
+        <module>msa-eureka-client-zuul</module>
+        <!-- msa-report -->
+        <module>msa-report-server</module>
+        <module>msa-report-eureka</module>
+        <module>msa-report-eureka-feign</module>
+        <module>msa-report-eureka-feign-gateway</module>
+        <module>msa-report-eureka-feign-gateway-hystrix</module>
     </modules>
 
 

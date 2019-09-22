@@ -12,7 +12,7 @@ import org.springframework.web.client.RestTemplate;
  * @version 1.0
  */
 @SpringBootApplication
-public class SpringCloudMicroserviceSimpleConsumerUserApplication {
+public class SpringCloudApplicationMicroserviceSimpleConsumerUser {
 
     @Bean
     public RestTemplate restTemplate() {
@@ -20,6 +20,6 @@ public class SpringCloudMicroserviceSimpleConsumerUserApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringCloudMicroserviceSimpleConsumerUserApplication.class, args);
+        SpringApplication.run(SpringCloudApplicationMicroserviceSimpleConsumerUser.class, args);
     }
 }
