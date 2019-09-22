@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-boot-cache-application</artifactId>
+    <artifactId>spring-boot-application-cache</artifactId>
     <packaging>pom</packaging>
     <modules>
         <module>spring-boot-cache-application-redis</module>

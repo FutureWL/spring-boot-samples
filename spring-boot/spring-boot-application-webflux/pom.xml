@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-boot-webflux-application</artifactId>
+    <artifactId>spring-boot-application-webflux</artifactId>
 
 
 </project>
