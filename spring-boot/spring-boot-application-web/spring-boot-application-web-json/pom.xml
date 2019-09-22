@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-boot-application-web-2</artifactId>
+    <artifactId>spring-boot-application-web-json</artifactId>
 
 
 </project>
