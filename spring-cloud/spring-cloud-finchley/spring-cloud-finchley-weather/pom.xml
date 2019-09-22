@@ -12,44 +12,44 @@
     <artifactId>spring-cloud-finchley-weather</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>spring-cloud-finchley-weather-hello-world</module>
-        <module>spring-cloud-finchley-weather-hello-world-rest</module>
-        <module>spring-cloud-finchley-weather-hello-world-log</module>
+        <module>hello-world</module>
+        <module>hello-world-rest</module>
+        <module>hello-world-log</module>
         <!-- micro-weather -->
-        <module>spring-cloud-finchley-weather-micro-weather-basic</module>
-        <module>spring-cloud-finchley-weather-micro-weather-quartz</module>
-        <module>spring-cloud-finchley-weather-micro-weather-redis</module>
-        <module>spring-cloud-finchley-weather-micro-weather-report</module>
+        <module>micro-weather-basic</module>
+        <module>micro-weather-quartz</module>
+        <module>micro-weather-redis</module>
+        <module>micro-weather-report</module>
         <!-- micro-weather-eureka -->
-        <module>spring-cloud-finchley-weather-micro-weather-eureka-server</module>
-        <module>spring-cloud-finchley-weather-micro-weather-eureka-client</module>
-        <module>spring-cloud-finchley-weather-micro-weather-eureka-client-ribbon</module>
-        <module>spring-cloud-finchley-weather-micro-weather-eureka-client-feign</module>
-        <module>spring-cloud-finchley-weather-micro-weather-eureka-client-zuul</module>
-        <module>spring-cloud-finchley-weather-micro-weather-eureka-client-feign-hystrix</module>
+        <module>micro-weather-eureka-server</module>
+        <module>micro-weather-eureka-client</module>
+        <module>micro-weather-eureka-client-ribbon</module>
+        <module>micro-weather-eureka-client-feign</module>
+        <module>micro-weather-eureka-client-zuul</module>
+        <module>micro-weather-eureka-client-feign-hystrix</module>
         <!-- micro-weather-config-->
-        <module>spring-cloud-finchley-weather-micro-weather-config-server</module>
-        <module>spring-cloud-finchley-weather-micro-weather-config-server-bus</module>
-        <module>spring-cloud-finchley-weather-micro-weather-config-client</module>
-        <module>spring-cloud-finchley-weather-micro-weather-config-client-bus</module>
+        <module>micro-weather-config-server</module>
+        <module>micro-weather-config-server-bus</module>
+        <module>micro-weather-config-client</module>
+        <module>micro-weather-config-client-bus</module>
         <!-- msa-weather -->
         <!-- msa-weather-collection -->
-        <module>spring-cloud-finchley-weather-msa-weather-collection-server</module>
-        <module>spring-cloud-finchley-weather-msa-weather-collection-eureka</module>
-        <module>spring-cloud-finchley-weather-msa-weather-collection-eureka-feign</module>
+        <module>msa-weather-collection-server</module>
+        <module>msa-weather-collection-eureka</module>
+        <module>msa-weather-collection-eureka-feign</module>
         <!-- msa-weather-city-->
-        <module>spring-cloud-finchley-weather-msa-weather-city-server</module>
-        <module>spring-cloud-finchley-weather-msa-weather-city-eureka</module>
+        <module>msa-weather-city-server</module>
+        <module>msa-weather-city-eureka</module>
         <!-- msa-weather-data -->
-        <module>spring-cloud-finchley-weather-msa-weather-data-server</module>
-        <module>spring-cloud-finchley-weather-msa-weather-data-eureka</module>
-        <module>spring-cloud-finchley-weather-msa-weather-eureka-client-zuul</module>
+        <module>msa-weather-data-server</module>
+        <module>msa-weather-data-eureka</module>
+        <module>msa-weather-eureka-client-zuul</module>
         <!-- msa-weather-report -->
-        <module>spring-cloud-finchley-weather-msa-weather-report-server</module>
-        <module>spring-cloud-finchley-weather-msa-weather-report-eureka</module>
-        <module>spring-cloud-finchley-weather-msa-weather-report-eureka-feign</module>
-        <module>spring-cloud-finchley-weather-msa-weather-report-eureka-feign-gateway</module>
-        <module>spring-cloud-finchley-weather-msa-weather-report-eureka-feign-gateway-hystrix</module>
+        <module>msa-weather-report-server</module>
+        <module>msa-weather-report-eureka</module>
+        <module>msa-weather-report-eureka-feign</module>
+        <module>msa-weather-report-eureka-feign-gateway</module>
+        <module>msa-weather-report-eureka-feign-gateway-hystrix</module>
     </modules>
 
 
