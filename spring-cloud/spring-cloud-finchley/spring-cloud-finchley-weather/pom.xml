@@ -15,8 +15,19 @@
         <module>spring-cloud-finchley-weather-hello-world</module>
         <module>spring-cloud-finchley-weather-hello-world-rest</module>
         <module>spring-cloud-finchley-weather-hello-world-log</module>
-        <module>spring-cloud-finchley-weather-micro-weather</module>
-        <module>spring-cloud-finchley-weather-msa-weather</module>
+        <!-- micro-weather -->
+        <module>spring-cloud-finchley-weather-micro-weather-basic</module>
+        <module>spring-cloud-finchley-weather-micro-weather-quartz</module>
+        <module>spring-cloud-finchley-weather-micro-weather-redis</module>
+        <module>spring-cloud-finchley-weather-micro-weather-report</module>
+        <module>spring-cloud-finchley-weather-micro-weather-eureka</module>
+        <module>spring-cloud-finchley-weather-micro-weather-config</module>
+        <!-- msa-weather -->
+        <module>spring-cloud-finchley-weather-msa-weather-collection</module>
+        <module>spring-cloud-finchley-weather-msa-weather-city</module>
+        <module>spring-cloud-finchley-weather-msa-weather-data</module>
+        <module>spring-cloud-finchley-weather-msa-weather-report</module>
+        <module>spring-cloud-finchley-weather-msa-weather-eureka-client-zuul</module>
     </modules>
 
 
