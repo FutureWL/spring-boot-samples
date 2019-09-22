@@ -40,17 +40,13 @@
     </properties>
 
     <modules>
+        <module>activiti</module>
+        <module>java</module>
+        <module>junit</module>
+        <module>netty</module>
         <module>spring</module>
         <module>spring-boot</module>
         <module>spring-cloud</module>
-        <!--        <module>spring-data</module>-->
-        <!--        <module>struts2-hibernate-spring</module>-->
-        <module>java</module>
-        <module>activiti</module>
-        <module>junit</module>
-        <module>netty</module>
-        <!--        <module>hibernate</module>-->
-        <!--        <module>netty</module>-->
     </modules>
 
     <repositories>

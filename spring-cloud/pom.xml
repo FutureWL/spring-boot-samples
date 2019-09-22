@@ -11,6 +11,7 @@
 
     <artifactId>spring-cloud</artifactId>
     <packaging>pom</packaging>
+
     <modules>
         <module>spring-cloud-angel</module>
         <module>spring-cloud-brixton</module>
@@ -21,16 +22,5 @@
         <module>spring-cloud-greenwich</module>
         <module>spring-cloud-hoxton</module>
     </modules>
-
-    <repositories>
-        <repository>
-            <id>aliyun</id>
-            <name>aliyun Repository</name>
-            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
 
 </project>

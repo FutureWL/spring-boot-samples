@@ -12,7 +12,6 @@
     <artifactId>hello-world</artifactId>
     <name>spring-cloud-finchley-weather-hello-world</name>
 
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
