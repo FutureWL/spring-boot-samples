@@ -17,7 +17,8 @@
         <module>spring-cloud-ribbon</module>
         <module>spring-cloud-zuul</module>
         <module>spring-cloud-sleuth</module>
-        <module>spring-cloud-microservice</module>
+        <module>spring-cloud-microservice-simple-provider-user</module>
+        <module>spring-cloud-microservice-simple-consumer-user</module>
         <module>spring-cloud-eureka-client</module>
     </modules>
 
