@@ -20,7 +20,7 @@
 
     <modules>
         <module>activiti</module>
-        <module>java</module>
+        <module>java-se</module>
         <module>common</module>
         <module>spring</module>
         <module>spring-boot</module>
