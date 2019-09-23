@@ -17,6 +17,7 @@
     <modules>
         <module>design-principles-ocp</module>
         <module>design-principles-dip</module>
+        <module>design-principles-srp</module>
     </modules>
 
 
