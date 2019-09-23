@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>design-principles</artifactId>
+        <groupId>io.github.futurewl</groupId>
+        <version>190921</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>design-principles-isp</artifactId>
+
+    <description>
+        接口隔离原则：
+        1. 一个类对另一个类的依赖应该建立在最小的接口之上
+        2. 建立单一接口，不要建立庞大臃肿的接口
+        3. 尽量细化接口，接口中的方法尽量少（不是越少越好，要适度）
+    </description>
+
+</project>

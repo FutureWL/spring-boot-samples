@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>design-principles</artifactId>
+        <groupId>io.github.futurewl</groupId>
+        <version>190921</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>design-principles-lod</artifactId>
+
+    <description>
+        迪米特原则：
+        又称 最少知道原则，指一个对象应该对其他对象保持最少的了解，尽量降低类与类之间的耦合度。迪米特原则主要强调：只和朋友交流，不和陌生人说话。
+        出现在成员变量、方法的输入、输出参数中的类都称为朋友类，而出现在方法体内部的类不属于朋友类。
+    </description>
+
+</project>

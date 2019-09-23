@@ -27,6 +27,7 @@
         <module>spring-cloud</module>
         <module>net</module>
         <module>design-principles</module>
+        <module>java-ee</module>
     </modules>
 
     <repositories>

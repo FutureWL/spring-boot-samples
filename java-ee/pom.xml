@@ -9,19 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>design-principles</artifactId>
+    <artifactId>java-ee</artifactId>
     <packaging>pom</packaging>
-    <description>
-        软件架构设计原则
-    </description>
     <modules>
-        <module>design-principles-ocp</module>
-        <module>design-principles-dip</module>
-        <module>design-principles-srp</module>
-        <module>design-principles-isp</module>
-        <module>design-principles-lod</module>
-        <module>design-principles-lsp</module>
-        <module>design-principles-carp</module>
+        <module>java-ee-tomcat</module>
     </modules>
 
 
