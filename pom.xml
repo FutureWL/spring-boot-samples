@@ -28,6 +28,8 @@
         <module>net</module>
         <module>design-principles</module>
         <module>java-ee</module>
+        <module>data-structur</module>
+        <module>algorithmic-analysis</module>
     </modules>
 
     <repositories>
