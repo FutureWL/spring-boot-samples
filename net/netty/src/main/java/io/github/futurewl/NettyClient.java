@@ -11,9 +11,10 @@ import io.netty.util.CharsetUtil;
 
 public class NettyClient {
     public static void main(String[] args) throws InterruptedException {
-        String host = "47.96.122.117";
-//        String host = "localhost";
-        int port = 11010;
+//        String host = "47.96.122.117";
+//        int port = 11010;
+        String host = "localhost";
+        int port = 9989;
         Bootstrap bootstrap = new Bootstrap();
         final EventLoopGroup group = new NioEventLoopGroup();
         bootstrap.group(group).channel(NioSocketChannel.class).handler(new ChannelInitializer<SocketChannel>() {
