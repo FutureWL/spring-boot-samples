@@ -2,6 +2,7 @@ package io.github.futurewl;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
@@ -26,5 +27,12 @@ public class BookController {
         mv.addObject("books", books);
         mv.setViewName("books");
         return mv;
+    }
+
+
+    @GetMapping("/hello")
+    @ResponseBody
+    public String hello(){
+        return "hello";
     }
 }
