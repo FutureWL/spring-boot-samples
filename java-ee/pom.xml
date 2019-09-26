@@ -12,8 +12,22 @@
     <artifactId>java-ee</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>java-ee-tomcat</module>
+        <module>java-ee-servlet</module>
+        <module>java-ee-jsp</module>
+        <module>java-ee-session</module>
+        <module>java-ee-el</module>
+        <module>java-ee-jstl</module>
+        <module>java-ee-custom</module>
+        <module>java-ee-filter</module>
+        <module>java-ee-websocket</module>
+        <module>java-ee-log</module>
+        <module>java-ee-bean-validation</module>
+        <module>java-ee-spring-framework</module>
+        <module>java-ee-spring-framework-mvc</module>
+        <module>java-ee-spring-framework-i18n</module>
+        <module>java-ee-spring-framework-mq</module>
+        <module>java-ee-spring-framework-jpa</module>
+        <module>java-ee-spring-framework-security</module>
     </modules>
-
 
 </project>
