@@ -21,15 +21,10 @@
         <module>java-ee-tomcat-filter</module>
         <module>java-ee-tomcat-websocket</module>
         <module>java-ee-tomcat-log</module>
+        <module>java-ee-tomcat-bean-validation</module>
         <module>java-ee-tomcat-spring-framework</module>
         <module>java-ee-tomcat-spring-framework-mvc</module>
-        <module>java-ee-tomcat-spring-framework-mvc-csr</module>
         <module>java-ee-tomcat-spring-framework-i18n</module>
-        <module>java-ee-tomcat-bean-validation-jsr349</module>
-        <module>java-ee-tomcat-bean-validation-spring-framework</module>
-        <module>java-ee-tomcat-bean-validation-hibernate-validator</module>
-        <module>java-ee-tomcat-spring-framework-web-mvc-restful</module>
-        <module>java-ee-tomcat-spring-framework-web-service-soap</module>
         <module>java-ee-tomcat-spring-framework-mq</module>
         <module>java-ee-tomcat-spring-framework-jpa</module>
         <module>java-ee-tomcat-spring-framework-security</module>

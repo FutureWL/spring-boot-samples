@@ -15,55 +15,46 @@ import java.util.Vector;
         name = "storeServlet",
         urlPatterns = "/do/*"
 )
-public class ActivityServlet extends HttpServlet
-{
+public class ActivityServlet extends HttpServlet {
+
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException
-    {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         this.recordSessionActivity(request);
 
         this.viewSessionActivity(request, response);
     }
 
-    private void recordSessionActivity(HttpServletRequest request)
-    {
+    private void recordSessionActivity(HttpServletRequest request) {
         HttpSession session = request.getSession();
 
-        if(session.getAttribute("activity") == null)
+        if (session.getAttribute("activity") == null)
             session.setAttribute("activity", new Vector<PageVisit>());
         @SuppressWarnings("unchecked")
         Vector<PageVisit> visits =
-                (Vector<PageVisit>)session.getAttribute("activity");
+                (Vector<PageVisit>) session.getAttribute("activity");
 
-        if(!visits.isEmpty())
-        {
+        if (!visits.isEmpty()) {
             PageVisit last = visits.lastElement();
             last.setLeftTimestamp(System.currentTimeMillis());
         }
 
         PageVisit now = new PageVisit();
         now.setEnteredTimestamp(System.currentTimeMillis());
-        if(request.getQueryString() == null)
+        if (request.getQueryString() == null)
             now.setRequest(request.getRequestURL().toString());
         else
-            now.setRequest(request.getRequestURL()+"?"+request.getQueryString());
-        try
-        {
+            now.setRequest(request.getRequestURL() + "?" + request.getQueryString());
+        try {
             now.setIpAddress(InetAddress.getByName(request.getRemoteAddr()));
-        }
-        catch (UnknownHostException e)
-        {
+        } catch (UnknownHostException e) {
             e.printStackTrace();
         }
         visits.add(now);
     }
 
-    private void viewSessionActivity(HttpServletRequest request,
-                                     HttpServletResponse response)
-            throws ServletException, IOException
-    {
+    private void viewSessionActivity(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.getRequestDispatcher("/WEB-INF/jsp/view/viewSessionActivity.jsp")
-               .forward(request, response);
+                .forward(request, response);
     }
+
 }

@@ -10,7 +10,7 @@
         <groupId>io.github.futurewl</groupId>
         <version>190921</version>
     </parent>
-    <artifactId>java-ee-tomcat-address-book</artifactId>
+    <artifactId>java-ee-tomcat-jstl-address-book</artifactId>
     <packaging>war</packaging>
 
     <properties>

@@ -10,7 +10,7 @@
         <groupId>io.github.futurewl</groupId>
         <version>190921</version>
     </parent>
-    <artifactId>java-ee-tomcat-customer-support</artifactId>
+    <artifactId>java-ee-tomcat-jstl-customer-support-v5</artifactId>
     <packaging>war</packaging>
 
     <properties>
