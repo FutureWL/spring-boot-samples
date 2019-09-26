@@ -10,6 +10,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>java-ee-tomcat-jstl</artifactId>
-
+    <packaging>pom</packaging>
+    <modules>
+        <module>java-ee-tomcat-jstl-address-book</module>
+        <module>java-ee-tomcat-jstl-address-book-i18n</module>
+        <module>java-ee-tomcat-jstl-customer-support-v5</module>
+    </modules>
 
 </project>
