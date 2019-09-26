@@ -6,8 +6,14 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
 </head>
 <body>
+<h1>Hello World</h1>
+<button onclick="loadXMLDoc()">点击我</button>
+<p id="myDiv"></p>
+
+
 <table border="1">
     <tr>
         <td>图书编号</td>
@@ -20,5 +26,33 @@
         <td th:text="${book.author}"></td>
     </tr>
 </table>
+
+
+
+<script>
+    function loadXMLDoc()
+{
+	var xmlhttp;
+	if (window.XMLHttpRequest)
+	{
+		//  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+		xmlhttp=new XMLHttpRequest();
+	}
+	else
+	{
+		// IE6, IE5 浏览器执行代码
+		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	xmlhttp.onreadystatechange=function()
+	{
+		if (xmlhttp.readyState==4 && xmlhttp.status==200)
+		{
+			document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+		}
+	}
+	xmlhttp.open("GET","/hello",true);
+	xmlhttp.send();
+}
+</script>
 </body>
 </html>

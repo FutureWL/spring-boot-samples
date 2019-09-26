@@ -16,7 +16,7 @@
         <module>spring-cloud-angel</module>
         <module>spring-cloud-brixton</module>
         <module>spring-cloud-camden</module>
-        <module>spring-cloud-dalston</module>
+<!--        <module>spring-cloud-dalston</module>-->
         <module>spring-cloud-edgware</module>
         <module>spring-cloud-finchley</module>
         <module>spring-cloud-greenwich</module>

@@ -14,10 +14,18 @@ public class BookController {
 
     @GetMapping("/bookOps")
     public void bookOps() {
+
+
         Book book1 = new Book();
         book1.setName("西厢记");
         book1.setAuthor("王实甫");
+
+
+
         int i = bookService.addBook(book1);
+
+
+
         System.out.println("addBook>>>" + i);
         Book book2 = new Book();
         book2.setId(1);
