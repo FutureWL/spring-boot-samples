@@ -1,10 +1,7 @@
 package io.github.futurewl;
 
-/**
- * 附件
- */
-public class Attachment {
-
+public class Attachment
+{
     private String name;
 
     private byte[] contents;
