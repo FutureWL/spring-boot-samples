@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
     <parent>
-        <artifactId>java-ee-tomcat-jsp</artifactId>
+        <artifactId>java-ee-tomcat-session</artifactId>
         <groupId>io.github.futurewl</groupId>
         <version>190921</version>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>java-ee-tomcat-jsp-customer-support-v2</artifactId>
+    <artifactId>java-ee-tomcat-session-customer-support-v3</artifactId>
     <packaging>war</packaging>
 
     <properties>
@@ -61,6 +63,20 @@
     </dependencies>
 
     <build>
+        <sourceDirectory>src/main/java</sourceDirectory>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+        </resources>
+
+        <testSourceDirectory>src/test/java/unit</testSourceDirectory>
+        <testResources>
+            <testResource>
+                <directory>src/test/java/resources</directory>
+            </testResource>
+        </testResources>
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
