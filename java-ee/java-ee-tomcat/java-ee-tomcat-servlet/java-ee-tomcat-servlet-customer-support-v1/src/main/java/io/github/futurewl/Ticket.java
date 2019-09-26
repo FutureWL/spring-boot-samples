@@ -4,7 +4,8 @@ import java.util.Collection;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class Ticket {
+public class Ticket
+{
     private String customerName;
 
     private String subject;
