@@ -1,8 +1,5 @@
 package com.wrox.site.entities;
 
-import javax.persistence.*;
-import java.util.*;
-
 @Entity
 public class Employee {
     private long id;

@@ -12,7 +12,6 @@ import org.springframework.web.socket.server.standard.SpringConfigurator;
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 import javax.servlet.http.HttpSession;
-import javax.websocket.*;
 import javax.websocket.server.HandshakeRequest;
 import javax.websocket.server.PathParam;
 import javax.websocket.server.ServerEndpoint;

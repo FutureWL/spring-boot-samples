@@ -2,8 +2,6 @@ package com.wrox.site.entities;
 
 import org.hibernate.search.annotations.*;
 
-import javax.persistence.*;
-
 @Entity
 @Table(name = "Post")
 @Indexed

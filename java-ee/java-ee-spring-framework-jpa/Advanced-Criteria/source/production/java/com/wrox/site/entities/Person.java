@@ -1,6 +1,5 @@
 package com.wrox.site.entities;
 
-import javax.persistence.*;
 import java.sql.Date;
 
 @Entity

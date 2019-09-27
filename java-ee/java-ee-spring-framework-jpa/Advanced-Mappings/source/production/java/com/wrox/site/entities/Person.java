@@ -3,8 +3,6 @@ package com.wrox.site.entities;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import javax.persistence.*;
-
 @Entity
 public class Person {
     private long id;

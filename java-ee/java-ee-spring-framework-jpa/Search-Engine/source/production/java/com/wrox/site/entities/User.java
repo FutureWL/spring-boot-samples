@@ -2,8 +2,6 @@ package com.wrox.site.entities;
 
 import org.hibernate.search.annotations.Field;
 
-import javax.persistence.*;
-
 @Entity
 @Table(name = "UserPrincipal")
 public class User {

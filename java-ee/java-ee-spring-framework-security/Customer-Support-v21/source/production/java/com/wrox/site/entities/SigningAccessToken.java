@@ -4,7 +4,6 @@ import org.springframework.security.oauth2.common.OAuth2AccessToken;
 import org.springframework.security.oauth2.common.OAuth2RefreshToken;
 import org.springframework.security.oauth2.provider.OAuth2Authentication;
 
-import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.HashMap;

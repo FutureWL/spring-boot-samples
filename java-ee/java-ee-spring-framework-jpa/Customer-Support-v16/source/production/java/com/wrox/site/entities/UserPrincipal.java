@@ -1,6 +1,5 @@
 package com.wrox.site.entities;
 
-import javax.persistence.*;
 import javax.servlet.http.HttpSession;
 import java.io.Serializable;
 import java.security.Principal;

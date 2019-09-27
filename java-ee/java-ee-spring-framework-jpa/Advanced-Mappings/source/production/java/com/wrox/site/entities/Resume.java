@@ -1,7 +1,5 @@
 package com.wrox.site.entities;
 
-import javax.persistence.*;
-
 @Entity
 @Table(name = "Applicant_Resume")
 public class Resume {

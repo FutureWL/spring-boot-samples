@@ -1,6 +1,5 @@
 package com.wrox.site.entities;
 
-import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity(name = "PublisherEntity")

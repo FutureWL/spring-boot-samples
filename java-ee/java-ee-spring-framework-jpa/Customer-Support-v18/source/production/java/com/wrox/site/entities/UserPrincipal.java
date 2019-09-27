@@ -3,7 +3,6 @@ package com.wrox.site.entities;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import javax.persistence.*;
 import javax.servlet.http.HttpSession;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

@@ -14,8 +14,6 @@ import org.springframework.web.context.support.AnnotationConfigWebApplicationCon
 import org.springframework.web.servlet.DispatcherServlet;
 import org.springframework.ws.transport.http.MessageDispatcherServlet;
 
-import javax.servlet.*;
-
 @SuppressWarnings("unused")
 @Order(1)
 public class FrameworkBootstrap implements WebApplicationInitializer {

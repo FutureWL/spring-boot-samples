@@ -5,10 +5,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.wrox.site.converters.InstantConverter;
 import com.wrox.site.validation.NotBlank;
 
-import javax.persistence.*;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
-import javax.xml.bind.annotation.*;
 import java.io.Serializable;
 import java.time.Instant;
 import java.util.ArrayList;

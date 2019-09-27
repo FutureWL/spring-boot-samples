@@ -15,14 +15,12 @@ import org.springframework.security.oauth2.provider.authentication.OAuth2Authent
 import org.springframework.security.oauth2.provider.error.OAuth2AuthenticationEntryPoint;
 import org.springframework.security.web.AuthenticationEntryPoint;
 
-import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.util.*;
 
 public class OAuthSigningTokenAuthenticationFilter implements Filter {
     private static final Logger log = LogManager.getLogger();

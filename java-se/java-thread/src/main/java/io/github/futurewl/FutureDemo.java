@@ -1,7 +1,7 @@
 package io.github.futurewl;
 
-import java.util.concurrent.*;
 import java.util.concurrent.Executors;
+import java.util.concurrent.*;
 
 public class FutureDemo {
     public static void main(String[] args) {

@@ -1,18 +1,12 @@
 package io.github.futurewl.service;
 
-import io.github.futurewl.entity.Device;
-import io.github.futurewl.entity.DeviceLoop;
-import io.github.futurewl.entity.DeviceLoopGroup;
 import io.github.futurewl.repository.DeviceLoopGroupRepository;
 import io.github.futurewl.repository.DeviceLoopRepository;
 import io.github.futurewl.repository.DeviceRepository;
-import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-
-import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

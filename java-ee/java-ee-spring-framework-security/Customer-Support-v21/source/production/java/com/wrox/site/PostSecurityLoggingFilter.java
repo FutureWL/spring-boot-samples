@@ -4,7 +4,6 @@ import org.apache.logging.log4j.ThreadContext;
 import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 
-import javax.servlet.*;
 import java.io.IOException;
 
 public class PostSecurityLoggingFilter implements Filter {

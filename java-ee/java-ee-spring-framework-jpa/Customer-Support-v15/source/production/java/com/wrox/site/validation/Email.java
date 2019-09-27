@@ -4,7 +4,6 @@ import javax.validation.Constraint;
 import javax.validation.Payload;
 import javax.validation.ReportAsSingleViolation;
 import javax.validation.constraints.Pattern;
-import java.lang.annotation.*;
 
 @SuppressWarnings("unused")
 @Target({ElementType.METHOD, ElementType.FIELD, ElementType.ANNOTATION_TYPE,

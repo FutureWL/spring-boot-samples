@@ -1,6 +1,5 @@
 package com.wrox;
 
-import javax.servlet.*;
 import javax.servlet.annotation.WebListener;
 import java.util.EnumSet;
 

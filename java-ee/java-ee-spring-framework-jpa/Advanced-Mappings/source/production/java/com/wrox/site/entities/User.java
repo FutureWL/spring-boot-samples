@@ -2,7 +2,6 @@ package com.wrox.site.entities;
 
 import com.wrox.site.converters.InstantConverter;
 
-import javax.persistence.*;
 import java.time.Instant;
 
 @Entity

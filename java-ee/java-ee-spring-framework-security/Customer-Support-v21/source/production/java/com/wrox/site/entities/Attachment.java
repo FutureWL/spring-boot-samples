@@ -4,9 +4,7 @@ import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.wrox.site.validation.NotBlank;
 
-import javax.persistence.*;
 import javax.validation.constraints.Size;
-import javax.xml.bind.annotation.*;
 import java.io.Serializable;
 
 @Entity

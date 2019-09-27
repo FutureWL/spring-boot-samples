@@ -2,7 +2,6 @@ package com.wrox.site.entities;
 
 import com.wrox.site.validation.NotBlank;
 
-import javax.persistence.*;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlSchemaType;

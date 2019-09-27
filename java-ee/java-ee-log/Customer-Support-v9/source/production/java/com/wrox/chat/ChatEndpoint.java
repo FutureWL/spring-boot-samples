@@ -7,7 +7,6 @@ import javax.servlet.annotation.WebListener;
 import javax.servlet.http.HttpSession;
 import javax.servlet.http.HttpSessionEvent;
 import javax.servlet.http.HttpSessionListener;
-import javax.websocket.*;
 import javax.websocket.server.HandshakeRequest;
 import javax.websocket.server.PathParam;
 import javax.websocket.server.ServerEndpoint;

@@ -5,9 +5,7 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.web.socket.server.standard.SpringConfigurator;
 
 import javax.inject.Inject;
-import javax.websocket.*;
 import javax.websocket.server.ServerEndpoint;
-import java.io.*;
 import java.util.Map;
 
 @ServerEndpoint(

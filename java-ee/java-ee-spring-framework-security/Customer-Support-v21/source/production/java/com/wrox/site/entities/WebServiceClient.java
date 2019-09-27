@@ -4,7 +4,6 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.oauth2.provider.ClientDetails;
 
-import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.HashSet;

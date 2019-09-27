@@ -8,7 +8,7 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.crypto.password.NoOpPasswordEncoder;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.io.PrintWriter;
@@ -21,17 +21,17 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Bean
     PasswordEncoder passwordEncoder() {
-        return NoOpPasswordEncoder.getInstance();
+        return new BCryptPasswordEncoder();
     }
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.inMemoryAuthentication()
-                .withUser("root").password("123").roles("ADMIN", "DBA")
+                .withUser("root").password("$2a$10$O9IeFxFIXKgTMI3t45/D..DpOccQvtsrNJdC0SZMojO4mgIA4psDC").roles("ADMIN", "DBA")
                 .and()
-                .withUser("admin").password("123").roles("ADMIN", "USER")
+                .withUser("admin").password("$2a$10$O9IeFxFIXKgTMI3t45/D..DpOccQvtsrNJdC0SZMojO4mgIA4psDC").roles("ADMIN", "USER")
                 .and()
-                .withUser("weilai").password("123").roles("USER");
+                .withUser("weilai").password("$2a$10$O9IeFxFIXKgTMI3t45/D..DpOccQvtsrNJdC0SZMojO4mgIA4psDC").roles("USER");
     }
 
     @Override

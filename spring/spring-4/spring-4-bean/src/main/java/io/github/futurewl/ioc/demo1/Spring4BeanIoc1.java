@@ -1,7 +1,12 @@
 package io.github.futurewl.ioc.demo1;
 
-import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.support.BeanDefinitionReader;
+import org.springframework.beans.factory.support.BeanDefinitionRegistry;
+import org.springframework.beans.factory.support.DefaultListableBeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
 
 /**
  * 功能描述：BeanFactory 容器
@@ -20,9 +25,18 @@ import org.springframework.core.io.ClassPathResource;
  * @author weilai create by 2019-06-07:16:34
  * @version 1.0
  */
-public class MainApp {
+public class Spring4BeanIoc1 {
     public static void main(String[] args) {
-        XmlBeanFactory factory = new XmlBeanFactory(new ClassPathResource("ioc/IocBeans1.xml"));
+
+        // 写法已废除，
+//        XmlBeanFactory factory = new XmlBeanFactory(new ClassPathResource("ioc/IocBeans1.xml"));
+
+        // 新写法
+        Resource resource = new ClassPathResource("ioc/IocBeans1.xml");
+        BeanFactory factory = new DefaultListableBeanFactory();
+        BeanDefinitionReader beanDefinitionReader = new XmlBeanDefinitionReader((BeanDefinitionRegistry) factory);
+        beanDefinitionReader.loadBeanDefinitions(resource);
+
         HelloWorld obj = (HelloWorld) factory.getBean("helloWorld");
         obj.getMessage();
     }

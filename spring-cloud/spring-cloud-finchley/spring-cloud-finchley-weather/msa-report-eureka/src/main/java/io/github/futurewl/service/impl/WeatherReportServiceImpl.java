@@ -1,7 +1,7 @@
 package io.github.futurewl.service.impl;
 
-import io.github.futurewl.vo.Forecast;
 import io.github.futurewl.service.WeatherReportService;
+import io.github.futurewl.vo.Forecast;
 import io.github.futurewl.vo.Weather;
 import org.springframework.stereotype.Service;
 
