@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>activiti-crazy</artifactId>
+        <groupId>io.github.futurewl</groupId>
+        <version>190921</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>activiti-crazy-0402-ds-c3p0</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.mchange</groupId>
+            <artifactId>c3p0</artifactId>
+            <version>0.9.5.4</version>
+        </dependency>
+    </dependencies>
+
+</project>

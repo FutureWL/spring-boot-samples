@@ -20,6 +20,7 @@
         <module>activiti-crazy-0401-create-standalone</module>
         <module>activiti-crazy-0402-ds-dbcp</module>
         <module>activiti-crazy-0402-ds-dbcp-java-config</module>
+        <module>activiti-crazy-0402-ds-c3p0</module>
     </modules>
 
 
