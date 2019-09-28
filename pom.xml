@@ -21,7 +21,7 @@
     <modules>
         <module>activiti</module>
         <module>java-se</module>
-        <module>common</module>
+<!--        <module>common</module>-->
         <module>spring</module>
         <module>spring-boot</module>
         <module>spring-cloud</module>
@@ -31,16 +31,5 @@
         <module>data-structur</module>
         <module>algorithmic-analysis</module>
     </modules>
-
-    <repositories>
-        <repository>
-            <id>aliyun</id>
-            <name>aliyun Repository</name>
-            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
 
 </project>
