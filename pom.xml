@@ -30,6 +30,8 @@
         <module>java-ee</module>
         <module>data-structur</module>
         <module>algorithmic-analysis</module>
+        <module>jeecg-boot</module>
+        <module>pig</module>
     </modules>
 
     <repositories>
