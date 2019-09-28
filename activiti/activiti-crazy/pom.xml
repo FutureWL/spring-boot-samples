@@ -19,6 +19,7 @@
         <module>activiti-crazy-0401-create-standalone-inmem</module>
         <module>activiti-crazy-0401-create-standalone</module>
         <module>activiti-crazy-0402-ds-dbcp</module>
+        <module>activiti-crazy-0402-ds-dbcp-java-config</module>
     </modules>
 
 
