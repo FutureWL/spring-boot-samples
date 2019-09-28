@@ -21,6 +21,8 @@
         <module>activiti-crazy-0402-ds-dbcp</module>
         <module>activiti-crazy-0402-ds-dbcp-java-config</module>
         <module>activiti-crazy-0402-ds-c3p0</module>
+        <module>activiti-crazy-1604-activiti6-spring-boot</module>
+        <module>activiti-crazy-1604-activiti7-spring-boot</module>
     </modules>
 
 

@@ -9,13 +9,18 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>activiti-crazy-0402-ds-dbcp</artifactId>
+    <artifactId>activiti-crazy-1604-activiti6-spring-boot</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>org.activiti</groupId>
-            <artifactId>activiti-engine</artifactId>
+            <artifactId>activiti-spring-boot-starter-basic</artifactId>
             <version>6.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>1.2.6.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>mysql</groupId>
@@ -23,19 +28,9 @@
             <version>8.0.17</version>
         </dependency>
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.7.21</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-            <version>1.7.21</version>
-        </dependency>
-        <dependency>
-            <groupId>commons-dbcp</groupId>
-            <artifactId>commons-dbcp</artifactId>
-            <version>1.4</version>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>4.2.5.RELEASE</version>
         </dependency>
     </dependencies>
 
