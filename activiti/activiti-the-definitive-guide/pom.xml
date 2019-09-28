@@ -3,20 +3,20 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>backend-java-samples</artifactId>
+        <artifactId>activiti</artifactId>
         <groupId>io.github.futurewl</groupId>
         <version>190921</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>activiti</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>activiti-crazy</module>
-        <module>activiti-the-definitive-guide</module>
-        <module>activiti-action</module>
-    </modules>
+    <artifactId>activiti-the-definitive-guide</artifactId>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-engine</artifactId>
+            <version>5.21.0</version>
+        </dependency>
+    </dependencies>
 
 </project>
