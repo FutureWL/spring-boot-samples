@@ -1,13 +1,12 @@
 package org.jeecg.modules.demo.test.vo;
 
-import java.util.List;
-
+import lombok.Data;
 import org.jeecg.modules.demo.test.entity.JeecgOrderCustomer;
 import org.jeecg.modules.demo.test.entity.JeecgOrderTicket;
 import org.jeecgframework.poi.excel.annotation.Excel;
 import org.jeecgframework.poi.excel.annotation.ExcelCollection;
 
-import lombok.Data;
+import java.util.List;
 
 @Data
 public class JeecgOrderMainPage {

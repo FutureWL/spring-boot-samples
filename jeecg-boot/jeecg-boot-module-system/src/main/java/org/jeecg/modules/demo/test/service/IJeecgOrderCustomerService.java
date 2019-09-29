@@ -1,10 +1,9 @@
 package org.jeecg.modules.demo.test.service;
 
-import java.util.List;
-
+import com.baomidou.mybatisplus.extension.service.IService;
 import org.jeecg.modules.demo.test.entity.JeecgOrderCustomer;
 
-import com.baomidou.mybatisplus.extension.service.IService;
+import java.util.List;
 
 /**
  * @Description: 订单客户

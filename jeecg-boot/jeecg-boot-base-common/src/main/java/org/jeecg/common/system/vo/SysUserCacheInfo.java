@@ -1,8 +1,8 @@
 package org.jeecg.common.system.vo;
 
-import java.util.List;
-
 import org.jeecg.common.util.DateUtils;
+
+import java.util.List;
 
 public class SysUserCacheInfo {
 	

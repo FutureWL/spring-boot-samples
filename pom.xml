@@ -32,6 +32,7 @@
         <module>algorithmic-analysis</module>
         <module>jeecg-boot</module>
         <module>pig</module>
+        <module>pigx</module>
     </modules>
 
     <repositories>

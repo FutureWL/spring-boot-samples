@@ -1,9 +1,9 @@
 package org.jeecg.modules.message.service;
 
-import java.util.List;
-
 import org.jeecg.common.system.base.service.JeecgService;
 import org.jeecg.modules.message.entity.SysMessageTemplate;
+
+import java.util.List;
 
 /**
  * @Description: 消息模板

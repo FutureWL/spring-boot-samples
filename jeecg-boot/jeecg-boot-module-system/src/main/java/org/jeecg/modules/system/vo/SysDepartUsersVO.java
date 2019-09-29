@@ -1,9 +1,9 @@
 package org.jeecg.modules.system.vo;
 
+import lombok.Data;
+
 import java.io.Serializable;
 import java.util.List;
-
-import lombok.Data;
 
 @Data
 public class SysDepartUsersVO implements Serializable{

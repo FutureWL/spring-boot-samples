@@ -9,6 +9,7 @@
     </parent>
 
     <artifactId>jeecg-boot-parent</artifactId>
+    <name>jeecg-boot</name>
     <packaging>pom</packaging>
 
     <modules>
@@ -291,11 +292,11 @@
                 <version>${jeecgboot.common.version}</version>
             </dependency>
             <!-- 七牛云SDK -->
-            <dependency>
-                <groupId>com.qiniu</groupId>
-                <artifactId>qiniu-java-sdk</artifactId>
-                <version>7.2.23</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>com.qiniu</groupId>-->
+<!--                <artifactId>qiniu-java-sdk</artifactId>-->
+<!--                <version>7.2.23</version>-->
+<!--            </dependency>-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>

@@ -1,11 +1,10 @@
 package org.jeecg.modules.quartz.mapper;
 
-import java.util.List;
-
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Param;
 import org.jeecg.modules.quartz.entity.QuartzJob;
 
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import java.util.List;
 
 /**
  * @Description: 定时任务在线管理

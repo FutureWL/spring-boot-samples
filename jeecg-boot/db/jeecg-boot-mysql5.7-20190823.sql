@@ -13,7 +13,7 @@
 
  Date: 23/08/2019 23:46:41
 */
-
+USE `db_jeecg`;
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 

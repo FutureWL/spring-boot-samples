@@ -2,7 +2,6 @@ package org.jeecg.modules.ngalain.service.impl;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import org.jeecg.common.util.MD5Util;
 import org.jeecg.common.util.oConvertUtils;
 import org.jeecg.modules.ngalain.mapper.NgAlainMapper;
 import org.jeecg.modules.ngalain.service.NgAlainService;

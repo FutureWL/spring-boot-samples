@@ -14,18 +14,14 @@
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
  */
-package ${package}.${moduleName}.entity;
-
-import com.baomidou.mybatisplus.annotation.TableId;
+package ${package}import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.baomidou.mybatisplus.extension.activerecord.Model;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-#if(${hasBigDecimal})
-import java.math.BigDecimal;
-#end
-import java.io.Serializable;
-import java.time.LocalDateTime;
+
+.${moduleName}.entity;
+    #if(${hasBigDecimal})
+    #end
 
 /**
  * ${comments}

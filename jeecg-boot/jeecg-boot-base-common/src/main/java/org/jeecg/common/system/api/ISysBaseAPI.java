@@ -1,10 +1,10 @@
 package org.jeecg.common.system.api;
 
-import java.sql.SQLException;
-import java.util.List;
-
 import org.jeecg.common.system.vo.DictModel;
 import org.jeecg.common.system.vo.LoginUser;
+
+import java.sql.SQLException;
+import java.util.List;
 
 /**
  * @Description: 底层共通业务API，提供其他独立模块调用

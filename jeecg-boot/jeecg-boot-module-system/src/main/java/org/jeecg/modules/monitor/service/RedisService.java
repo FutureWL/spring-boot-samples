@@ -1,11 +1,10 @@
 package org.jeecg.modules.monitor.service;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
 import org.jeecg.modules.monitor.domain.RedisInfo;
 import org.jeecg.modules.monitor.exception.RedisConnectException;
+
+import java.util.List;
+import java.util.Map;
 
 public interface RedisService {
 

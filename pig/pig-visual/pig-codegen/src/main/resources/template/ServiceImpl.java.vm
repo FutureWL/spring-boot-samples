@@ -14,12 +14,13 @@
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
  */
-package ${package}.${moduleName}.service.impl;
+package ${package}import org.springframework.stereotype.Service;
 
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import ${package}.${moduleName}.entity.${className};
-import ${package}.${moduleName}.service.${className}Service;
-import org.springframework.stereotype.Service;
+.${moduleName}.service.impl;
+    ${package}
+        .${moduleName}.entity.${className};
+    ${package}
+        .${moduleName}.service.${className}Service;
 
 /**
  * ${comments}

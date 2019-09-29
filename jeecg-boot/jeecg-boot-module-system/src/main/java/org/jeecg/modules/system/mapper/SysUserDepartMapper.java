@@ -1,12 +1,10 @@
 package org.jeecg.modules.system.mapper;
 
-import java.util.List;
-
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import io.lettuce.core.dynamic.annotation.Param;
 import org.jeecg.modules.system.entity.SysUserDepart;
 
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-
-import io.lettuce.core.dynamic.annotation.Param;
+import java.util.List;
 
 public interface SysUserDepartMapper extends BaseMapper<SysUserDepart>{
 	

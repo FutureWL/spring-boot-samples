@@ -1,5 +1,6 @@
 package org.jeecg.modules.message.util;
 
+import com.alibaba.fastjson.JSONObject;
 import org.jeecg.modules.message.entity.SysMessage;
 import org.jeecg.modules.message.entity.SysMessageTemplate;
 import org.jeecg.modules.message.handle.enums.SendMsgStatusEnum;
@@ -7,8 +8,6 @@ import org.jeecg.modules.message.service.ISysMessageService;
 import org.jeecg.modules.message.service.ISysMessageTemplateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
-import com.alibaba.fastjson.JSONObject;
 
 import java.util.Date;
 import java.util.List;

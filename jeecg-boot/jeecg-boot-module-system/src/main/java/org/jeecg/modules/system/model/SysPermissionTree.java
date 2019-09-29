@@ -1,10 +1,11 @@
 package org.jeecg.modules.system.model;
 
+import org.jeecg.modules.system.entity.SysPermission;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import org.jeecg.modules.system.entity.SysPermission;
 
 public class SysPermissionTree implements Serializable {
 

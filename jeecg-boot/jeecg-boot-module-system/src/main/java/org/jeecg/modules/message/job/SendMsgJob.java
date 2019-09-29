@@ -1,7 +1,7 @@
 package org.jeecg.modules.message.job;
 
-import java.util.List;
-
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import lombok.extern.slf4j.Slf4j;
 import org.jeecg.common.util.DateUtils;
 import org.jeecg.modules.message.entity.SysMessage;
 import org.jeecg.modules.message.handle.ISendMsgHandle;
@@ -13,9 +13,7 @@ import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-
-import lombok.extern.slf4j.Slf4j;
+import java.util.List;
 
 /**
  * 发送消息任务

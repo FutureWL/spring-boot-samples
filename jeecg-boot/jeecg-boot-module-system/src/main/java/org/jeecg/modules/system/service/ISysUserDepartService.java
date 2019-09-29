@@ -1,14 +1,12 @@
 package org.jeecg.modules.system.service;
 
 
-import java.util.List;
-
+import com.baomidou.mybatisplus.extension.service.IService;
 import org.jeecg.modules.system.entity.SysUser;
 import org.jeecg.modules.system.entity.SysUserDepart;
 import org.jeecg.modules.system.model.DepartIdModel;
 
-
-import com.baomidou.mybatisplus.extension.service.IService;
+import java.util.List;
 
 /**
  * <p>

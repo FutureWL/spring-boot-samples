@@ -1,10 +1,11 @@
 package org.jeecg.common.api.vo;
 
-import java.io.Serializable;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import org.jeecg.common.constant.CommonConstant;
 import lombok.Data;
+import org.jeecg.common.constant.CommonConstant;
+
+import java.io.Serializable;
 
 /**
  *   接口返回数据格式

@@ -1,14 +1,13 @@
 package org.jeecg.modules.demo.test.service.impl;
 
-import java.util.List;
-
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.jeecg.modules.demo.test.entity.JeecgOrderTicket;
 import org.jeecg.modules.demo.test.mapper.JeecgOrderTicketMapper;
 import org.jeecg.modules.demo.test.service.IJeecgOrderTicketService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import java.util.List;
 
 /**
  * @Description: 订单机票

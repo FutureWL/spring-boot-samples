@@ -1,11 +1,10 @@
 package org.jeecg.modules.quartz.job;
 
+import lombok.extern.slf4j.Slf4j;
 import org.jeecg.common.util.DateUtils;
 import org.quartz.Job;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
-
-import lombok.extern.slf4j.Slf4j;
 
 /**
  * 示例不带参定时任务

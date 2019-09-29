@@ -14,10 +14,9 @@
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
  */
-package ${package}.${moduleName}.mapper;
+package ${package}import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import ${package}.${moduleName}.entity.${className};
+.${moduleName}.mapper; ${package}.${moduleName}.entity.${className};
 
 /**
  * ${comments}

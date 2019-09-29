@@ -1,9 +1,9 @@
 package org.jeecg.modules.system.util;
 
-import java.util.List;
-
 import org.jeecg.common.util.oConvertUtils;
 import org.jeecg.modules.system.entity.SysPermission;
+
+import java.util.List;
 
 /**
  * @Author: scott

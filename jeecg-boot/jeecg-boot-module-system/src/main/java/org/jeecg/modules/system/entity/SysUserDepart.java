@@ -1,12 +1,11 @@
 package org.jeecg.modules.system.entity;
 
-import java.io.Serializable;
-
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-
 import lombok.Data;
+
+import java.io.Serializable;
 @Data
 @TableName("sys_user_depart")
 public class SysUserDepart implements Serializable {

@@ -1,8 +1,7 @@
 package org.jeecg.modules.demo.test.mapper;
 
-import org.jeecg.modules.demo.test.entity.JoaDemo;
-
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.jeecg.modules.demo.test.entity.JoaDemo;
 
 /**
  * @Description: 流程测试

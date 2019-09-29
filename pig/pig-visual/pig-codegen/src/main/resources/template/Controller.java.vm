@@ -14,18 +14,19 @@
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
  */
-package ${package}.${moduleName}.controller;
-
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.core.toolkit.Wrappers;
+package ${package}import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.pig4cloud.pig.common.core.util.R;
 import com.pig4cloud.pig.common.log.annotation.SysLog;
-import ${package}.${moduleName}.entity.${className};
-import ${package}.${moduleName}.service.${className}Service;
-import org.springframework.security.access.prepost.PreAuthorize;
 import lombok.AllArgsConstructor;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
+
+.${moduleName}.controller;
+    ${package}
+        .${moduleName}.entity.${className};
+    ${package}
+        .${moduleName}.service.${className}Service;
 
 
 /**

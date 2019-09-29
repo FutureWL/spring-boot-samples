@@ -1,8 +1,7 @@
 package org.jeecg.modules.system.mapper;
 
-import org.jeecg.modules.system.entity.SysRole;
-
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.jeecg.modules.system.entity.SysRole;
 
 /**
  * <p>

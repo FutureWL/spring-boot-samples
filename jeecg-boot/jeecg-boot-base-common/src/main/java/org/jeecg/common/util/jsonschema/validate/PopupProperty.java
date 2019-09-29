@@ -1,12 +1,10 @@
 package org.jeecg.common.util.jsonschema.validate;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
+import com.alibaba.fastjson.JSONObject;
 import org.jeecg.common.util.jsonschema.CommonProperty;
 
-import com.alibaba.fastjson.JSONObject;
+import java.util.HashMap;
+import java.util.Map;
 
 public class PopupProperty extends CommonProperty {
 	

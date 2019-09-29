@@ -1,11 +1,10 @@
 package org.jeecg.common.system.base.service.impl;
 
-import org.jeecg.common.system.base.entity.JeecgEntity;
-import org.jeecg.common.system.base.service.JeecgService;
-
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import lombok.extern.slf4j.Slf4j;
+import org.jeecg.common.system.base.entity.JeecgEntity;
+import org.jeecg.common.system.base.service.JeecgService;
 
 /**
  * @Description: ServiceImpl基类

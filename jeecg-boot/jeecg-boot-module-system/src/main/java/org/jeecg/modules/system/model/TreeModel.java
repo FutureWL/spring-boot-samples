@@ -1,12 +1,12 @@
 package org.jeecg.modules.system.model;
 
+import org.jeecg.modules.system.entity.SysPermission;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import org.jeecg.modules.system.entity.SysPermission;
 
 /**
   * 树形列表用到

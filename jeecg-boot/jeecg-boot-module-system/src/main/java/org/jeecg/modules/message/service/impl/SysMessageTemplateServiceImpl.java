@@ -6,6 +6,7 @@ import org.jeecg.modules.message.mapper.SysMessageTemplateMapper;
 import org.jeecg.modules.message.service.ISysMessageTemplateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import java.util.List;
 
 /**
