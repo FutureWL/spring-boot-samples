@@ -35,6 +35,7 @@
 <!--        <module>pigx</module>-->
         <module>mybatis</module>
         <module>jdbc</module>
+        <module>mybatis-plus</module>
     </modules>
 
     <repositories>
