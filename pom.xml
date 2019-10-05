@@ -31,8 +31,10 @@
         <module>data-structur</module>
         <module>algorithmic-analysis</module>
         <module>jeecg-boot</module>
-        <module>pig</module>
-        <module>pigx</module>
+<!--        <module>pig</module>-->
+<!--        <module>pigx</module>-->
+        <module>mybatis</module>
+        <module>jdbc</module>
     </modules>
 
     <repositories>
