@@ -1,4 +1,4 @@
-package io.github.futurewl.entity;
+package io.github.futurewl.demo1.entity;
 
 import lombok.Data;
 

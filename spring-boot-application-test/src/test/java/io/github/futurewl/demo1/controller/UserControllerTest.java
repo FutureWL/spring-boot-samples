@@ -1,4 +1,4 @@
-package io.github.futurewl.controller;
+package io.github.futurewl.demo1.controller;
 
 import io.github.futurewl.service.UserService;
 import org.junit.Test;

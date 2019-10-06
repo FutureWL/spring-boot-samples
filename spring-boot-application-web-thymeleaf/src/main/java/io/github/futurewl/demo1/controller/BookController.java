@@ -1,5 +1,6 @@
-package io.github.futurewl;
+package io.github.futurewl.demo1.controller;
 
+import io.github.futurewl.demo1.entity.Book;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;

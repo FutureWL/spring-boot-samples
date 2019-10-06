@@ -1,6 +1,6 @@
-package io.github.futurewl.entity.projection;
+package io.github.futurewl.demo1.entity.projection;
 
-import io.github.futurewl.entity.DeviceLoopGroup;
+import io.github.futurewl.demo1.entity.DeviceLoopGroup;
 import org.springframework.data.rest.core.config.Projection;
 
 @Projection(name = "base",types = DeviceLoopGroup.class)

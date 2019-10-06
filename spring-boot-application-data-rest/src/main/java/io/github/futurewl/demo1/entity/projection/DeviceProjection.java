@@ -1,7 +1,7 @@
-package io.github.futurewl.entity.projection;
+package io.github.futurewl.demo1.entity.projection;
 
-import io.github.futurewl.entity.Device;
-import io.github.futurewl.entity.DeviceLoop;
+import io.github.futurewl.demo1.entity.Device;
+import io.github.futurewl.demo1.entity.DeviceLoop;
 import org.springframework.data.rest.core.config.Projection;
 
 import java.util.Set;

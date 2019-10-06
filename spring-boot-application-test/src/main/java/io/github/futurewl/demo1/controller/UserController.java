@@ -1,4 +1,4 @@
-package io.github.futurewl.controller;
+package io.github.futurewl.demo1.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
