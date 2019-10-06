@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-boot-cache-application-redis</artifactId>
+    <artifactId>spring-boot-application-cache-ehcache</artifactId>
 
 
 </project>

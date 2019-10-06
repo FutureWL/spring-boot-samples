@@ -12,9 +12,9 @@
     <artifactId>spring-boot-application-cache</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>spring-boot-cache-application-redis</module>
-        <module>spring-boot-cache-application-ehcache</module>
-        <module>spring-boot-cache-application-concurrent-cache</module>
+        <module>spring-boot-application-cache-redis</module>
+        <module>spring-boot-application-cache-ehcache</module>
+        <module>spring-boot-application-cache-concurrent-cache</module>
     </modules>
 
 

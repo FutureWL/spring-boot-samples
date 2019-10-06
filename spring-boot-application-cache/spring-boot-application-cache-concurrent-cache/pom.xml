@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-boot-cache-application-concurrent-cache</artifactId>
+    <artifactId>spring-boot-application-cache-concurrent-cache</artifactId>
 
 
 </project>
