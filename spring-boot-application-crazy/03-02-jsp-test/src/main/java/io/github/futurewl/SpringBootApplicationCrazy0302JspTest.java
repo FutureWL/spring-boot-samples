@@ -9,17 +9,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import javax.servlet.http.HttpServletRequest;
 
-@SpringBootApplication
 @Controller
-public class JspApp extends SpringBootServletInitializer {
+@SpringBootApplication
+public class SpringBootApplicationCrazy0302JspTest extends SpringBootServletInitializer {
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(JspApp.class);
+        return application.sources(SpringBootApplicationCrazy0302JspTest.class);
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(JspApp.class, args);
+        SpringApplication.run(SpringBootApplicationCrazy0302JspTest.class, args);
     }
 
     @GetMapping("/hello")
