@@ -2,8 +2,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>ek-service-provider</artifactId>
-
+    <artifactId>13-03-ek-service-provider</artifactId>
+    <name>${parent.artifactId}-${artifactId}</name>
 
     <!-- 声明项目的父项目 -->
     <parent>
@@ -12,17 +12,6 @@
         <version>190921</version>
     </parent>
     <!-- 添加依赖管理 -->
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Finchley.M9</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>

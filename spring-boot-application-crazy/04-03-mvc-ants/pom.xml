@@ -2,8 +2,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>mvc-ants</artifactId>
-
+    <artifactId>04-03-mvc-ants</artifactId>
+    <name>${parent.artifactId}-${artifactId}</name>
 
     <parent>
         <artifactId>spring-boot-application-crazy</artifactId>

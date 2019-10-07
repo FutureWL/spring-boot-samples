@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @SpringBootApplication
 @Controller
-public class ComApp {
+public class SpringBootApplicationCrazy0303CompressionTest {
 
     public static void main(String[] args) {
-        SpringApplication.run(ComApp.class, args);
+        SpringApplication.run(SpringBootApplicationCrazy0303CompressionTest.class, args);
     }
 
     @RequestMapping(path = "/hello")

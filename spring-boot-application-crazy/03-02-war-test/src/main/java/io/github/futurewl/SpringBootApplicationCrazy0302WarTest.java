@@ -9,15 +9,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-public class WarApp extends SpringBootServletInitializer {
+public class SpringBootApplicationCrazy0302WarTest extends SpringBootServletInitializer {
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(WarApp.class);
+        return application.sources(SpringBootApplicationCrazy0302WarTest.class);
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(WarApp.class, args);
+        SpringApplication.run(SpringBootApplicationCrazy0302WarTest.class, args);
     }
 
     @GetMapping("/hello")

@@ -4,8 +4,8 @@
     http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>war-test</artifactId>
-
+    <artifactId>03-02-war-test</artifactId>
+    <name>${parent.artifactId}-03-02-war-test</name>
     <packaging>war</packaging>
     <build>
         <finalName>war-test</finalName>
