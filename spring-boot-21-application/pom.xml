@@ -21,6 +21,12 @@
         <module>spring-boot-21-application-config-xml</module>
         <module>spring-boot-21-application-config-java</module>
         <module>spring-boot-21-application-bean-life-cycle</module>
+        <module>spring-boot-21-application-web-swagger2</module>
+        <module>spring-boot-21-application-security-oauth2</module>
+        <module>spring-boot-21-application-security-shiro</module>
+        <module>spring-boot-21-application-security-spring-security</module>
+        <module>spring-boot-21-application-security-spring-security-database</module>
+        <module>spring-boot-21-application-security-spring-security-mutil-config</module>
     </modules>
     <parent>
         <artifactId>spring-boot-samples</artifactId>
@@ -60,6 +66,13 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
