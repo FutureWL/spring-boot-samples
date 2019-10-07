@@ -20,6 +20,7 @@
         <module>spring-boot-21-application-netty</module>
         <module>spring-boot-21-application-config-xml</module>
         <module>spring-boot-21-application-config-java</module>
+        <module>spring-boot-21-application-bean-life-cycle</module>
     </modules>
     <parent>
         <artifactId>spring-boot-samples</artifactId>
