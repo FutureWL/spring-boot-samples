@@ -7,7 +7,7 @@
         <version>190921</version>
     </parent>
     <artifactId>13-04-feign-client</artifactId>
-    <name>${parent.artifactId}-13-04-feign-client</name>
+    <name>spring-boot-application-crazy-13-04-feign-client</name>
 
     <dependencies>
         <dependency>

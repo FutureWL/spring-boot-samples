@@ -9,7 +9,7 @@
     </parent>
 
     <artifactId>02-rest-client</artifactId>
-    <name>${parent.artifactId}-02-rest-client</name>
+    <name>spring-boot-application-crazy-02-rest-client</name>
 
     <dependencies>
         <dependency>

@@ -7,7 +7,7 @@
         <version>190921</version>
     </parent>
     <artifactId>05-02-first-th</artifactId>
-    <name>${parent.artifactId}-${artifactId}</name>
+    <name>spring-boot-application-crazy-05-02-first-th</name>
 
     <dependencies>
         <dependency>

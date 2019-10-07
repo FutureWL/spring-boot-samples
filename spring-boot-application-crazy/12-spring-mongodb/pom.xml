@@ -2,8 +2,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-mongodb</artifactId>
-
+    <artifactId>12-spring-mongodb</artifactId>
+    <name>spring-boot-application-crazy-12-spring-mongodb</name>
 
     <!-- Spring Boot版本 -->
     <parent>

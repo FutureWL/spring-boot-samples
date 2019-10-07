@@ -2,7 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <artifactId>03-01-config-file-test</artifactId>
-    <name>${parent.artifactId}-03-01-config-file-test</name>
+    <name>spring-boot-application-crazy-03-01-config-file-test</name>
 
     <parent>
         <artifactId>spring-boot-application-crazy</artifactId>

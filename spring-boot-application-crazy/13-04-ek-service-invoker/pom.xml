@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>13-04-ek-service-invoker</artifactId>
-    <name>${parent.artifactId}-${artifactId}</name>
+    <name>spring-boot-application-crazy-13-04-ek-service-invoker</name>
 
     <!-- 声明项目的父项目 -->
     <parent>

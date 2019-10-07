@@ -10,7 +10,7 @@
         <version>190921</version>
     </parent>
     <artifactId>02-first-boot</artifactId>
-    <name>${parent.artifactId}-02-first-boot</name>
+    <name>spring-boot-application-crazy-02-first-boot</name>
 
     <dependencies>
         <dependency>

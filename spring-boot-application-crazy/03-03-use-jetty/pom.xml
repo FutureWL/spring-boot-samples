@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>03-03-use-jetty</artifactId>
-    <name>${parent.artifactId}-03-03-use-jetty</name>
+    <name>spring-boot-application-crazy-03-03-use-jetty</name>
 
     <parent>
         <artifactId>spring-boot-application-crazy</artifactId>

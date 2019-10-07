@@ -8,7 +8,7 @@
     </parent>
     
     <artifactId>13-03-first-ribbon-client</artifactId>
-    <name>${parent.artifactId}-${artifactId}</name>
+    <name>spring-boot-application-crazy-13-03-first-ribbon-client</name>
 
     <dependencies>
         <dependency>

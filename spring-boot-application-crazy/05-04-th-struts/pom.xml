@@ -7,7 +7,7 @@
         <version>190921</version>
     </parent>
     <artifactId>05-04-th-struts</artifactId>
-    <name>${parent.artifactId}-${artifactId}</name>
+    <name>spring-boot-application-crazy-05-04-th-struts</name>
     <packaging>war</packaging>
 
     <build>
@@ -19,7 +19,7 @@
                 <version>9.4.7.v20170914</version>
                 <configuration>
                     <webApp>
-                        <contextPath>/${build.finalName}</contextPath>
+                        <contextPath>/${project.build.finalName}</contextPath>
                     </webApp>
                     <stopKey>CTRL+C</stopKey>
                     <stopPort>8999</stopPort>

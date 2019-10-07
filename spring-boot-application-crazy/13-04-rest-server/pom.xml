@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>13-04-rest-server</artifactId>
-    <name>${parent.artifactId}-13-04-rest-server</name>
+    <name>spring-boot-application-crazy-13-04-rest-server</name>
 
     <parent>
         <artifactId>spring-boot-application-crazy</artifactId>

@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>13-03-ek-server</artifactId>
-    <name>${parent.artifactId}-13-03-ek-server</name>
+    <name>spring-boot-application-crazy-13-03-ek-server</name>
 
     <!-- 声明项目的父项目 -->
     <parent>

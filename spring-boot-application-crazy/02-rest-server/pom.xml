@@ -4,7 +4,7 @@
 
     <artifactId>02-rest-server</artifactId>
 
-    <name>${parent.artifactId}-02-rest-server</name>
+    <name>spring-boot-application-crazy-02-rest-server</name>
 
     <parent>
         <artifactId>spring-boot-application-crazy</artifactId>

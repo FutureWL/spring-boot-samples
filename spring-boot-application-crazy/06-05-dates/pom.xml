@@ -2,8 +2,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>dates</artifactId>
-
+    <artifactId>06-05-dates</artifactId>
+    <name>spring-boot-application-crazy-06-05-dates</name>
+    <parent>
+        <artifactId>spring-boot-application-crazy</artifactId>
+        <groupId>io.github.futurewl</groupId>
+        <version>190921</version>
+    </parent>
 
     <dependencies>
         <dependency>

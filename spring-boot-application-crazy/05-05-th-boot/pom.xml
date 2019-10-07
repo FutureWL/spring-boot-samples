@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>05-05-th-boot</artifactId>
-    <name>${parent.artifactId}-${artifactId}</name>
+    <name>spring-boot-application-crazy-05-05-th-boot</name>
 
     <parent>
         <artifactId>spring-boot-application-crazy</artifactId>

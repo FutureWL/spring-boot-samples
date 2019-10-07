@@ -2,8 +2,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>form</artifactId>
-
+    <artifactId>10-form</artifactId>
+    <name>spring-boot-application-crazy-10-form</name>
 
     <!-- Spring Boot版本 -->
     <parent>

@@ -7,7 +7,7 @@
         <version>190921</version>
     </parent>
     <artifactId>13-05-first-hystrix</artifactId>
-    <name>${parent.artifactId}-13-05-first-hystrix</name>
+    <name>spring-boot-application-crazy-13-05-first-hystrix</name>
 
     <dependencies>
         <dependency>

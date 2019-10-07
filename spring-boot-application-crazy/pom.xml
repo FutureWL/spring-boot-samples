@@ -33,36 +33,36 @@
         <module>05-03-th-web</module>
         <module>05-04-th-struts</module>
         <module>05-05-th-boot</module>
-        <!--        <module>06-01-gm-text</module>-->
-        <!--        <module>06-02-basic-object</module>-->
-        <!--        <module>06-03-numbers</module>-->
-        <!--        <module>06-04-strings</module>-->
-        <!--        <module>06-05-dates</module>-->
-        <!--        <module>06-06-colls</module>-->
-        <!--        <module>06-07-other-obj</module>-->
-        <!--        <module>07-02-exp-boot</module>-->
-        <!--        <module>07-02-exp-imp</module>-->
-        <!--        <module>07-04-iter-boot</module>-->
-        <!--        <module>07-04-iter-test</module>-->
-        <!--        <module>08-01-tpl-fragment</module>-->
-        <!--        <module>08-02-decouple</module>-->
-        <!--        <module>08-03-comment</module>-->
-        <!--        <module>08-04-inlining</module>-->
-        <!--        <module>09-custom-tpl</module>-->
-        <!--        <module>09-processor</module>-->
-        <!--        <module>09-tpl-process</module>-->
-        <!--        <module>10-boot-config</module>-->
-        <!--        <module>10-dialect</module>-->
-        <!--        <module>10-form</module>-->
-        <!--        <module>10-fragment</module>-->
-        <!--        <module>10-validate</module>-->
-        <!--        <module>11-bootstrap</module>-->
-        <!--        <module>11-jquery</module>-->
-        <!--        <module>11-vue</module>-->
-        <!--        <module>12-spring-jpa</module>-->
-        <!--        <module>12-spring-mongodb</module>-->
-        <!--        <module>12-spring-redis</module>-->
-        <!--        <module>12-test-jedis</module>-->
+        <module>06-01-gm-text</module>
+        <module>06-02-basic-object</module>
+        <module>06-03-numbers</module>
+        <module>06-04-strings</module>
+        <module>06-05-dates</module>
+        <module>06-06-colls</module>
+        <module>06-07-other-obj</module>
+        <module>07-02-exp-boot</module>
+        <module>07-02-exp-imp</module>
+        <module>07-04-iter-boot</module>
+        <module>07-04-iter-test</module>
+        <module>08-01-tpl-fragment</module>
+        <module>08-02-decouple</module>
+        <module>08-03-comment</module>
+        <module>08-04-inlining</module>
+        <module>09-custom-tpl</module>
+        <module>09-processor</module>
+        <module>09-tpl-process</module>
+        <module>10-boot-config</module>
+        <module>10-dialect</module>
+        <module>10-form</module>
+        <module>10-fragment</module>
+        <module>10-validate</module>
+        <module>11-bootstrap</module>
+        <module>11-jquery</module>
+        <module>11-vue</module>
+        <module>12-spring-jpa</module>
+        <module>12-spring-mongodb</module>
+        <module>12-spring-redis</module>
+        <module>12-test-jedis</module>
         <module>13-02-first-ek-server</module>
         <module>13-02-first-ek-service-invoker</module>
         <module>13-02-first-ek-service-provider</module>

@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>03-02-web-test</artifactId>
-    <name>${parent.artifactId}-03-02-web-tests</name>
+    <name>spring-boot-application-crazy-03-02-web-tests</name>
     <packaging>war</packaging>
 
     <parent>
