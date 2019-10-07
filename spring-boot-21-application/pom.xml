@@ -13,7 +13,9 @@
         <module>spring-boot-21-application-web-thymeleaf</module>
         <module>spring-boot-21-application-web-validation</module>
         <module>spring-boot-21-application-web-websocket</module>
+        <module>spring-boot-21-application-web-servlet-filter-listener</module>
         <module>spring-boot-21-application-web-websocket-point-to-point</module>
+        <module>spring-boot-21-application-web-vue</module>
     </modules>
     <parent>
         <artifactId>spring-boot-samples</artifactId>
