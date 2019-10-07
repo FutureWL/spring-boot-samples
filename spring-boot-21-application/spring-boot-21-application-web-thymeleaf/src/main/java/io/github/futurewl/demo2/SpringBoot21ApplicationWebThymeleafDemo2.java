@@ -4,8 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootApplicationWebThymeleafDemo2 {
+public class SpringBoot21ApplicationWebThymeleafDemo2 {
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootApplicationWebThymeleafDemo2.class, args);
+        SpringApplication.run(SpringBoot21ApplicationWebThymeleafDemo2.class, args);
     }
 }

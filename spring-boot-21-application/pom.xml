@@ -10,6 +10,7 @@
         <module>spring-boot-21-application-actuator</module>
         <module>spring-boot-21-application-web-sse</module>
         <module>spring-boot-21-application-web-freemarker</module>
+        <module>spring-boot-21-application-web-thymeleaf</module>
     </modules>
     <parent>
         <artifactId>spring-boot-samples</artifactId>
