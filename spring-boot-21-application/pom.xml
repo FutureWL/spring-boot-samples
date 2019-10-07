@@ -5,28 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <modules>
-        <module>spring-boot-21-application-aop</module>
-        <module>spring-boot-21-application-web</module>
-        <module>spring-boot-21-application-actuator</module>
-        <module>spring-boot-21-application-web-sse</module>
-        <module>spring-boot-21-application-web-freemarker</module>
-        <module>spring-boot-21-application-web-thymeleaf</module>
-        <module>spring-boot-21-application-web-validation</module>
-        <module>spring-boot-21-application-web-websocket</module>
-        <module>spring-boot-21-application-web-servlet-filter-listener</module>
-        <module>spring-boot-21-application-web-websocket-point-to-point</module>
-        <module>spring-boot-21-application-web-vue</module>
-        <module>spring-boot-21-application-quartz</module>
-        <module>spring-boot-21-application-netty</module>
-        <module>spring-boot-21-application-config-xml</module>
-        <module>spring-boot-21-application-config-java</module>
-        <module>spring-boot-21-application-bean-life-cycle</module>
-        <module>spring-boot-21-application-web-swagger2</module>
-        <module>spring-boot-21-application-security-oauth2</module>
-        <module>spring-boot-21-application-security-shiro</module>
-        <module>spring-boot-21-application-security-spring-security</module>
-        <module>spring-boot-21-application-security-spring-security-database</module>
-        <module>spring-boot-21-application-security-spring-security-mutil-config</module>
+        <module>web</module>
+        <!--        <module>config</module>-->
+        <!--        <module>actuator</module>-->
+        <!--        <module>quartz</module>-->
+        <!--        <module>netty</module>-->
+        <!--        <module>bean-life-cycle</module>-->
     </modules>
     <parent>
         <artifactId>spring-boot-samples</artifactId>

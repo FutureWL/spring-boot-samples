@@ -3,13 +3,13 @@ package io.github.futurewl;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.boot.web.support.SpringBootServletInitializer;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 @SpringBootApplication
-public class SpringBoot15ApplicationWebJsp extends SpringBootServletInitializer {
+public class SpringBoot21ApplicationWebTemplateJsp extends SpringBootServletInitializer {
 
     @GetMapping("/index")
     public String index() {
@@ -18,10 +18,10 @@ public class SpringBoot15ApplicationWebJsp extends SpringBootServletInitializer 
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-        return builder.sources(SpringBoot15ApplicationWebJsp.class);
+        return builder.sources(SpringBoot21ApplicationWebTemplateJsp.class);
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBoot15ApplicationWebJsp.class, args);
+        SpringApplication.run(SpringBoot21ApplicationWebTemplateJsp.class, args);
     }
 }
