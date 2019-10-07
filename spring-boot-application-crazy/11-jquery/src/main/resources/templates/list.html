@@ -1,0 +1,41 @@
+<script th:src="@{/js/jquery-3.3.1.min.js}"></script>
+<script>
+    $(document).ready(function () {
+        // 模拟数据，实际开发中这些数据可能通过AJAX获取
+        var datas = [{"id": "1", "name": "疯狂Spring Cloud微服务架构实战", "author": "杨恩雄"},
+            {"id": "2", "name": "疯狂工作流讲义", "author": "杨恩雄"}];
+        // 删除模板中的数据
+        $("#dataTable").empty();
+        // 遍历JSON数组
+        for (var i = 0; i < datas.length; i++) {
+            // 获取单个数据对象
+            var data = datas[i];
+            // 创建tr与td
+            var tr = $("<tr style='height: 40px;'></tr>");
+            var idTd = $("<td>" + data.id + "</td>");
+            var nameTd = $("<td>" + data.name + "</td>");
+            var authorTd = $("<td>" + data.author + "</td>");
+            // 依次为tr添加3个td
+            tr.append(idTd).append(nameTd).append(authorTd);
+            // 添加数据列表中
+            $("#dataTable").append(tr);
+        }
+    });
+</script>
+<table style="width: 500px; text-align: center;" cellspacing="0" border="1">
+    <thead>
+    <tr>
+        <td width="10%">id</td>
+        <td width="60%">书名</td>
+        <td width="30%">作者</td>
+    </tr>
+    </thead>
+    <tbody id="dataTable">
+    <!-- 静态数据 -->
+    <tr style="height: 40px;">
+        <td>1</td>
+        <td>疯狂Spring Cloud微服务架构实战</td>
+        <td>杨恩雄</td>
+    </tr>
+    </tbody>
+</table>

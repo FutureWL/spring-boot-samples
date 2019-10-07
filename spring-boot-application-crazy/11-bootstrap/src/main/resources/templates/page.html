@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}"/>
+    <script th:src="@{/js/jquery-3.3.1.min.js}"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+</head>
+<body>
+<!-- 列表 -->
+<table class="table">
+    <thead>
+    <tr>
+        <td>id</td>
+        <td>书名</td>
+        <td>作者</td>
+    </tr>
+    </thead>
+    `
+    <tbody>
+    <tr th:each="book : ${datas.datas}" th:object="${book}">
+        <td th:text="*{id}">1</td>
+        <td th:text="*{name}">疯狂Spring Cloud微服务架构实战</td>
+        <td th:text="*{author}">杨恩雄</td>
+    </tr>
+    </tbody>
+</table>
+<ul class="pagination">
+    <li class="page-item active"
+        th:class="${datas.currentPage == page} ? 'page-item active' : 'page-item'"
+        th:each="page : ${#numbers.sequence(1, datas.pageCount)}">
+        <a class="page-link" href="#" th:href="@{/page/} + ${page}" th:text="${page}">1</a>
+    </li>
+</ul>
+<div>
+    <span th:text="|当前页：| + ${datas.currentPage}"></span></br>
+    <span th:text="|总页数：| + ${datas.pageCount}"></span></br>
+    <span th:text="|总数量：| + ${datas.dataCount}"></span>
+</div>
+</body>
+</html>

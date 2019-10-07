@@ -1,0 +1,21 @@
+<form method="post" th:action="@{/save}" th:object="${user}">
+    name: <input type="text" th:field="*{name}" th:errorclass="fieldError"/></br>
+    email: <input type="text" th:field="*{email}"/></br>
+    passwd: <input type="text" th:field="*{passwd}"/></br>
+    <input type="submit" value="提交"/>
+    <p></p>
+    <div th:each="err : ${#fields.errors('*')}">
+        <span th:text="${err}"></span></br>
+    </div>
+</form>
+
+<!-- 直接输出错误信息 -->
+<div th:errors="${user.name}"></div>
+<!-- 判断是否存在错误 -->
+<div th:if="${#fields.hasErrors('${user.name}')}">name属性存在错误</div>
+
+<style>
+    .fieldError {
+        background-color: red;
+    }
+</style>

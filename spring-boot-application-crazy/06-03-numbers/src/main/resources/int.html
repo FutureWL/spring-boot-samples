@@ -1,0 +1,12 @@
+formatInteger:
+<div th:text="${#numbers.formatInteger(10.99, 5)}"></div>
+<div th:each="num : ${#numbers.arrayFormatInteger(arr, 5)}">
+    <div th:text="${num}"></div>
+</div>
+<div th:each="num : ${#numbers.listFormatInteger(list, 5)}">
+    <div th:text="${num}"></div>
+</div>
+<div th:each="num : ${#numbers.setFormatInteger(set, 5)}">
+    <div th:text="${num}"></div>
+</div>
+<div th:text="${#numbers.formatInteger(1000000, 5, 'COMMA')}"></div>

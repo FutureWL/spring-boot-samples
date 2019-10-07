@@ -1,0 +1,11 @@
+spring:
+  profiles: mysql
+jdbc:
+  driver:
+    com.mysql.jdbc.Driver
+---
+spring:
+  profiles: oracle
+jdbc:
+  driver:
+    oracle.jdbc.driver.OracleDriver

@@ -1,0 +1,3 @@
+jdbc:
+  driver:
+    oracle.jdbc.driver.OracleDriver2

@@ -1,0 +1,6 @@
+<div th:text="${#strings.toString(user)}"></div>
+<div th:text="${#strings.length(user)}"></div>
+
+<div th:each="data : ${#strings.listLength(datas)}">
+    <div th:text="${data}"></div>
+</div>

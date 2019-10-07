@@ -1,0 +1,19 @@
+<table>
+    <tr th:each="data,iterState : ${#numbers.sequence(0, 2)}">
+        <td th:text="|从0开始的索引：| + ${iterState.index}"></td>
+        <td th:text="|从1开始的索引：| + ${iterState.count}"></td>
+        <td th:text="|数据集合大小：| + ${iterState.size}"></td>
+        <td th:text="|当前元素：| + ${iterState.current}"></td>
+        <td th:text="|是否第一次迭代：| + ${iterState.first}"></td>
+        <td th:text="|是否最后一次迭代：| + ${iterState.last}"></td>
+        <td th:text="|是否偶数次迭代：| + ${iterState.even}"></td>
+        <td th:text="|是否奇数次迭代：| + ${iterState.odd}"></td>
+    </tr>
+</table>
+
+<table>
+    <tr th:each="data,iterState : ${#numbers.sequence(0, 1)}"
+        th:style="|background-color: | + ${iterState.odd ? 'white' : 'gray'} + |;|">
+        <td th:text="${data}"></td>
+    </tr>
+</table>

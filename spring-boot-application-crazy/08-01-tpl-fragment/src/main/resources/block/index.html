@@ -1,0 +1,10 @@
+<body>
+<head th:replace="block/header.html :: common_header(~{this :: link})">
+    <link rel="stylesheet" href="/css/sale.css">
+</head>
+
+<head th:replace="block/header.html :: noop(~{this :: title})">
+    <title>模板的标题</title>
+</head>
+
+</body>

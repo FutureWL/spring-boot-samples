@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <form>
+        <table>
+            <tr>
+                <td>名称：</td>
+                <td>
+                    <input v-validate="'min: 3|max: 10|required'" name="name" type="text">
+                    <span v-show="errors.has('name')">{{ '最少3个字符，最长10个字符' }}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>作者：</td>
+                <td>
+                    <input v-validate="'required'" name="author" type="text">
+                    <span v-show="errors.has('author')">{{ '请输入作者' }}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><input type="submit" value="提交"/></td>
+            </tr>
+        </table>
+    </form>
+</div>
+<script th:src="@{/js/vue.min.js}"></script>
+<script th:src="@{/js/vee-validate.js}"></script>
+<script>
+    Vue.use(VeeValidate);
+    new Vue({
+        el: "#app"
+    });
+</script>
+</body>
+</html>
+
+

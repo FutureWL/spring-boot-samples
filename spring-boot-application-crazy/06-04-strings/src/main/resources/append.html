@@ -1,0 +1,4 @@
+<div th:text="${#strings.prepend(3, 'e')}"></div>
+<div th:text="${#strings.append('abcd', 'e')}"></div>
+<div th:text="${#strings.concat('abcd', 'e', 'b')}"></div>
+<div th:text="${#strings.concatReplaceNulls('**', '123', null, 'abc')}"></div>

@@ -1,0 +1,28 @@
+<table>
+    <tr th:each="u : ${users}" th:object="${u}">
+        <td th:text="*{id}"></td>
+        <td th:text="*{name}"></td>
+    </tr>
+</table>
+
+// 使用变量表达式
+<table>
+    <tr>
+        <td th:text="${user.id}"></td>
+        <td th:text="${user.name}"></td>
+    </tr>
+</table>
+// 选定对象后，使用星号表达式
+<table>
+    <tr th:object="${user}">
+        <td th:text="*{id}"></td>
+        <td th:text="*{name}"></td>
+    </tr>
+</table>
+
+<table>
+    <tr th:object="${user}">
+        <td th:text="${#object.id}"></td>
+        <td th:text="${#object.name}"></td>
+    </tr>
+</table>

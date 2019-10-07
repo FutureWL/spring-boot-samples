@@ -1,0 +1,16 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/common.css}"/>
+    <script th:src="@{/js/jquery-3.3.1.min.js}"></script>
+    <script>
+        $(document).ready(function () {
+            $("#span").click(function () {
+                alert("点击了span");
+            });
+        });
+    </script>
+</head>
+<body>
+<span id="span">click事件</span>
+</body>
+</html>

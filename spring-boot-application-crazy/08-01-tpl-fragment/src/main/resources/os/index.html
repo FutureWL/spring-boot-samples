@@ -1,0 +1,15 @@
+<body>
+/************省略@***********/
+<div th:insert="~{os/footer.html :: /div[id='footerA']}"></div>
+<div th:insert="~{os/footer.html :: span[class='andContent'][id='testAnd1']}"></div>
+/************使用#代替id选取***********/
+<div th:insert="~{os/footer.html :: div#footerA}"></div>
+/************使用.代替class选取***********/
+<div th:insert="~{os/footer.html :: span.footerClass}"></div>
+<div th:insert="~{os/footer.html :: .footerClass}"></div>
+/************使用%代替th:ref节点的引用***********/
+<div th:insert="~{os/footer.html :: div%footerRef}"></div>
+<div th:insert="~{os/footer.html :: %footerRef}"></div>
+/************混合使用***********/
+<div th:insert="~{os/footer.html :: div.footerContent//span[id='footerE']}"></div>
+</body>

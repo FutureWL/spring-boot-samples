@@ -1,0 +1,14 @@
+<body>
+<ul>
+    <li th:each="p : ${products}">
+        <div th:text="${p.name}">商品名称</div>
+        <div th:if="${pStat.index <= 1}"><span style="color: red;">推荐</span></div>
+    </li>
+</ul>
+<ul>
+    <li th:each="p : ${products}">
+        <div th:text="${p.name}">商品名称</div>
+        <div th:remove="${pStat.index > 1} ? all : none"><span style="color: red;">推荐</span></div>
+    </li>
+</ul>
+</body>

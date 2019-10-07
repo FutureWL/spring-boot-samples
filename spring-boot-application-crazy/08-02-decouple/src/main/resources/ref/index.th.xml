@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<thlogic>
+    <attr sel="/table/tr/td/span" th:text="${user}"></attr>
+    <attr sel="/div/#spanId" th:text="${user}"></attr>
+    <attr sel="/div/.spanClass" th:text="${user}"></attr>
+    <attr sel="/li/[class = 'spanClass']" th:text="${user}"></attr>
+    <attr sel="testRef" th:text="${user}"></attr>
+    <attr sel="testFrag" th:text="${user}"></attr>
+</thlogic>

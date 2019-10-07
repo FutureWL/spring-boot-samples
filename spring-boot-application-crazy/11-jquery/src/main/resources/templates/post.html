@@ -1,0 +1,28 @@
+<script th:src="@{/js/jquery-3.3.1.min.js}"></script>
+<script>
+    $.ajaxSetup({
+        contentType: "application/json; charset=utf-8"
+    });
+
+    function send() {
+        var url = "[[@{/save}]]";
+        var data = {id: "3", name: "Thymeleaf实战", author: "杨恩雄"};
+        /**
+         $.ajax({
+                    type: "POST",
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    url: url,
+                    data: JSON.stringify(data),
+                    success: function(data) {
+                        alert(data.name);
+                    }
+                });
+         */
+        $.post(url, JSON.stringify(data), function (data) {
+            alert(data.name);
+        });
+    }
+</script>
+<input type="button" value="Send Post" onClick="send()"/>
+        

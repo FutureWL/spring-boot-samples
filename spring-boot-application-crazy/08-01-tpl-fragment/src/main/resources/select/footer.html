@@ -1,0 +1,30 @@
+/************第1种语法***********/
+<div id="footerA">footer A</div>
+/************第2种语法***********/
+<div>
+    <div id="footerB"></div>
+</div>
+/************第3种语法***********/
+<div>
+    <span class="content">footer c</span>
+    <span class="content">footer d</span>
+</div>
+<div>
+    <span class="andContent" id="testAnd1">test and 1</span>
+    <span class="andContent" id="testAnd2">test and 2</span>
+</div>
+/************第4种语法***********/
+<span class="footerG">footer g1</span>
+<span class="footerG">footer g2</span>
+/************混合使用***********/
+<div class="footerContent">
+    <div>
+        <span id="footerE">footer e</span>
+        <span id="footerF">footer f</span>
+    </div>
+</div>
+/************ 第3种 th:ref ***********/
+<div th:ref="footerRef">
+    <span>footer ref</span>
+</div>
+    

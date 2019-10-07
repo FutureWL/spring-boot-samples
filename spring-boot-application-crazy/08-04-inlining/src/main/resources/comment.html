@@ -1,0 +1,73 @@
+<head>
+    <script th:inline="JavaScript">
+
+        /*[+
+        function show() {
+            alert('Hello, [[${user}]]');
+        }
+        +]*/
+
+        /*[- */
+        function show() {
+            alert('Prototype Content');
+        }
+
+        /* -]*/
+    </script>
+    <style th:inline="CSS">
+        /*[+
+        .my-text{
+            color: red;
+        }
+        +]*/
+
+        /*[- */
+        .my-text {
+            color: blue;
+        }
+
+        /* -]*/
+    </style>
+</head>
+<body>
+<input type="button" value="click me" onClick="show()"/>
+<span class="my-text">Hello World!</span>
+</body>
+
+
+<head>
+    <script th:inline="JavaScript">
+        var name = /*[[${user}]]*/ "Prototype user";
+
+        function show() {
+            alert(name);
+        }
+    </script>
+</head>
+<body>
+<input type="button" value="click me" onClick="show()"/>
+</body>
+
+
+<head>
+    <script th:inline="JavaScript">
+        // JavaBean
+        var user = /*[[${dataUser}]]*/ null;
+        // List
+        var users = /*[[${users}]]*/ null;
+        // Map
+        var map = /*[[${map}]]*/ null;
+
+        function show() {
+            alert(user.name);
+            alert(users.length);
+            alert(map.user1.name);
+        }
+
+    </script>
+</head>
+<body>
+<input type="button" value="click me" onClick="show()"/>
+</body>
+
+

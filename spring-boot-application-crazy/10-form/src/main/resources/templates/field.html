@@ -1,0 +1,16 @@
+<form method="post" th:action="@{/submit}" th:object="${user}">
+    <table>
+        <tr>
+            <td><input type="text" id="test" th:field="*{userName}"/></td>
+        </tr>
+        <tr>
+            <td><textarea th:field="*{userName}"></textarea></td>
+        </tr>
+        <select th:field="*{sex}">
+            <option th:each="sexCon : ${sexCons}" th:value="${sexCon}" th:text="${sexCon}"></option>
+        </select>
+        <tr>
+            <td><input type="submit" value="提交"/></td>
+        </tr>
+    </table>
+</form>

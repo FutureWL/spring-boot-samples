@@ -1,0 +1,13 @@
+<style>
+    .my-text {
+        color: [ [${color}] ];
+    }
+</style>
+<body>
+<span class="my-text">Hello World!</span>
+</body>
+
+
+<body>
+<span class="my-text" th:sytle="|color: | + ${color} + |;|">Hello World!</span>
+</body>

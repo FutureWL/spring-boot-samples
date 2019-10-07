@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+    <title>Users</title>
+    <meta name="content-type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<table border="1" width="200px;" style="text-align: center;">
+    <tr>
+        <td width="30%">数据ID</td>
+        <td>用户名称</td>
+    </tr>
+    <tr th:each="user : ${users}">
+        <td th:text="${user.id}">0</td>
+        <td th:text="${user.name}">Angus</td>
+    </tr>
+</table>
+</body>
+</html>

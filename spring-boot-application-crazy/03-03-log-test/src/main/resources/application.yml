@@ -1,0 +1,8 @@
+server:
+  tomcat:
+    basedir: my-tomcat
+    accesslog:
+      pattern: 'ip: %A, response code: %s, time: %t'
+      enabled: true
+      directory: crazyit-logs
+      buffered: false

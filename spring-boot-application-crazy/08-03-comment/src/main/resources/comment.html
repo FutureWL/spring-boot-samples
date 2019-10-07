@@ -1,0 +1,18 @@
+<!--/* 这里的内容在解析后将不会显示  */-->
+<span th:text="Angus">Prototype Angus</span>
+
+<!--/*/
+<span th:text="Angus">Prototype Angus</span>
+/*/-->
+<table>
+    <tr th:each="user : ${users}">
+        <td th:text="${user.id}">id: 100</td>
+        <td th:text="${user.name}">名称：小明</td>
+    </tr>
+    <!--/*
+    <tr>
+        <td>id: 200</td>
+        <td>名称：小红</td>
+    </tr>
+    */-->
+</table>

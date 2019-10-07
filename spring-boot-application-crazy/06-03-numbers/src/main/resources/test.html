@@ -1,0 +1,13 @@
+<div th:text="${#numbers.formatInteger(one, 5)}"></div>
+<div th:text="${#numbers.formatInteger(two, 5, 'DEFAULT')}"></div>
+<div th:text="${#numbers.formatDecimal(three, 3, 5, 'COMMA')}"></div>
+<div th:text="${#strings.capitalizeWords(user.name)}"></div>
+
+<div th:text="${#strings.escapeXml(xml)}"></div>
+<div th:text="${#strings.escapeXml('/user/test?id=1')}"></div>
+<div th:text="${#strings.unescapeJava('Angus')}"></div>
+
+
+<div th:text="${#strings.concat('a', 'c', 'e')}"></div>
+<div th:text="${#strings.concatReplaceNulls('bb', 'bbb', null, 'e')}"></div>
+<div th:text="${#strings.randomAlphanumeric(2)}"></div>

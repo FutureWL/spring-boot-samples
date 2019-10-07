@@ -1,0 +1,7 @@
+jdbc:
+  user:
+    root
+  passwd:
+    123456
+  driver:
+    com.mysql.jdbc.Driver

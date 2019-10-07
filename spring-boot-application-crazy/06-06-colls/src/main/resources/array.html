@@ -1,0 +1,15 @@
+<div th:each="data : ${#arrays.toArray(arr)}">
+    <div th:text="${data}"></div>
+</div>
+<div th:each="data : ${#arrays.toArray(list)}">
+    <div th:text="${data}"></div>
+</div>
+<div th:each="data : ${#arrays.toStringArray(strArr)}">
+    <div th:text="${data}"></div>
+</div>
+<div th:each="data : ${#arrays.toStringArray(strList)}">
+    <div th:text="${data}"></div>
+</div>
+<div th:text="${#arrays.length(arr)}"></div>
+<div th:text="${#arrays.isEmpty(arr)}"></div>
+<div th:text="${#arrays.contains(strList, 'def')}"></div>

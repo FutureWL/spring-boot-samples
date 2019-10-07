@@ -1,0 +1,4 @@
+<span th:text="${money}" style="color: red;">Prototype name</span></br>
+<span th:text="${{money}}" style="color: red;">Prototype name</span></br>
+<span th:text="*{{money}}" style="color: red;">Prototype name</span></br>
+<span th:text="${#conversions.convert(money, 'String')}" style="color: red;">Prototype name</span>

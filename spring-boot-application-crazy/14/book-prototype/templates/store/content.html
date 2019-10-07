@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图书管理系统</title>
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css"/>
+    <script src="../../static/js/jquery-3.3.1.min.js"></script>
+    <script src="../../static/js/popper.min.js"></script>
+    <script src="../../static/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="row" style="height: 30px;"></div>
+    <div class="row">
+        <div class="col-lg-4" style="text-align: center;">
+            <img src="../../static/images/logo.png"/>
+        </div>
+        <div class="col-lg-8" style="text-align: center;">
+            <img src="../../static/images/banner.png"/>
+        </div>
+    </div>
+    <div class="row" style="height: 20px;"></div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #A9C8E7;">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="../main.html">首页</a>
+                    <a class="nav-item nav-link" href="../book/list.html">图书管理</a>
+                    <a class="nav-item nav-link active" href="#">图书入库</a>
+                    <a class="nav-item nav-link" href="../sale/list.html">图书销售</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="row" style="height: 20px;"></div>
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-header">新建图书入库</div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">图书：</label>
+                            <button type="button" class="btn btn-primary"
+                                    onClick="document.location.href='choose.html'">选择图书
+                            </button>
+                        </div>
+                        <div class="form-group row">
+                            <table class="table col-lg-12" style="border: 1px solid #cccfc9;">
+                                <thead>
+                                <tr class="table-secondary">
+                                    <th scope="col" width="60%">书名</th>
+                                    <th scope="col" width="20%">数量</th>
+                                    <th scope="col" width="20%">操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>疯狂Spring Cloud微服务架构实战</td>
+                                    <td><input type="text" class="col-sm-12 form-control"></td>
+                                    <td><input type="button" class="btn btn-primary" value="删除"/></td>
+                                </tr>
+                                <tr>
+                                    <td>疯狂Java讲义</td>
+                                    <td><input type="text" class="col-sm-12 form-control"></td>
+                                    <td><input type="button" class="btn btn-primary" value="删除"/></td>
+                                </tr>
+                                <tr>
+                                    <td>疯狂工作流讲义</td>
+                                    <td>
+                                        <input type="text" class="col-sm-12 form-control">
+                                    <td><input type="button" class="btn btn-primary" value="删除"/></td>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-5"></div>
+                            <div class="col-sm-2">
+                                <button type="submit" class="btn btn-primary">保 存</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="height: 20px;"></div>
+    <div class="row">
+        <div class="col-lg-12" style="text-align: center;">
+            Copyright © 2017-2018 Angus Young All rights reserved.
+        </div>
+    </div>
+    <div class="row" style="height: 20px;"></div>
+</div>
+
+
+</body>
+</html>

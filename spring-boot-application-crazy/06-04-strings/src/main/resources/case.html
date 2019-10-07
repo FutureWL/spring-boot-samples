@@ -1,0 +1,6 @@
+<div th:text="${#strings.toUpperCase('疯狂Spring Cloud')}"></div>    // 结果：疯狂SPRING CLOUD
+<div th:text="${#strings.toLowerCase('疯狂JAVA')}"></div>    // 结果：疯狂java
+<div th:text="${#strings.capitalize('crazy')}"></div>    // 结果：Crazy
+<div th:text="${#strings.unCapitalize('Crazy')}"></div>    // 结果：crazy
+<div th:text="${#strings.capitalizeWords('疯狂 spring cloud')}"></div>    // 结果：疯狂 Spring Cloud
+<div th:text="${#strings.capitalizeWords('crazy-spring-cloud', '-')}"></div>    // 结果：Crazy-Spring-Cloud

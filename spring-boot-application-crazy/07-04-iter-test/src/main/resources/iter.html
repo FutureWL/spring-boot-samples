@@ -1,0 +1,10 @@
+<table>
+    <tr th:each="user : ${users}">
+        <td th:text="${user.name}"></td>
+    </tr>
+</table>
+<table>
+    <tr th:each="map : ${userMap}">
+        <td th:text="${map.key} + |---| + ${map.value.name}"></td>
+    </tr>
+</table>

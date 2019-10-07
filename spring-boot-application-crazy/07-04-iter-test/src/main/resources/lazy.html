@@ -1,0 +1,5 @@
+<table th:if="${show == true}">
+    <tr th:each="user : ${users}">
+        <td th:text="${user.name}"></td>
+    </tr>
+</table>
