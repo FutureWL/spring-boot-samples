@@ -2,7 +2,7 @@ package io.github.futurewl.feign;
 
 import feign.Param;
 import feign.RequestLine;
-import io.github.futurewl.Person;
+import io.github.futurewl.entity.Person;
 
 /**
  * Feign客户端接口

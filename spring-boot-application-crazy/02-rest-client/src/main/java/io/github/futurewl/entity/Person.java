@@ -1,4 +1,4 @@
-package io.github.futurewl;
+package io.github.futurewl.entity;
 
 public class Person {
 

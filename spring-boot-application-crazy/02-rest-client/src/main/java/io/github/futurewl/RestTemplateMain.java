@@ -1,5 +1,6 @@
 package io.github.futurewl;
 
+import io.github.futurewl.entity.Person;
 import org.springframework.web.client.RestTemplate;
 
 /**

@@ -2,7 +2,7 @@ package io.github.futurewl.feign;
 
 import feign.Feign;
 import feign.gson.GsonDecoder;
-import io.github.futurewl.Person;
+import io.github.futurewl.entity.Person;
 
 public class FeignMain {
 

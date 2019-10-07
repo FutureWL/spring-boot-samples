@@ -1,5 +1,6 @@
-package io.github.futurewl;
+package io.github.futurewl.service;
 
+import io.github.futurewl.entity.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
