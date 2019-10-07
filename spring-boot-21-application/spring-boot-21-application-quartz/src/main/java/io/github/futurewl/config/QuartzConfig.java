@@ -1,5 +1,6 @@
-package io.github.futurewl;
+package io.github.futurewl.config;
 
+import io.github.futurewl.job.MySecondJob;
 import org.quartz.CronTrigger;
 import org.quartz.JobDataMap;
 import org.quartz.SimpleTrigger;

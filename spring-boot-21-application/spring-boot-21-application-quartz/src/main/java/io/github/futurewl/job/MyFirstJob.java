@@ -1,4 +1,4 @@
-package io.github.futurewl;
+package io.github.futurewl.job;
 
 import org.springframework.stereotype.Component;
 
