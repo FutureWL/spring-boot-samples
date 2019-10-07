@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-boot-21-application-importxml</artifactId>
+    <artifactId>spring-boot-21-application-config-xml</artifactId>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>

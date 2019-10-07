@@ -18,7 +18,8 @@
         <module>spring-boot-21-application-web-vue</module>
         <module>spring-boot-21-application-quartz</module>
         <module>spring-boot-21-application-netty</module>
-        <module>spring-boot-21-application-importxml</module>
+        <module>spring-boot-21-application-config-xml</module>
+        <module>spring-boot-21-application-config-java</module>
     </modules>
     <parent>
         <artifactId>spring-boot-samples</artifactId>
