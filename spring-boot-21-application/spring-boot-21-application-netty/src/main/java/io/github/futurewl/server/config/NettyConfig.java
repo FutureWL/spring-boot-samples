@@ -1,4 +1,4 @@
-package io.github.futurewl.server;
+package io.github.futurewl.server.config;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;

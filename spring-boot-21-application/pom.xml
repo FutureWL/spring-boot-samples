@@ -17,6 +17,7 @@
         <module>spring-boot-21-application-web-websocket-point-to-point</module>
         <module>spring-boot-21-application-web-vue</module>
         <module>spring-boot-21-application-quartz</module>
+        <module>spring-boot-21-application-netty</module>
     </modules>
     <parent>
         <artifactId>spring-boot-samples</artifactId>

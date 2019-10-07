@@ -9,8 +9,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author weilai
  */
 @SpringBootApplication
-public class SpringBootApplicationNettyClient {
+public class SpringBoot21ApplicationNettyClient {
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootApplicationNettyClient.class);
+        SpringApplication.run(SpringBoot21ApplicationNettyClient.class);
     }
 }
