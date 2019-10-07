@@ -1,4 +1,4 @@
-package org.crazyit.boot;
+package io.github.futurewl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

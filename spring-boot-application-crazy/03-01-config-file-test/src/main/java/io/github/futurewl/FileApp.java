@@ -1,4 +1,4 @@
-package org.crazyit.boot;
+package io.github.futurewl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,21 +7,19 @@ import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+
 @SpringBootApplication
 @RestController
-public class SpecFileApp {
+public class FileApp {
 
     public static void main(String[] args) {
-        new SpringApplicationBuilder(SpecFileApp.class)
-                .properties(
-                        "spring.config.location=classpath:/test-folder/my-config.properties")
-                .run(args);
+        new SpringApplicationBuilder(FileApp.class).run(args);
     }
 
     @Autowired
     private Environment env;
 
-    @GetMapping("/ta")
+    @GetMapping("/ua")
     public String getProp() {
         System.out.println(env.getProperty("user.test.name"));
         return "";
