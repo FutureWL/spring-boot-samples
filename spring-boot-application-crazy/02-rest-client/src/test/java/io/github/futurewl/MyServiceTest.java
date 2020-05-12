@@ -1,7 +1,7 @@
 package io.github.futurewl;
 
 import io.github.futurewl.entity.Person;
-import io.github.futurewl.service.MyService;
+import io.github.futurewl.demo1.service.MyService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

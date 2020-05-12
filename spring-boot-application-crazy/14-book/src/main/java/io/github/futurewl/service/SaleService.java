@@ -1,4 +1,4 @@
-package io.github.futurewl.service;
+package io.github.futurewl.demo1.service;
 
 import io.github.futurewl.dao.BookDao;
 import io.github.futurewl.dao.SaleDao;

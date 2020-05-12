@@ -1,4 +1,4 @@
-package io.github.futurewl.repository;
+package io.github.futurewl.demo1.repository;
 
 import io.github.futurewl.entity.Role;
 import org.springframework.data.jpa.repository.JpaRepository;

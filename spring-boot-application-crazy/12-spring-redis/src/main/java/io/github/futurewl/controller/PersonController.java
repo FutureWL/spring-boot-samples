@@ -1,7 +1,7 @@
 package io.github.futurewl.controller;
 
 import io.github.futurewl.entity.Person;
-import io.github.futurewl.service.PersonService;
+import io.github.futurewl.demo1.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,4 +1,4 @@
-package io.github.futurewl.service;
+package io.github.futurewl.demo1.service;
 
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.access.prepost.PreAuthorize;

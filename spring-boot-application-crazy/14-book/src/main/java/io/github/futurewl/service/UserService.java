@@ -1,4 +1,4 @@
-package io.github.futurewl.service;
+package io.github.futurewl.demo1.service;
 
 import io.github.futurewl.dao.UserDao;
 import io.github.futurewl.entity.User;

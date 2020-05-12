@@ -1,6 +1,6 @@
 package io.github.futurewl.demo1.controller;
 
-import io.github.futurewl.service.UserService;
+import io.github.futurewl.demo1.service.UserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

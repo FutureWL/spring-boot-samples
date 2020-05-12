@@ -1,6 +1,6 @@
 package io.github.futurewl.controller;
 
-import io.github.futurewl.service.UserService;
+import io.github.futurewl.demo1.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

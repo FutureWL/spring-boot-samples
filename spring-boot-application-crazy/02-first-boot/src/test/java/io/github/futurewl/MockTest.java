@@ -1,7 +1,7 @@
 package io.github.futurewl;
 
-import io.github.futurewl.service.MainService;
-import io.github.futurewl.service.RemoteService;
+import io.github.futurewl.demo1.service.MainService;
+import io.github.futurewl.demo1.service.RemoteService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.BDDMockito;

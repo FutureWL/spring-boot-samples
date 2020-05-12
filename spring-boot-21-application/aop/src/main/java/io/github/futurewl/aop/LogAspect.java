@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class LogAspect {
 
-    @Pointcut("execution(* io.github.futurewl.service.*.*(..))")
+    @Pointcut("execution(* io.github.futurewl.demo1.service.*.*(..))")
     public void pc1() {
     }
 

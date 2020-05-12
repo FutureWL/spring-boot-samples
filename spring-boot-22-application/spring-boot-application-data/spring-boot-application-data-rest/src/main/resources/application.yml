@@ -1,10 +1,11 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/db_spring_boot_data_rest?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
-    username: root
-    password: root
+    url: jdbc:mysql://192.168.0.11:3306/db_sb_data_rest?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    username: db_sb_data_rest
+    password: db_sb_data_rest
   jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect # 设计数据库引擎为 InnoDB
     hibernate:
       ddl-auto: update
     show-sql: true

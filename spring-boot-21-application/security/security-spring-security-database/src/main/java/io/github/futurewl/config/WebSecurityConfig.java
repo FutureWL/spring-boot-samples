@@ -1,6 +1,6 @@
 package io.github.futurewl.config;
 
-import io.github.futurewl.service.UserService;
+import io.github.futurewl.demo1.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

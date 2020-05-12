@@ -1,4 +1,4 @@
-package io.github.futurewl.service;
+package io.github.futurewl.demo1.service;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

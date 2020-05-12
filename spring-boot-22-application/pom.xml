@@ -16,7 +16,8 @@
         <module>spring-boot-application-actuator-admin-client</module>
         <module>spring-boot-application-data</module>
         <module>spring-boot-application-starter</module>
-                <module>spring-boot-application-mq</module>
+        <module>spring-boot-application-mq</module>
+        <module>spring-boot-application-cache</module>
         <!--        <module>spring-boot-application-mq-kafka</module>-->
         <!--        <module>spring-boot-application-mq-rabbitmq</module>-->
         <!--        <module>spring-boot-application-commandlinerunner</module>-->
@@ -28,13 +29,7 @@
         <!--        <module>spring-boot-application-actuator-admin</module>-->
         <!--        <module>spring-boot-application-actuator-admin-client</module>-->
         <!--        <module>spring-boot-application-quartz</module>-->
-        <!--        <module>spring-boot-application-data-jdbc</module>-->
-        <!--        <module>spring-boot-application-data-mybatis</module>-->
-        <!--        <module>spring-boot-application-data-mybatis-plus</module>-->
-        <!--        <module>spring-boot-application-data-jpa</module>-->
-        <!--        <module>spring-boot-application-data-rest</module>-->
-        <!--        <module>spring-boot-application-data-mongodb</module>-->
-        <!--        <module>spring-boot-application-data-elasticsearch</module>-->
+
         <!--        <module>spring-boot-application-cache-redis</module>-->
         <!--        <module>spring-boot-application-cache-ehcache</module>-->
         <!--        <module>spring-boot-application-cache-concurrent-cache</module>-->

@@ -1,7 +1,7 @@
-package io.github.futurewl.service.impl;
+package io.github.futurewl.demo1.service.impl;
 
-import io.github.futurewl.repository.UserRepository;
-import io.github.futurewl.service.UserService;
+import io.github.futurewl.demo1.repository.UserRepository;
+import io.github.futurewl.demo1.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
