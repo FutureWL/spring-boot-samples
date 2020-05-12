@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>spring-boot-samples</artifactId>
+        <groupId>io.github.futurewl</groupId>
+        <version>190921</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+    <artifactId>spring-boot-22-application</artifactId>
+    <modules>
+        <module>spring-boot-application-actuator</module>
+        <module>spring-boot-application-actuator-admin</module>
+        <module>spring-boot-application-actuator-admin-client</module>
+        <module>spring-boot-application-data</module>
+        <module>spring-boot-application-starter</module>
+                <module>spring-boot-application-mq</module>
+        <!--        <module>spring-boot-application-mq-kafka</module>-->
+        <!--        <module>spring-boot-application-mq-rabbitmq</module>-->
+        <!--        <module>spring-boot-application-commandlinerunner</module>-->
+        <!--        <module>spring-boot-application-importxml</module>-->
+        <!--        <module>spring-boot-application-lombok</module>-->
+        <!--        <module>spring-boot-application-netty</module>-->
+        <!--        <module>spring-boot-application-poi</module>-->
+        <!--        <module>spring-boot-application-actuator</module>-->
+        <!--        <module>spring-boot-application-actuator-admin</module>-->
+        <!--        <module>spring-boot-application-actuator-admin-client</module>-->
+        <!--        <module>spring-boot-application-quartz</module>-->
+        <!--        <module>spring-boot-application-data-jdbc</module>-->
+        <!--        <module>spring-boot-application-data-mybatis</module>-->
+        <!--        <module>spring-boot-application-data-mybatis-plus</module>-->
+        <!--        <module>spring-boot-application-data-jpa</module>-->
+        <!--        <module>spring-boot-application-data-rest</module>-->
+        <!--        <module>spring-boot-application-data-mongodb</module>-->
+        <!--        <module>spring-boot-application-data-elasticsearch</module>-->
+        <!--        <module>spring-boot-application-cache-redis</module>-->
+        <!--        <module>spring-boot-application-cache-ehcache</module>-->
+        <!--        <module>spring-boot-application-cache-concurrent-cache</module>-->
+        <!--        <module>spring-boot-application-webflux</module>-->
+        <!--        <module>spring-boot-application-test</module>-->
+        <!--        <module>spring-boot-application-web-1</module>-->
+        <!--        <module>spring-boot-application-web-json</module>-->
+        <!--        <module>spring-boot-application-web-thymeleaf</module>-->
+        <!--        <module>spring-boot-application-web-freemarker</module>-->
+        <!--        <module>spring-boot-application-web-cors</module>-->
+        <!--        <module>spring-boot-application-web-test</module>-->
+        <!--        <module>spring-boot-application-web-json-gson</module>-->
+        <!--        <module>spring-boot-application-web-json-fastjson</module>-->
+        <!--        <module>spring-boot-application-web-static</module>-->
+        <!--        <module>spring-boot-application-web-file</module>-->
+        <!--        <module>spring-boot-application-web-file-multipart</module>-->
+        <!--        <module>spring-boot-application-web-controller-advice</module>-->
+        <!--        <module>spring-boot-application-web-custom-error-page</module>-->
+        <!--        <module>spring-boot-application-web-servlet-filter-listener</module>-->
+        <!--        <module>spring-boot-application-web-sse</module>-->
+        <!--        <module>spring-boot-application-web-websocket</module>-->
+        <!--        <module>spring-boot-application-web-websocket-point-to-point</module>-->
+        <!--        <module>spring-boot-application-web-swagger2</module>-->
+        <!--        <module>spring-boot-application-web-validation</module>-->
+        <!--        <module>spring-boot-application-security-oauth2</module>-->
+        <!--        <module>spring-boot-application-security-shiro</module>-->
+        <!--        <module>spring-boot-application-security-spring-security</module>-->
+        <!--        <module>spring-boot-application-security-spring-security-mutil-config</module>-->
+        <!--        <module>spring-boot-application-security-spring-security-database</module>-->
+        <!--        <module>spring-boot-application-crazy</module>-->
+    </modules>
+    <properties>
+        <spring.boot.2.2.x.RELEASE.version>2.2.7.RELEASE</spring.boot.2.2.x.RELEASE.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.2.2.x.RELEASE.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>${spring.boot.2.2.x.RELEASE.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

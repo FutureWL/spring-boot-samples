@@ -9,7 +9,7 @@
     <version>190921</version>
     <packaging>pom</packaging>
 
-    <name>00-backend-java-samples</name>
+    <name>spring-boot-samples</name>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -19,59 +19,10 @@
     </properties>
 
     <modules>
-<!--        <module>spring-boot-application-aop</module>-->
-<!--        <module>spring-boot-application-commandlinerunner</module>-->
-<!--        <module>spring-boot-application-importxml</module>-->
-<!--        <module>spring-boot-application-lombok</module>-->
-<!--        <module>spring-boot-application-netty</module>-->
-<!--        <module>spring-boot-application-starter</module>-->
-<!--        <module>spring-boot-application-poi</module>-->
-<!--        <module>spring-boot-application-actuator</module>-->
-<!--        <module>spring-boot-application-actuator-admin</module>-->
-<!--        <module>spring-boot-application-actuator-admin-client</module>-->
-<!--        <module>spring-boot-application-quartz</module>-->
-<!--        <module>spring-boot-application-data-jdbc</module>-->
-<!--        <module>spring-boot-application-data-mybatis</module>-->
-<!--        <module>spring-boot-application-data-mybatis-plus</module>-->
-<!--        <module>spring-boot-application-data-jpa</module>-->
-<!--        <module>spring-boot-application-data-rest</module>-->
-<!--        <module>spring-boot-application-data-mongodb</module>-->
-<!--        <module>spring-boot-application-data-elasticsearch</module>-->
-<!--        <module>spring-boot-application-cache-redis</module>-->
-<!--        <module>spring-boot-application-cache-ehcache</module>-->
-<!--        <module>spring-boot-application-cache-concurrent-cache</module>-->
-<!--        <module>spring-boot-application-mq-jms</module>-->
-<!--        <module>spring-boot-application-mq-kafka</module>-->
-<!--        <module>spring-boot-application-mq-rabbitmq</module>-->
-<!--        <module>spring-boot-application-webflux</module>-->
-<!--        <module>spring-boot-application-test</module>-->
-<!--        <module>spring-boot-application-web-1</module>-->
-<!--        <module>spring-boot-application-web-json</module>-->
-<!--        <module>spring-boot-application-web-thymeleaf</module>-->
-<!--        <module>spring-boot-application-web-freemarker</module>-->
-<!--        <module>spring-boot-application-web-cors</module>-->
-<!--        <module>spring-boot-application-web-test</module>-->
-<!--        <module>spring-boot-application-web-json-gson</module>-->
-<!--        <module>spring-boot-application-web-json-fastjson</module>-->
-<!--        <module>spring-boot-application-web-static</module>-->
-<!--        <module>spring-boot-application-web-file</module>-->
-<!--        <module>spring-boot-application-web-file-multipart</module>-->
-<!--        <module>spring-boot-application-web-controller-advice</module>-->
-<!--        <module>spring-boot-application-web-custom-error-page</module>-->
-<!--        <module>spring-boot-application-web-servlet-filter-listener</module>-->
-<!--        <module>spring-boot-application-web-sse</module>-->
-<!--        <module>spring-boot-application-web-websocket</module>-->
-<!--        <module>spring-boot-application-web-websocket-point-to-point</module>-->
-<!--        <module>spring-boot-application-web-swagger2</module>-->
-<!--        <module>spring-boot-application-web-validation</module>-->
-<!--        <module>spring-boot-application-security-oauth2</module>-->
-<!--        <module>spring-boot-application-security-shiro</module>-->
-<!--        <module>spring-boot-application-security-spring-security</module>-->
-<!--        <module>spring-boot-application-security-spring-security-mutil-config</module>-->
-<!--        <module>spring-boot-application-security-spring-security-database</module>-->
-<!--        <module>spring-boot-application-crazy</module>-->
         <module>spring-boot-15-application</module>
         <module>spring-boot-21-application</module>
+        <module>spring-boot-22-application</module>
+        <module>spring-boot-application-crazy</module>
     </modules>
 
     <repositories>

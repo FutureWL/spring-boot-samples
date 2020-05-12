@@ -63,23 +63,64 @@
         <module>12-spring-mongodb</module>
         <module>12-spring-redis</module>
         <module>12-test-jedis</module>
-        <module>13-02-first-ek-server</module>
-        <module>13-02-first-ek-service-invoker</module>
-        <module>13-02-first-ek-service-provider</module>
-        <module>13-03-ek-server</module>
-        <module>13-03-ek-service-invoker</module>
-        <module>13-03-ek-service-provider</module>
-        <module>13-03-first-ribbon-client</module>
-        <module>13-04-ek-server</module>
-        <module>13-04-ek-service-invoker</module>
-        <module>13-04-ek-service-provider</module>
-        <module>13-04-feign-client</module>
-        <module>13-04-rest-server</module>
-        <module>13-05-first-hystrix</module>
-        <module>13-05-hy-server</module>
-        <module>13-05-hy-service-invoker</module>
-        <module>13-05-hy-service-provider</module>
-        <module>14-book</module>
+        <!--        <module>13-02-first-ek-server</module>-->
+        <!--        <module>13-02-first-ek-service-invoker</module>-->
+        <!--        <module>13-02-first-ek-service-provider</module>-->
+        <!--        <module>13-03-ek-server</module>-->
+        <!--        <module>13-03-ek-service-invoker</module>-->
+        <!--        <module>13-03-ek-service-provider</module>-->
+        <!--        <module>13-03-first-ribbon-client</module>-->
+        <!--        <module>13-04-ek-server</module>-->
+        <!--        <module>13-04-ek-service-invoker</module>-->
+        <!--        <module>13-04-ek-service-provider</module>-->
+        <!--        <module>13-04-feign-client</module>-->
+        <!--        <module>13-04-rest-server</module>-->
+        <!--        <module>13-05-first-hystrix</module>-->
+        <!--        <module>13-05-hy-server</module>-->
+        <!--        <module>13-05-hy-service-invoker</module>-->
+        <!--        <module>13-05-hy-service-provider</module>-->
+        <!--        <module>14-book</module>-->
     </modules>
+    <properties>
+        <spring.boot.2.1.x.RELEASE.version>2.1.9.RELEASE</spring.boot.2.1.x.RELEASE.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.2.1.x.RELEASE.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>${spring.boot.2.1.x.RELEASE.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
 
 </project>

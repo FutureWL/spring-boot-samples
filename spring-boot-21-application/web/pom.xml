@@ -24,6 +24,7 @@
         <module>web-use-jetty</module>
         <module>web-use-undertow</module>
         <module>web-template-jsp</module>
+        <module>web-first-app</module>
     </modules>
 
 </project>
