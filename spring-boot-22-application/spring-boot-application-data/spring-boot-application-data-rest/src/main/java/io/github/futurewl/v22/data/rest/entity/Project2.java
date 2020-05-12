@@ -12,16 +12,16 @@ import java.util.List;
 @Getter
 @Setter
 @Entity
-@Table(name = "t_project")
-@org.hibernate.annotations.Table(appliesTo = "t_project", comment = "项目表")
-public class Project extends BaseEntity {
+@Table(name = "t_project2")
+@org.hibernate.annotations.Table(appliesTo = "t_project2", comment = "项目表")
+public class Project2 extends BaseEntity {
 
     private String name;
 
-    @ManyToMany(mappedBy = "projects")
+    @ManyToMany(mappedBy = "project2s")
     private List<Device> devices;
 
-    @OneToMany(mappedBy = "project")
+    @OneToMany(mappedBy = "project2")
     private List<DeviceLoopGroup> deviceLoopGroups;
 
 }

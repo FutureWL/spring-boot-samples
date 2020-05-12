@@ -5,6 +5,7 @@ import lombok.Setter;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import java.util.List;
 
@@ -19,6 +20,12 @@ public class DeviceLoopGroup extends BaseEntity {
      * 设备回路组名称
      */
     private String name;
+
+    @ManyToOne
+    private Project project;
+
+    @ManyToOne
+    private Project2 project2;
 
     /**
      * 设备回路列表

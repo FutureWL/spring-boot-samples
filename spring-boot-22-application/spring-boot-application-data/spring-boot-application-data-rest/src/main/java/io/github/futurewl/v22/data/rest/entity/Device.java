@@ -3,10 +3,7 @@ package io.github.futurewl.v22.data.rest.entity;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.List;
 
 @Getter
@@ -23,5 +20,11 @@ public class Device extends BaseEntity {
 
     @ManyToMany
     private List<Project> projects;
+
+    @ManyToMany
+    private List<Project2> project2s;
+
+    @ManyToOne
+    private Project3 project3;
 
 }
