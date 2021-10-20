@@ -24,6 +24,8 @@
 <!--        <module>spring-boot-22-application</module>-->
 <!--        <module>spring-boot-application-crazy</module>-->
         <module>spring-boot-25-apps</module>
+        <module>spring-boot-23-apps</module>
+        <module>spring-boot-24-apps</module>
     </modules>
 
     <repositories>

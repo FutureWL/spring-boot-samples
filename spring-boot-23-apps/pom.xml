@@ -9,17 +9,17 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-boot-25-apps</artifactId>
+    <artifactId>spring-boot-23-apps</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>spring-boot-25-apps-01-hello</module>
-        <module>spring-boot-25-apps-02-spring-boot-admin</module>
+        <module>spring-boot-23-apps-01-hello</module>
+        <module>spring-boot-23-apps-02-spring-boot-admin</module>
     </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
-        <spring.boot.2.5.x.RELEASE.version>2.5.5</spring.boot.2.5.x.RELEASE.version>
+        <spring.boot.2.3.x.RELEASE.version>2.3.12.RELEASE</spring.boot.2.3.x.RELEASE.version>
     </properties>
 
     <dependencyManagement>
@@ -27,7 +27,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>${spring.boot.2.5.x.RELEASE.version}</version>
+                <version>${spring.boot.2.3.x.RELEASE.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -44,7 +44,7 @@
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
-                    <version>${spring.boot.2.5.x.RELEASE.version}</version>
+                    <version>${spring.boot.2.3.x.RELEASE.version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
