@@ -7,7 +7,7 @@
     <parent>
         <artifactId>web</artifactId>
         <groupId>io.github.futurewl</groupId>
-        <version>190921</version>
+        <version>211020</version>
     </parent>
 
     <dependencies>

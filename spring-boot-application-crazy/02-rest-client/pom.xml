@@ -5,7 +5,7 @@
     <parent>
         <artifactId>spring-boot-application-crazy</artifactId>
         <groupId>io.github.futurewl</groupId>
-        <version>190921</version>
+        <version>211020</version>
     </parent>
 
     <artifactId>02-rest-client</artifactId>

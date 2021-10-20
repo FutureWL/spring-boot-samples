@@ -15,7 +15,7 @@
     <parent>
         <artifactId>spring-boot-samples</artifactId>
         <groupId>io.github.futurewl</groupId>
-        <version>190921</version>
+        <version>211020</version>
     </parent>
 
     <artifactId>spring-boot-21-application</artifactId>

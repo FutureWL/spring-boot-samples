@@ -6,7 +6,7 @@
 
     <groupId>io.github.futurewl</groupId>
     <artifactId>spring-boot-samples</artifactId>
-    <version>190921</version>
+    <version>211020</version>
     <packaging>pom</packaging>
 
     <name>spring-boot-samples</name>
@@ -19,10 +19,11 @@
     </properties>
 
     <modules>
-        <module>spring-boot-15-application</module>
-        <module>spring-boot-21-application</module>
-        <module>spring-boot-22-application</module>
-        <module>spring-boot-application-crazy</module>
+<!--        <module>spring-boot-15-application</module>-->
+<!--        <module>spring-boot-21-application</module>-->
+<!--        <module>spring-boot-22-application</module>-->
+<!--        <module>spring-boot-application-crazy</module>-->
+        <module>spring-boot-25-apps</module>
     </modules>
 
     <repositories>

@@ -6,7 +6,7 @@
     <parent>
         <artifactId>spring-boot-application-crazy</artifactId>
         <groupId>io.github.futurewl</groupId>
-        <version>190921</version>
+        <version>211020</version>
     </parent>
 
     <artifactId>05-03-th-web</artifactId>
