@@ -6,26 +6,21 @@
 
     <groupId>io.github.futurewl</groupId>
     <artifactId>spring-boot-samples</artifactId>
-    <version>211020</version>
+    <version>v.2.6.x</version>
     <packaging>pom</packaging>
 
-    <name>spring-boot-samples</name>
+    <name>apps-samples</name>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <v.2.6.x.RELEASE.version>2.6.2</v.2.6.x.RELEASE.version>
     </properties>
 
     <modules>
-        <module>v-1.5.x-apps</module>
-        <module>v-2.1.x-apps</module>
-        <module>v-2.2.x-apps</module>
-        <module>v-2.3.x-apps</module>
-        <module>v-2.4.x-apps</module>
-        <module>v-2.5.x-apps</module>
-        <module>v-2.6.x-apps</module>
+        <module>apps-hello</module>
     </modules>
 
     <repositories>
@@ -49,5 +44,42 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${v.2.6.x.RELEASE.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>${v.2.6.x.RELEASE.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
