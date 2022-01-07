@@ -23,7 +23,8 @@
         <!--        <module>spring-boot-21-application</module>-->
         <!--        <module>spring-boot-22-application</module>-->
         <!--        <module>spring-boot-application-crazy</module>-->
-        <module>v-2.3.x-apps</module>
+        <module>v-2.2.x-apps</module>
+        <!--        <module>v-2.3.x-apps</module>-->
         <!--        <module>v-2.4.x-apps</module>-->
         <!--        <module>v-2.5.x-apps</module>-->
         <!--        <module>v-2.6.x-apps</module>-->

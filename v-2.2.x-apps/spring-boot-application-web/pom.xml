@@ -3,19 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>spring-boot-22-application</artifactId>
+        <artifactId>v-2.2.x-apps</artifactId>
         <groupId>io.github.futurewl</groupId>
         <version>211020</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <packaging>pom</packaging>
-    <artifactId>spring-boot-application-mq</artifactId>
 
-    <modules>
-        <module>spring-boot-application-mq-jms</module>
-        <module>spring-boot-application-mq-kafka</module>
-        <module>spring-boot-application-mq-rabbitmq</module>
-    </modules>
+    <artifactId>spring-boot-application-web</artifactId>
 
 
 </project>

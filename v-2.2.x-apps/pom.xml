@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
-    <artifactId>spring-boot-22-application</artifactId>
+    <artifactId>v-2.2.x-apps</artifactId>
     <modules>
         <module>spring-boot-application-actuator</module>
         <module>spring-boot-application-actuator-admin</module>
