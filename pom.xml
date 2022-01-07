@@ -21,6 +21,7 @@
 
     <modules>
         <module>apps-hello</module>
+        <module>netty-samples</module>
     </modules>
 
     <repositories>
