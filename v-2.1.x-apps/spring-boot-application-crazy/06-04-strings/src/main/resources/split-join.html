@@ -1,4 +1,0 @@
-<tr th:each="str : ${#strings.arraySplit('a-b-c', '-')}">
-    <td th:text="${str}"></td>
-</tr>
-<tr th:text="${#strings.arrayJoin(new String[]{'a', 'b', 'c'}, '-')}"></tr>

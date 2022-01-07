@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>spring-boot-samples</artifactId>
+        <groupId>io.github.futurewl</groupId>
+        <version>v.2.2.x</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>spring-boot-application-web</artifactId>
+
+    <modules>
+        <module>spring-boot-application-web-1</module>
+        <module>spring-boot-application-web-controller-advice</module>
+        <module>spring-boot-application-web-cors</module>
+        <module>spring-boot-application-web-custom-error-page</module>
+        <module>spring-boot-application-web-file</module>
+        <module>spring-boot-application-web-file-multipart</module>
+        <module>spring-boot-application-web-json</module>
+        <module>spring-boot-application-web-json-fastjson</module>
+        <module>spring-boot-application-web-json-gson</module>
+        <module>spring-boot-application-web-static</module>
+        <module>spring-boot-application-web-test</module>
+        <module>spring-boot-application-webflux</module>
+    </modules>
+
+</project>
