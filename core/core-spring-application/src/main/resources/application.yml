@@ -1,0 +1,3 @@
+spring:
+  main:
+    log-startup-info: false # 设置为false来关闭启动信息日志记录。
