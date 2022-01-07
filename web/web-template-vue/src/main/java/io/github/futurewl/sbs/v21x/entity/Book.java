@@ -1,4 +1,4 @@
-package io.github.futurewl.entity;
+package io.github.futurewl.sbs.v21x.entity;
 
 public class Book {
 

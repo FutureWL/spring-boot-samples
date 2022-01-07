@@ -1,4 +1,4 @@
-package io.github.futurewl;
+package io.github.futurewl.sbs.v21x;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 @RestController
 @SpringBootApplication
-public class SpringBootWebFirstApp {
+public class WebFirstAppV21x {
 
     @GetMapping("/hello")
     public ResponseEntity<String> hello() {
@@ -23,6 +23,6 @@ public class SpringBootWebFirstApp {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootWebFirstApp.class, args);
+        SpringApplication.run(WebFirstAppV21x.class, args);
     }
 }

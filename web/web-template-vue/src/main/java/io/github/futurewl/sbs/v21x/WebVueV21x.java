@@ -1,4 +1,4 @@
-package io.github.futurewl;
+package io.github.futurewl.sbs.v21x;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 @SpringBootApplication
-public class SpringBoot21ApplicationWebVue {
+public class WebVueV21x {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBoot21ApplicationWebVue.class, args);
+        SpringApplication.run(WebVueV21x.class, args);
     }
 
     @GetMapping("/simple")
