@@ -24,6 +24,7 @@
         <module>netty-samples</module>
         <module>core</module>
         <module>data</module>
+        <module>web</module>
     </modules>
 
     <repositories>

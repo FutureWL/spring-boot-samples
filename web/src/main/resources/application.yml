@@ -1,0 +1,5 @@
+server:
+  shutdown: graceful #　平滑关闭
+spring:
+  lifecycle:
+    timeout-per-shutdown-phase: 20s
