@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>v-2.1.x-apps</artifactId>
+        <groupId>io.github.futurewl</groupId>
+        <version>211020</version>
+    </parent>
+    <artifactId>web</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>web-template-freemarker</module>
+        <module>web-template-thymeleaf</module>
+        <module>web-template-vue</module>
+        <module>web-validation</module>
+        <module>web-servlet-filter-listener</module>
+        <module>web-sse</module>
+        <module>web-websocket</module>
+        <module>web-websocket-point-to-point</module>
+        <module>web-swagger2</module>
+        <module>web-use-tomcat</module>
+        <module>web-use-jetty</module>
+        <module>web-use-undertow</module>
+        <module>web-template-jsp</module>
+        <module>web-first-app</module>
+    </modules>
+
+</project>
