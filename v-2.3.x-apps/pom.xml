@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-boot-23-apps</artifactId>
+    <artifactId>v-2.3.x-apps</artifactId>
     <packaging>pom</packaging>
     <modules>
         <module>spring-boot-23-apps-01-hello</module>
