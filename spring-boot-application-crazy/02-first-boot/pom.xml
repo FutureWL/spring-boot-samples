@@ -7,7 +7,7 @@
     <parent>
         <artifactId>spring-boot-application-crazy</artifactId>
         <groupId>io.github.futurewl</groupId>
-        <version>211020</version>
+        <version>v.2.1.x</version>
     </parent>
     <artifactId>02-first-boot</artifactId>
     <name>spring-boot-application-crazy-02-first-boot</name>

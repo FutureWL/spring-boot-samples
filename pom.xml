@@ -6,7 +6,7 @@
 
     <groupId>io.github.futurewl</groupId>
     <artifactId>spring-boot-samples</artifactId>
-    <version>v.2.2.x</version>
+    <version>v.2.1.x</version>
     <packaging>pom</packaging>
 
     <name>spring-boot-samples</name>

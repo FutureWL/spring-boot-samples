@@ -6,7 +6,7 @@
     <parent>
         <artifactId>web</artifactId>
         <groupId>io.github.futurewl</groupId>
-        <version>211020</version>
+        <version>v.2.1.x</version>
     </parent>
     <artifactId>web-template-jsp</artifactId>
     <packaging>war</packaging>

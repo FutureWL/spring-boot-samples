@@ -4,7 +4,7 @@
     <parent>
         <artifactId>spring-boot-application-crazy</artifactId>
         <groupId>io.github.futurewl</groupId>
-        <version>211020</version>
+        <version>v.2.1.x</version>
     </parent>
     <artifactId>05-04-th-struts</artifactId>
     <name>spring-boot-application-crazy-05-04-th-struts</name>
