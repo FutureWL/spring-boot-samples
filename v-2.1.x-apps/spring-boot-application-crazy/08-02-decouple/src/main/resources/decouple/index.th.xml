@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<thlogic>
-    <attr sel="[id='dataTable']">
-        <attr sel="tr" th:each="user : ${users}">
-            <attr sel="td[0]" th:text="${user.id}"></attr>
-            <attr sel="td[1]" th:text="${user.name}"></attr>
-        </attr>
-    </attr>
-</thlogic>
