@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <artifactId>v-2.1.x-apps</artifactId>
+        <artifactId>spring-boot-samples</artifactId>
         <groupId>io.github.futurewl</groupId>
-        <version>211020</version>
+        <version>v.2.2.x</version>
     </parent>
     <artifactId>web</artifactId>
     <packaging>pom</packaging>
