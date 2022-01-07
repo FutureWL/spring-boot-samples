@@ -21,9 +21,9 @@
 
     <modules>
         <module>web</module>
+        <module>quartz</module>
         <!--        <module>config</module>-->
         <!--        <module>actuator</module>-->
-        <!--        <module>quartz</module>-->
         <!--        <module>netty</module>-->
         <!--        <module>bean-life-cycle</module>-->
     </modules>

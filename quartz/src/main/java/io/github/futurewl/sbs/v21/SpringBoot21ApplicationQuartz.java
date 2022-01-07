@@ -1,4 +1,4 @@
-package io.github.futurewl;
+package io.github.futurewl.sbs.v21;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

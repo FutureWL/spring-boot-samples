@@ -1,4 +1,4 @@
-package io.github.futurewl.job;
+package io.github.futurewl.sbs.v21.job;
 
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
