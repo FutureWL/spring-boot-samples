@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-boot-15-application</artifactId>
+    <artifactId>v-1.5.x-apps</artifactId>
     <packaging>pom</packaging>
     <modules>
         <module>spring-boot-15-application-web</module>

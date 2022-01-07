@@ -19,13 +19,13 @@
     </properties>
 
     <modules>
-        <!--        <module>spring-boot-15-application</module>-->
+        <module>v-1.5.x-apps</module>
         <module>v-2.1.x-apps</module>
-        <!--        <module>v-2.2.x-apps</module>-->
-        <!--        <module>v-2.3.x-apps</module>-->
-        <!--        <module>v-2.4.x-apps</module>-->
-        <!--        <module>v-2.5.x-apps</module>-->
-        <!--        <module>v-2.6.x-apps</module>-->
+        <module>v-2.2.x-apps</module>
+        <module>v-2.3.x-apps</module>
+        <module>v-2.4.x-apps</module>
+        <module>v-2.5.x-apps</module>
+        <module>v-2.6.x-apps</module>
     </modules>
 
     <repositories>
