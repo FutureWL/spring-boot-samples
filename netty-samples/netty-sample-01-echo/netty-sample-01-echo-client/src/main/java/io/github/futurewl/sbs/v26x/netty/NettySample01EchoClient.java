@@ -88,11 +88,11 @@ public class NettySample01EchoClient implements CommandLineRunner {
         String remoteHost = "127.0.0.1";
         Bootstrap bootstrap = bootstrap();
         bootstrap.handler(channelChannelInitializer());
-        bootstrap.localAddress(new InetSocketAddress(port));
         bootstrap.connect(remoteHost, port).sync().addListener((ChannelFutureListener) future -> {
-            if (future.isSuccess()) {
-                log.info("客户端启动成功！监听端口：" + port);
-            }
-        });
+                    if (future.isSuccess()) {
+                        log.info("客户端启动成功！监听端口：" + port);
+                    }
+                }
+        );
     }
 }
