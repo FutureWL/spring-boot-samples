@@ -1,6 +1,0 @@
-[submodule "lib"]
-	path = lib
-	url = https://github.com/FutureWL/lib1.git
-[submodule "lib2"]
-	path = lib2
-	url = https://github.com/FutureWL/lib1.git
