@@ -14,6 +14,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>data-mybatis</module>
+        <module>data-mybatis-plus</module>
     </modules>
 
     <properties>
