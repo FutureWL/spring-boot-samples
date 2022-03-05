@@ -1,8 +1,9 @@
 package io.github.futurewl.sbs.v26x;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/myrest")
@@ -19,4 +20,18 @@ public class MyRestController {
         return "myget param:" + myparam;
     }
 
+    @GetMapping("/getPerson")
+    public String getPerson() {
+        return new Person("小明", 18).toString();
+    }
+
+    @PostMapping("/postPerson")
+    public String postPerson(@RequestBody Person person) {
+        return person.toString();
+    }
+
+    @PutMapping("/putPerson")
+    public String putPerson(@RequestBody Person person) {
+        return person.toString();
+    }
 }

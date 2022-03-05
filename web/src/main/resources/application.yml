@@ -1,6 +1,7 @@
 server:
   shutdown: graceful #　平滑关闭
-  port: 0 # 0 是随机端口
+  # port: 0 # 0 是随机端口
+  port: 51479 # 0 是随机端口
 spring:
   lifecycle:
     timeout-per-shutdown-phase: 20s
