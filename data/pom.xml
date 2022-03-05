@@ -12,6 +12,9 @@
     <artifactId>data</artifactId>
 
     <packaging>pom</packaging>
+    <modules>
+        <module>data-mybatis</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

@@ -1,0 +1,13 @@
+server:
+  port: 8999
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.0.14:3306/sbs-mybatis?characterEncoding=utf-8&useSSL=false
+    username: sbs-mybatis
+    password: sbs-mybatis
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: io.github.futurewl.sbs.v26x.entity
+  configuration:
+    map-underscore-to-camel-case: true # 开启驼峰命名
