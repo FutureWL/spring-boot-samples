@@ -15,6 +15,7 @@
         <module>web-rest</module>
         <module>web-security</module>
         <module>web-shiro</module>
+        <module>web-oauth2</module>
     </modules>
 
     <properties>
