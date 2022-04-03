@@ -1,2 +1,19 @@
 server:
   port: 9999
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:9999 # The URL of the Spring Boot Admin Server to register at.
+        instance:
+          service-base-url: http://192.168.0.216:9999
+management:
+  endpoint:
+    shutdown:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        # As with Spring Boot 2 most of the endpoints aren’t exposed via http by default, we expose all of them. For production you should carefully choose which endpoints to expose.
+# spring-boot-admin
