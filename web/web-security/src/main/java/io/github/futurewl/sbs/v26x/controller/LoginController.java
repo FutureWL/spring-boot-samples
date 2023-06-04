@@ -28,6 +28,24 @@ public class LoginController {
         return "Hello";
     }
 
+    @GetMapping("/user/hello3")
+    @PreAuthorize("hasAnyAuthority('admin','test','system:dept:list')") // 鉴权注解
+    public String hello3() {
+        return "Hello";
+    }
+
+    @GetMapping("/user/hello4")
+    @PreAuthorize("hasAnyRole('admin','test','system:dept:list')") // 鉴权注解
+    public String hello4() {
+        return "Hello";
+    }
+
+    @GetMapping("/user/hello5")
+    @PreAuthorize("hasRole('system:dept:list')") // 鉴权注解
+    public String hello5() {
+        return "Hello";
+    }
+
     @PostMapping("/user/login")
     public ResponseResult login(@RequestBody User user) {
 

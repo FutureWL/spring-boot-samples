@@ -3,6 +3,7 @@ package io.github.futurewl.sbs.v26x.service;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import io.github.futurewl.sbs.v26x.entity.LoginUser;
 import io.github.futurewl.sbs.v26x.entity.User;
+import io.github.futurewl.sbs.v26x.mapper.MenuMapper;
 import io.github.futurewl.sbs.v26x.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -10,8 +11,6 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
@@ -21,6 +20,9 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     @Autowired
     private UserMapper userMapper;
 
+    @Autowired
+    private MenuMapper menuMapper;
+
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         LambdaQueryWrapper<User> wrapper = new LambdaQueryWrapper<>();
@@ -29,7 +31,8 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         if (Objects.isNull(user)) {
             throw new RuntimeException("用户名或密码错误");
         }
-        List<String> list = new ArrayList<>(Arrays.asList("test"));
+//        List<String> list = new ArrayList<>(Arrays.asList("test"));
+        List<String> list = menuMapper.selectPermsByUserId(user.getId());
         return new LoginUser(user, list);
     }
 }
