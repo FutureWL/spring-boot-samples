@@ -1,0 +1,10 @@
+server:
+  port: 9999
+spring:
+  redis:
+    database: 1
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_sbs?characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: weilai
+    driver-class-name: com.mysql.cj.jdbc.Driver
