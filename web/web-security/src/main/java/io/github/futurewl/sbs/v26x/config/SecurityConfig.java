@@ -14,7 +14,10 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.security.web.access.AccessDeniedHandler;
+import org.springframework.security.web.authentication.AuthenticationFailureHandler;
+import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.security.web.authentication.logout.LogoutSuccessHandler;
 
 /**
  *
@@ -44,6 +47,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private AccessDeniedHandler accessDeniedHandler;
 
+    @Autowired
+    private AuthenticationSuccessHandler successHandler;
+    @Autowired
+    private AuthenticationFailureHandler failureHandler;
+    @Autowired
+    private LogoutSuccessHandler logoutSuccessHandler;
+
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
@@ -56,8 +66,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 // 对于登录接口 允许匿名访问
                 .antMatchers("/user/login").anonymous()
-                // 除上面外的所有请求全部需要授权认证
-                .anyRequest().authenticated();
+                .antMatchers("/user/hello7").hasAuthority("test");
+
         //把token校验过滤器添加到过滤器链中
         http.addFilterBefore(jwtAuthenticationTokenFilter, UsernamePasswordAuthenticationFilter.class);
         // 自定义失败处理
@@ -67,6 +77,14 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .accessDeniedHandler(accessDeniedHandler);
         // 允许跨域
         http.cors();
+        // 成功认证
+        http.formLogin().successHandler(successHandler);
+        // 失败认证
+        http.formLogin().failureHandler(failureHandler);
+        // 注销认证
+        http.logout().logoutSuccessHandler(logoutSuccessHandler);
+        // 除上面外的所有请求全部需要授权认证
+        http.authorizeRequests().anyRequest().authenticated();
     }
 
     @Bean

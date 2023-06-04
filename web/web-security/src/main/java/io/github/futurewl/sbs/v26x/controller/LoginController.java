@@ -46,6 +46,13 @@ public class LoginController {
         return "Hello";
     }
 
+    @GetMapping("/user/hello6")
+    @PreAuthorize("@ex.hasAuthority('system:dept:list')") // 鉴权注解
+    public String hello6() {
+        return "Hello";
+    }
+
+
     @PostMapping("/user/login")
     public ResponseResult login(@RequestBody User user) {
 
