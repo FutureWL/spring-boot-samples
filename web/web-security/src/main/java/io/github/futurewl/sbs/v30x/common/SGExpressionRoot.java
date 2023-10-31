@@ -1,6 +1,6 @@
-package io.github.futurewl.sbs.v30x.common;
+package io.github.futurewl.sbs.v31x.common;
 
-import io.github.futurewl.sbs.v30x.entity.LoginUser;
+import io.github.futurewl.sbs.v31x.entity.LoginUser;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;

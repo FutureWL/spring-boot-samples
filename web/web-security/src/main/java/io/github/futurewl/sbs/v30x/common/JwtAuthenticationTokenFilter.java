@@ -1,7 +1,7 @@
-package io.github.futurewl.sbs.v30x.common;
+package io.github.futurewl.sbs.v31x.common;
 
-import io.github.futurewl.sbs.v30x.entity.LoginUser;
-import io.github.futurewl.sbs.v30x.utils.JwtUtil;
+import io.github.futurewl.sbs.v31x.entity.LoginUser;
+import io.github.futurewl.sbs.v31x.utils.JwtUtil;
 import io.jsonwebtoken.Claims;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

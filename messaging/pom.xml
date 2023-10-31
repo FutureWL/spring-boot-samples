@@ -5,7 +5,7 @@
     <parent>
         <artifactId>spring-boot-samples</artifactId>
         <groupId>io.github.futurewl</groupId>
-        <version>v.3.0.x</version>
+        <version>v.3.1.x</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 

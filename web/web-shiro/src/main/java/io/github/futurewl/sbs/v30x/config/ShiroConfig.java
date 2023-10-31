@@ -1,4 +1,4 @@
-package io.github.futurewl.sbs.v30x.config;
+package io.github.futurewl.sbs.v31x.config;
 
 import at.pollux.thymeleaf.shiro.dialect.ShiroDialect;
 import org.apache.shiro.realm.Realm;

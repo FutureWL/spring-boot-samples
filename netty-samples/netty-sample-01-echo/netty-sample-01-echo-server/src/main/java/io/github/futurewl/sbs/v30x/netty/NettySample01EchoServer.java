@@ -1,4 +1,4 @@
-package io.github.futurewl.sbs.v30x.netty;
+package io.github.futurewl.sbs.v31x.netty;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;

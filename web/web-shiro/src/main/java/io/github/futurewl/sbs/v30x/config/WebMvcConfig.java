@@ -1,4 +1,4 @@
-package io.github.futurewl.sbs.v30x.config;
+package io.github.futurewl.sbs.v31x.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;

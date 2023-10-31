@@ -1,10 +1,10 @@
-package io.github.futurewl.sbs.v30x.service;
+package io.github.futurewl.sbs.v31x.service;
 
-import io.github.futurewl.sbs.v30x.common.RedisCache;
-import io.github.futurewl.sbs.v30x.common.ResponseResult;
-import io.github.futurewl.sbs.v30x.entity.LoginUser;
-import io.github.futurewl.sbs.v30x.entity.User;
-import io.github.futurewl.sbs.v30x.utils.JwtUtil;
+import io.github.futurewl.sbs.v31x.common.RedisCache;
+import io.github.futurewl.sbs.v31x.common.ResponseResult;
+import io.github.futurewl.sbs.v31x.entity.LoginUser;
+import io.github.futurewl.sbs.v31x.entity.User;
+import io.github.futurewl.sbs.v31x.utils.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

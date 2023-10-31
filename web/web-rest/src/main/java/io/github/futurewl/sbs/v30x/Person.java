@@ -1,4 +1,4 @@
-package io.github.futurewl.sbs.v30x;
+package io.github.futurewl.sbs.v31x;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

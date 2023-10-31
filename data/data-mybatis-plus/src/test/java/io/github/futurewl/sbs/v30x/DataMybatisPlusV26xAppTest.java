@@ -1,7 +1,7 @@
-package io.github.futurewl.sbs.v30x;
+package io.github.futurewl.sbs.v31x;
 
-import io.github.futurewl.sbs.v30x.entity.User;
-import io.github.futurewl.sbs.v30x.mapper.UserMapper;
+import io.github.futurewl.sbs.v31x.entity.User;
+import io.github.futurewl.sbs.v31x.mapper.UserMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

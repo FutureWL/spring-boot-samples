@@ -1,4 +1,4 @@
-package io.github.futurewl.sbs.v30x.handler;
+package io.github.futurewl.sbs.v31x.handler;
 
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;

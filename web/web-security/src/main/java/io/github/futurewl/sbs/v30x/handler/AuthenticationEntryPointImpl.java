@@ -1,8 +1,8 @@
-package io.github.futurewl.sbs.v30x.handler;
+package io.github.futurewl.sbs.v31x.handler;
 
 import com.alibaba.fastjson.JSON;
-import io.github.futurewl.sbs.v30x.common.ResponseResult;
-import io.github.futurewl.sbs.v30x.utils.WebUtils;
+import io.github.futurewl.sbs.v31x.common.ResponseResult;
+import io.github.futurewl.sbs.v31x.utils.WebUtils;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.AuthenticationEntryPoint;

@@ -1,4 +1,4 @@
-package io.github.futurewl.sbs.v30x.common;
+package io.github.futurewl.sbs.v31x.common;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.BoundSetOperations;

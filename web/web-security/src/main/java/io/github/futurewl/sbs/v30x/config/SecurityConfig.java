@@ -1,6 +1,6 @@
-package io.github.futurewl.sbs.v30x.config;
+package io.github.futurewl.sbs.v31x.config;
 
-import io.github.futurewl.sbs.v30x.common.JwtAuthenticationTokenFilter;
+import io.github.futurewl.sbs.v31x.common.JwtAuthenticationTokenFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

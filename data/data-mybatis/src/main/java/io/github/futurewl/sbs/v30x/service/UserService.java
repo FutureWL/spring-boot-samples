@@ -1,6 +1,6 @@
-package io.github.futurewl.sbs.v30x.service;
+package io.github.futurewl.sbs.v31x.service;
 
-import io.github.futurewl.sbs.v30x.entity.User;
+import io.github.futurewl.sbs.v31x.entity.User;
 
 import java.util.List;
 

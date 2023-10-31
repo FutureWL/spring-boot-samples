@@ -1,4 +1,4 @@
-package io.github.futurewl.sbs.v30x.utils;
+package io.github.futurewl.sbs.v31x.utils;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtBuilder;

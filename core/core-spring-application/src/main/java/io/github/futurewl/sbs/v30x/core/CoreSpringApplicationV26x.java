@@ -1,4 +1,4 @@
-package io.github.futurewl.sbs.v30x.core;
+package io.github.futurewl.sbs.v31x.core;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;

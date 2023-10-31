@@ -1,4 +1,4 @@
-package io.github.futurewl.sbs.v30x.service;
+package io.github.futurewl.sbs.v31x.service;
 
 import org.springframework.stereotype.Service;
 

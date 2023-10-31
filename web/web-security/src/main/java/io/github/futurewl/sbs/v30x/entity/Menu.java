@@ -1,4 +1,4 @@
-package io.github.futurewl.sbs.v30x.entity;
+package io.github.futurewl.sbs.v31x.entity;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;

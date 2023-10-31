@@ -1,4 +1,4 @@
-package io.github.futurewl.sbs.v30x.controller;
+package io.github.futurewl.sbs.v31x.controller;
 
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;

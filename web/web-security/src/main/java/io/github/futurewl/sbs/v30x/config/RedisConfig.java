@@ -1,7 +1,7 @@
-package io.github.futurewl.sbs.v30x.config;
+package io.github.futurewl.sbs.v31x.config;
 
 import com.alibaba.fastjson.parser.ParserConfig;
-import io.github.futurewl.sbs.v30x.common.FastJsonRedisSerializer;
+import io.github.futurewl.sbs.v31x.common.FastJsonRedisSerializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;

@@ -1,7 +1,7 @@
-package io.github.futurewl.sbs.v30x.controller;
+package io.github.futurewl.sbs.v31x.controller;
 
-import io.github.futurewl.sbs.v30x.entity.SysUser;
-import io.github.futurewl.sbs.v30x.service.SysUserService;
+import io.github.futurewl.sbs.v31x.entity.SysUser;
+import io.github.futurewl.sbs.v31x.service.SysUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

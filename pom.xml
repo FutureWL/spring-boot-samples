@@ -6,7 +6,7 @@
 
     <groupId>io.github.futurewl</groupId>
     <artifactId>spring-boot-samples</artifactId>
-    <version>v.3.0.x</version>
+    <version>v.3.1.x</version>
     <packaging>pom</packaging>
 
     <name>apps-samples</name>
@@ -16,7 +16,7 @@
         <maven.compiler.target>17</maven.compiler.target>
         <maven.compiler.compilerVersion>17</maven.compiler.compilerVersion>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <v.3.0.x.RELEASE.version>3.0.12</v.3.0.x.RELEASE.version>
+        <v.3.1.x.RELEASE.version>3.1.5</v.3.1.x.RELEASE.version>
         <spring-boot-admin.version>2.7.10</spring-boot-admin.version>
     </properties>
 
@@ -60,7 +60,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>${v.3.0.x.RELEASE.version}</version>
+                <version>${v.3.1.x.RELEASE.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -89,7 +89,7 @@
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
-                    <version>${v.3.0.x.RELEASE.version}</version>
+                    <version>${v.3.1.x.RELEASE.version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
@@ -97,13 +97,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>

@@ -1,6 +1,6 @@
-package io.github.futurewl.sbs.v30x.dao;
+package io.github.futurewl.sbs.v31x.dao;
 
-import io.github.futurewl.sbs.v30x.entity.SysUser;
+import io.github.futurewl.sbs.v31x.entity.SysUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;

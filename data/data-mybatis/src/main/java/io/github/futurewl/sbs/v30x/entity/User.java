@@ -1,4 +1,4 @@
-package io.github.futurewl.sbs.v30x.entity;
+package io.github.futurewl.sbs.v31x.entity;
 
 import java.io.Serializable;
 

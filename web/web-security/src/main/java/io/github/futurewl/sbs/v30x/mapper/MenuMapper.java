@@ -1,7 +1,7 @@
-package io.github.futurewl.sbs.v30x.mapper;
+package io.github.futurewl.sbs.v31x.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import io.github.futurewl.sbs.v30x.entity.Menu;
+import io.github.futurewl.sbs.v31x.entity.Menu;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

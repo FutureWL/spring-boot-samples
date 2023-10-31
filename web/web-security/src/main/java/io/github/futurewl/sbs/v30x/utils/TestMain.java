@@ -1,4 +1,4 @@
-package io.github.futurewl.sbs.v30x.utils;
+package io.github.futurewl.sbs.v31x.utils;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 

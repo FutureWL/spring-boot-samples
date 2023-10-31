@@ -1,4 +1,4 @@
-package io.github.futurewl.sbs.v30x.utils;
+package io.github.futurewl.sbs.v31x.utils;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;

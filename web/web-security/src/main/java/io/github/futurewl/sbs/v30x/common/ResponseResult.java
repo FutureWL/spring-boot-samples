@@ -1,4 +1,4 @@
-package io.github.futurewl.sbs.v30x.common;
+package io.github.futurewl.sbs.v31x.common;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 

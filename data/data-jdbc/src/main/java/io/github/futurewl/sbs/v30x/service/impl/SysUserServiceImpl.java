@@ -1,8 +1,8 @@
-package io.github.futurewl.sbs.v30x.service.impl;
+package io.github.futurewl.sbs.v31x.service.impl;
 
-import io.github.futurewl.sbs.v30x.dao.SysUserDao;
-import io.github.futurewl.sbs.v30x.entity.SysUser;
-import io.github.futurewl.sbs.v30x.service.SysUserService;
+import io.github.futurewl.sbs.v31x.dao.SysUserDao;
+import io.github.futurewl.sbs.v31x.entity.SysUser;
+import io.github.futurewl.sbs.v31x.service.SysUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

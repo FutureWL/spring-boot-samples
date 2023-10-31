@@ -1,10 +1,10 @@
-package io.github.futurewl.sbs.v30x.service;
+package io.github.futurewl.sbs.v31x.service;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import io.github.futurewl.sbs.v30x.entity.LoginUser;
-import io.github.futurewl.sbs.v30x.entity.User;
-import io.github.futurewl.sbs.v30x.mapper.MenuMapper;
-import io.github.futurewl.sbs.v30x.mapper.UserMapper;
+import io.github.futurewl.sbs.v31x.entity.LoginUser;
+import io.github.futurewl.sbs.v31x.entity.User;
+import io.github.futurewl.sbs.v31x.mapper.MenuMapper;
+import io.github.futurewl.sbs.v31x.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

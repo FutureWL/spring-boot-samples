@@ -1,8 +1,8 @@
-package io.github.futurewl.sbs.v30x.controller;
+package io.github.futurewl.sbs.v31x.controller;
 
-import io.github.futurewl.sbs.v30x.common.ResponseResult;
-import io.github.futurewl.sbs.v30x.entity.User;
-import io.github.futurewl.sbs.v30x.service.LoginService;
+import io.github.futurewl.sbs.v31x.common.ResponseResult;
+import io.github.futurewl.sbs.v31x.entity.User;
+import io.github.futurewl.sbs.v31x.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
