@@ -2,10 +2,10 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="person1" class="io.github.futurewl.sbs.v26x.Person" init-method="init" destroy-method="destroy">
+    <bean id="person1" class="io.github.futurewl.sbs.v30x.Person" init-method="init" destroy-method="destroy">
         <property name="name" value="名称1"/>
     </bean>
-    <bean id="person2" class="io.github.futurewl.sbs.v26x.Person" init-method="init" destroy-method="destroy">
+    <bean id="person2" class="io.github.futurewl.sbs.v30x.Person" init-method="init" destroy-method="destroy">
         <property name="name" value="名称2"/>
     </bean>
 </beans>

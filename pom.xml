@@ -6,31 +6,31 @@
 
     <groupId>io.github.futurewl</groupId>
     <artifactId>spring-boot-samples</artifactId>
-    <version>v.2.7.x</version>
+    <version>v.3.0.x</version>
     <packaging>pom</packaging>
 
     <name>apps-samples</name>
 
     <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.compilerVersion>17</maven.compiler.compilerVersion>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <v.2.7.x.RELEASE.version>2.7.9</v.2.7.x.RELEASE.version>
+        <v.3.0.x.RELEASE.version>3.0.12</v.3.0.x.RELEASE.version>
         <spring-boot-admin.version>2.7.10</spring-boot-admin.version>
     </properties>
 
     <modules>
         <module>apps-hello</module>
-        <module>netty-samples</module>
-        <module>core</module>
-        <module>data</module>
-        <module>web</module>
-        <module>io</module>
-        <module>messaging</module>
-        <module>container-images</module>
-        <module>webflux</module>
-        <module>spring-boot-admin</module>
+<!--        <module>netty-samples</module>-->
+<!--        <module>core</module>-->
+<!--        <module>data</module>-->
+<!--        <module>web</module>-->
+<!--        <module>io</module>-->
+<!--        <module>messaging</module>-->
+<!--        <module>container-images</module>-->
+<!--        <module>webflux</module>-->
+<!--        <module>spring-boot-admin</module>-->
     </modules>
 
     <repositories>
@@ -60,7 +60,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>${v.2.7.x.RELEASE.version}</version>
+                <version>${v.3.0.x.RELEASE.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -89,7 +89,7 @@
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
-                    <version>${v.2.7.x.RELEASE.version}</version>
+                    <version>${v.3.0.x.RELEASE.version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
